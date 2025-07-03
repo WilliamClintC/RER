@@ -1,0 +1,220 @@
+---
+title: "William's Comments"
+subtitle: "Tariffs, Trade and Tumult Canada’s challenges ahead"
+author: 
+  - name: "William Clinton Co"
+    affiliation: "The University of British Columbia"
+    email: "clinton.will.c@gmail.com"
+date: today
+date-format: "MMMM D, YYYY"
+abstract: |
+  This document provides comments on Prof. Michael B. Devereux’s presentation, "Tariffs, Trade, and Tumult: Canada’s Challenges Ahead," delivered at the Pender Whistler Investment Conference on July 9, 2025.
+format:
+  pdf:
+    documentclass: article
+    geometry: 
+      - margin=1in
+    fontsize: 11pt
+    linestretch: 1.5
+    number-sections: true
+    toc: true
+    toc-depth: 3
+    lof: false  # List of figures
+    lot: false  # List of tables
+    colorlinks: true
+    cite-method: biblatex
+    keep-tex: true
+bibliography: references.bib
+csl: apa.csl
+---
+
+# Introduction {#sec-introduction}
+
+Overall, the presentation is strong. The comments below focus on minor corrections to improve clarity and consistency, such as rephrasing for clarity, adding explanatory sentences, increasing font size, labeling axes, and ensuring consistent formatting.
+
+# Comments
+
+## Slide 3
+
+![Slide 3](bean.pdf){#fig-slide3 width="70%" page="3"}
+
+Roadmap:
+
+1.  The postwar trading system
+
+2.  The US tariff shock
+
+3.  ::: callout-tip
+    ## Maybe say
+
+    ~~The logic of tariffs~~ maybe say "Evaluating Tariffs"
+    :::
+
+4.  The impact on Canada
+
+5.  The way forward?
+
+## Slide 4
+
+![Slide 4](bean.pdf){#fig-slide4 width="70%" page="4"}
+
+Evolution of the global trading system
+
+-   ::: callout-tip
+    ## Gave better background on GATT
+
+    GATT ***(General Agreement on Tariffs and Trade)*** set up in 1947 under US leadership
+    :::
+
+-   Tari rates over 20% in 1950s..
+
+-   ....
+
+## Slide 5
+
+![Slide 5](bean.pdf){#fig-slide5 width="70%" page="5"}
+
+::: callout-tip
+## Suggestion
+
+1.  Label the axis
+2.  Maybe confusing because there are two points being made.
+    1.  World trade growth vs GDP growth
+        -   show mean of World Trade and mean of GDP comparison
+    2.  Trade and Post War success
+        -   show pre war growth against post war growth
+
+![](images/clipboard-4219370577.jpeg)
+:::
+
+## Slide 6
+
+![Slide 6](bean.pdf){#fig-slide6 width="70%" page="6"}
+
+::: callout-tip
+## Suggestion
+
+add a small bullet point explanation of trade diversion
+
+ie.
+
+Trade Diversion
+
+:   when trade is diverted from a more efficient exporter towards a less efficient one.
+:::
+
+## Slide 7
+
+![Slide 7](bean.pdf){#fig-slide7 width="70%" page="7"}
+
+::: callout-tip
+Indicate new "chapter" with a chapter slide. i.e.
+
+![](images/clipboard-2994615373.jpeg){width="383"}
+:::
+
+## Slide 8
+
+![Slide 8](bean.pdf){#fig-slide8 width="70%" page="8"}
+
+::: callout-tip
+-   Add axis label
+:::
+
+## Slide 9
+
+![Slide 9](bean.pdf){#fig-slide9 width="70%" page="9"}
+
+::: callout-tip
+-   define uncertainty
+
+-   commit to a consistent label of axis
+
+-   time axis formatting is inconsistent across graphs
+
+-   typo "~~2925~~ 2025"
+:::
+
+## Slide 11
+
+![Slide 11](bean.pdf){#fig-slide11 width="70%" page="11"}
+
+::: callout-tip
+-   US CBO ***(Congressional Budget Office)*** suggests tariff revenue 2 trillion over 9 years 26-34
+
+-   Sankey diagram font may be too small, move it to another slide maybe
+
+-   better labeling of Sankey if possible. For example Total Receipts and Deficit should be in far right
+:::
+
+## Slide 12
+
+![Slide 12](bean.pdf){#fig-slide12 width="70%" page="12"}
+
+::: callout-tip
+-   It may be helpful to talk about (X-M)=(S-I)+(T-G)
+:::
+
+## Slide 16
+
+![Slide 16](bean.pdf){#fig-slide16 width="70%" page="16"}
+
+::: callout-tip
+-   put year in label
+
+-   time series graph may also be helpful
+:::
+
+## Slide 17
+
+![Slide 17](bean.pdf){#fig-slide17 width="70%" page="17"}
+
+::: callout-tip
+-   maybe tie in with slide 12 (X-M)=(S-I)+(T-G)
+:::
+
+## Slide 20/21
+
+![Slide 20](bean.pdf){#fig-slide20 width="70%" page="20"}
+
+![Slide 21](bean.pdf){#fig-slide21 width="70%" page="21"}
+
+::: callout-tip
+-   label the axis
+
+-   unclear units
+:::
+
+## Slide 23
+
+![Slide 23](bean.pdf){#fig-slide23 width="70%" page="23"}
+
+::: callout-tip
+-   Commit to consistent x axis format
+
+-   different format from slide 9
+
+-   introduce new chapter slide
+
+![](images/clipboard-2994615373.jpeg){width="409"}
+:::
+
+## Slide 24/25
+
+![Slide 24](bean.pdf){#fig-slide24 width="70%" page="24"}
+
+![Slide 25](bean.pdf){#fig-slide25 width="70%" page="25"}
+
+::: callout-tip
+-   Pi chart comparison may be better
+:::
+
+## Slide 29
+
+![Slide 29](bean.pdf){#fig-slide29 width="70%" page="29"}
+
+::: callout-tip
+-   add chapter slide
+
+-   add end slide
+:::
