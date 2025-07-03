@@ -1,0 +1,86 @@
+---
+title: "My First Quarto Document"
+author: "Your Name"
+date: today
+format: 
+  pdf:
+    documentclass: article
+    geometry: margin=1in
+    fontsize: 11pt
+---
+
+# Introduction
+
+Welcome to your first Quarto document! Quarto is a powerful tool for creating reproducible documents that combine text, code, and outputs.
+
+## What is Quarto?
+
+Quarto is an open-source scientific and technical publishing system built on Pandoc. It allows you to:
+
+- Write content in Markdown
+- Include executable code chunks
+- Generate high-quality documents in multiple formats (PDF, HTML, Word, etc.)
+- Create reproducible research
+
+## Getting Started
+
+### Basic Markdown
+
+You can write **bold text**, *italic text*, and `inline code`.
+
+Here's a list:
+- Item 1
+- Item 2
+- Item 3
+
+### Code Chunks
+
+You can include code chunks in various languages. Here's a Python example:
+
+```{python}
+#| echo: true
+#| eval: false
+
+# This is a Python code chunk
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Create some sample data
+data = {'x': [1, 2, 3, 4, 5], 'y': [2, 4, 6, 8, 10]}
+df = pd.DataFrame(data)
+
+# Create a simple plot
+plt.figure(figsize=(8, 6))
+plt.plot(df['x'], df['y'], marker='o')
+plt.title('Simple Line Plot')
+plt.xlabel('X values')
+plt.ylabel('Y values')
+plt.show()
+```
+
+### Math
+
+You can include mathematical equations:
+
+Inline math: $E = mc^2$
+
+Display math:
+$$
+\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}
+$$
+
+## Tables
+
+| Column 1 | Column 2 | Column 3 |
+|----------|----------|----------|
+| Value 1  | Value 2  | Value 3  |
+| Value 4  | Value 5  | Value 6  |
+
+## Conclusion
+
+This is just the beginning! Quarto offers many more features for creating professional documents.
+
+To render this document to PDF, use the command:
+```
+quarto render document.qmd --to pdf
+```

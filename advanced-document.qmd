@@ -1,0 +1,156 @@
+---
+title: "Advanced Quarto Document Template"
+subtitle: "A comprehensive example with multiple features"
+author: 
+  - name: "Your Name"
+    affiliation: "Your Institution"
+    email: "your.email@example.com"
+date: today
+date-format: "MMMM D, YYYY"
+abstract: |
+  This document demonstrates advanced features of Quarto for creating professional PDF documents. It includes examples of cross-references, citations, code execution, mathematical equations, and more.
+format:
+  pdf:
+    documentclass: article
+    geometry: 
+      - margin=1in
+    fontsize: 11pt
+    linestretch: 1.5
+    number-sections: true
+    toc: true
+    toc-depth: 3
+    lof: true  # List of figures
+    lot: true  # List of tables
+    colorlinks: true
+    cite-method: biblatex
+    keep-tex: true
+bibliography: references.bib
+csl: apa.csl
+---
+
+# Introduction {#sec-introduction}
+
+This document serves as a comprehensive template for creating professional documents with Quarto. As discussed in @sec-methods, we'll explore various features that make Quarto powerful for academic and professional writing.
+
+## Document Structure
+
+A well-structured document typically includes:
+
+1. **Front matter** - Title, author, abstract
+2. **Table of contents** - Navigation aid
+3. **Main content** - Organized in logical sections
+4. **References** - Proper citations and bibliography
+
+# Literature Review {#sec-literature}
+
+According to recent research [@doe2023], Quarto represents a significant advancement in reproducible document generation. The integration of multiple programming languages makes it particularly suitable for data science applications [@smith2023].
+
+# Methods {#sec-methods}
+
+## Data Analysis Workflow
+
+Our analysis follows these steps:
+
+1. Data collection and cleaning
+2. Exploratory data analysis  
+3. Statistical modeling
+4. Results visualization
+
+### Sample Code
+
+Here's an example of data analysis code that would be executed:
+
+```{python}
+#| label: fig-scatter
+#| fig-cap: "Sample scatter plot showing relationship between variables"
+#| echo: true
+#| eval: false
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Generate sample data
+np.random.seed(42)
+x = np.random.normal(0, 1, 100)
+y = 2 * x + np.random.normal(0, 0.5, 100)
+
+# Create the plot
+plt.figure(figsize=(8, 6))
+plt.scatter(x, y, alpha=0.7)
+plt.xlabel('X Variable')
+plt.ylabel('Y Variable')
+plt.title('Scatter Plot Example')
+plt.grid(True, alpha=0.3)
+plt.show()
+```
+
+## Statistical Analysis
+
+The relationship can be expressed mathematically as:
+
+$$
+Y = \beta_0 + \beta_1 X + \epsilon
+$$ {#eq-regression}
+
+where $\epsilon \sim N(0, \sigma^2)$ represents the error term.
+
+# Results {#sec-results}
+
+## Summary Statistics
+
+@tbl-summary presents the descriptive statistics for our variables.
+
+| Variable | Mean | SD   | Min  | Max  |
+|----------|------|------|------|------|
+| X        | 0.12 | 0.98 | -2.4 | 2.1  |
+| Y        | 0.24 | 2.1  | -4.8 | 4.2  |
+
+: Summary Statistics {#tbl-summary}
+
+## Model Results
+
+The regression analysis (see @eq-regression) yielded the following results:
+
+- Intercept: $\beta_0 = 0.05$ (SE = 0.21, p = 0.81)
+- Slope: $\beta_1 = 1.98$ (SE = 0.19, p < 0.001)
+- R² = 0.78
+
+As shown in @fig-scatter, there's a strong positive relationship between the variables.
+
+# Discussion {#sec-discussion}
+
+## Key Findings
+
+Our analysis reveals several important insights:
+
+::: {.callout-note}
+## Important Note
+The strong correlation observed in our data suggests a meaningful relationship that warrants further investigation.
+:::
+
+::: {.callout-warning}
+## Limitation
+This analysis is based on simulated data and should not be interpreted as real research findings.
+:::
+
+## Future Work
+
+Potential extensions of this work include:
+
+- [ ] Collect real-world data
+- [ ] Implement more sophisticated models
+- [ ] Conduct sensitivity analyses
+- [ ] Validate findings with independent datasets
+
+# Conclusion {#sec-conclusion}
+
+This document demonstrates the power of Quarto for creating professional, reproducible documents. The combination of narrative text, executable code, mathematical equations, and proper citations makes it an excellent choice for academic and professional writing.
+
+Key advantages of using Quarto include:
+
+- **Reproducibility**: Code and results are integrated
+- **Flexibility**: Multiple output formats supported
+- **Professional appearance**: High-quality typesetting
+- **Cross-references**: Automatic numbering and linking
+
+# References {.unnumbered}
