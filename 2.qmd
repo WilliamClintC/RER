@@ -1,0 +1,123 @@
+---
+title: "William's Update"
+subtitle: "Identifying Related Papers"
+author: 
+  - name: "William Clinton Co"
+    affiliation: "The University of British Columbia"
+    email: "clinton.will.c@gmail.com"
+date: today
+date-format: "MMMM D, YYYY"
+abstract: |
+  This document compiles and ranks related literature by relevance to "Productivity and Wedges: Economic Convergence and the Real Exchange Rate" (Devereux, Fujiwara, & Granados, 2025). More litearture will follow. 
+format:
+  pdf:
+    documentclass: article
+    geometry: 
+      - margin=1in
+    fontsize: 11pt
+    linestretch: 1.5
+    number-sections: true
+    toc: true
+    toc-depth: 3
+    lof: false  # List of figures
+    lot: false  # List of tables
+    colorlinks: true
+    linkcolor: blue
+    urlcolor: blue
+    citecolor: blue
+    cite-method: biblatex
+    keep-tex: true
+    include-in-header:
+      - text: |
+          \usepackage{hyperref}
+          \hypersetup{
+            colorlinks=true,
+            linkcolor=blue,
+            urlcolor=blue,
+            citecolor=blue,
+            breaklinks=true,
+            pdfborder={0 0 0}
+          }
+bibliography: references.bib
+csl: apa.csl
+---
+
+## Introduction 
+This document represents William's current work on identifying related literature. More literature will follow soon. 
+
+We have also sent a Zotero library invitation to Michael.Devereux@ubc.ca (invited on 2025-07-10 16:56:43), which provides access to the current literature we are reviewing. 
+
+Any feedback is appreciated.
+
+## High Relevance
+
+### The Determinants of Real Exchange Rates in Transition Economies
+
+**Authors:** Dan Meshulam, Peter Sanfey (EBRD)  
+**Date:** 2019  
+**Link:** [Read Paper](https://drive.google.com/file/d/1MldCJB2yPD3AEI93kt9qSX11rjcTdySo/view?usp=sharing)
+
+**Note:** This paper provides empirical evidence on the drivers of real exchange rates in transition economies, including support for the Balassa-Samuelson hypothesis.
+
+## High Relevance
+
+### The Story of the Real Exchange Rate
+
+**Author:** Oleg Itskhoki  
+**Date:** 2021  
+**Link:** [Read Paper](https://drive.google.com/file/d/1vhVbum9po2xoiaPT8suUqOqjDg5o8EkI/view?usp=sharing)
+
+**Note:** This review presents a comprehensive framework for understanding the real exchange rate (RER) as a general equilibrium outcome, emphasizing its dependence on home bias, incomplete pass-through, international risk sharing, and monetary policy regimes. It highlights the limitations of partial theories such as PPP and underscores the RER's complex empirical behavior.
+
+## Medium to High Relevance
+
+### The Balassa-Samuelson Effect Reversed: New Evidence from OECD Countries
+
+**Authors:** Matthias Gubler, Christoph Sax  
+**Date:** 2019  
+**Link:** [Read Paper](https://drive.google.com/file/d/17D8FzoOwr9Z-TulNWzoSWobEIz4HaWuQ/view?usp=sharing)
+
+**Note:** This paper re-evaluates the Balassa-Samuelson hypothesis using OECD panel data from 1970–2008. It finds a robust negative relationship between productivity in the tradable sector and the real exchange rate post-1985, challenging the traditional Balassa-Samuelson view.
+
+## Medium Relevance
+
+### Competitiveness and Productivity in the Baltics: Common Shocks, Different Implications
+
+**Authors:** Saioa Armendariz, Carlos de Resende, Alice Fan, Gianluigi Ferrucci, Bingjie Hu, Sadhna Naik, Can Ugur  
+**Date:** January 17, 2025  
+**Link:** [Read Paper](https://drive.google.com/file/d/1GFUm5ckExKBUJ7CXxZ4ZyplTKT2Krc28/view?usp=sharing)
+
+**Note:** Although the paper addresses a different research question, it provides relevance with its use of the Balassa-Samuelson framework.
+
+::: {.callout-note}
+## Relevant Quote
+"productivity. Multivariate filtering techniques and estimates of the real effective exchange rates based on historical productivity trends, consistent with Balassa-Samuelson, confirm that differences in long-term total, factor productivity growth have affected external competitiveness."
+:::
+
+## Low to Medium Relevance
+
+### Exchange Rate Models Are Better Than You Think, and Why They Didn't Work in the Old Days
+
+**Authors:** Charles Engel, Steve Pak Yeung Wu  
+**Date:** 2024  
+**Link:** <https://www.nber.org/system/files/working_papers/w32808/w32808.pdf>
+
+**Note:** Exchange rate model in the context of US dollar and monetary policy.
+
+### The Purchasing Power Parity and Exchange-Rate Economics Half a Century On
+
+**Authors:** Hai Long Vo, Duc Hong Vo  
+**Date:** 2023  
+**Link:** [Read Paper](https://drive.google.com/file/d/1GvSoUtKJiy58EFfif0aoFeuvEYS26tqs/view?usp=sharing)
+
+**Note:** A survey-style review of exchange rate economics, useful for context but limited in direct empirical relevance.
+
+## Lowest Relevance
+
+### Subnational Purchasing Power of Parity in OECD Countries: Estimates Based on the Balassa-Samuelson Hypothesis
+
+**Authors:** Alex Costa, Jaume Garcia, Josep Lluís Raymond, Daniel Sánchez-Serra  
+**Date:** 2019  
+**Link:** [Read Paper](https://drive.google.com/file/d/1QT0iR2TwIY5ayraL7pAe0Ir_R03U17nR/view?usp=sharing)
+
+**Note:** Estimates regional PPPs in OECD countries using the Balassa-Samuelson hypothesis. Methodologically relevant, though not directly focused on real exchange rates.
