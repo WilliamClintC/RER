@@ -1,0 +1,376 @@
+---
+title: "William's Update"
+subtitle: "Identifying Related Papers"
+author: 
+  - name: "William Clinton Co"
+    affiliation: "The University of British Columbia"
+    email: "clinton.will.c@gmail.com"
+date: today
+date-format: "MMMM D, YYYY"
+abstract: |
+  This document compiles and ranks related literature by relevance to "Productivity and Wedges: Economic Convergence and the Real Exchange Rate" (Devereux, Fujiwara, & Granados, 2025). More litearture will follow. 
+format:
+  pdf:
+    documentclass: article
+    geometry: 
+      - margin=1in
+    fontsize: 11pt
+    linestretch: 1
+    number-sections: true
+    toc: true
+    toc-depth: 3
+    lof: false  # List of figures
+    lot: false  # List of tables
+    colorlinks: true
+    linkcolor: blue
+    urlcolor: blue
+    citecolor: blue
+    cite-method: biblatex
+    keep-tex: true
+    include-in-header:
+      - text: |
+          \usepackage{hyperref}
+          \hypersetup{
+            colorlinks=true,
+            linkcolor=blue,
+            urlcolor=blue,
+            breaklinks=true,
+            pdfborder={0 0 0}
+          }
+bibliography: references.bib
+csl: apa.csl
+---
+
+## Introduction
+
+This document represents William's current work on identifying related literature. More literature will follow soon.
+
+We have also sent a Zotero library invitation to Michael.Devereux\@ubc.ca (invited on 2025-07-10 16:56:43), which provides access to the current literature we are reviewing.
+
+Any feedback is appreciated.
+
+## Related Literature (Ranked by Relevance)
+
+### High Relevance
+
+#### Understanding Korea’s Long-Run Real Exchange Rate Behavior  
+**Authors:** Douglas A. Irwin, Maurice Obstfeld  
+**Date:** August 2024  
+**Links:** [NBER Working Paper](https://www.nber.org/system/files/working_papers/w32769/w32769.pdf)  
+**Notes:**  
+
+- Challenges the Harrod-Balassa-Samuelson hypothesis,
+- Decomposes real exchange rate changes into internal and external  components.
+- Suggests that Korea’s policy of intervening to smooth nominal exchange rate fluctuations may be justified
+
+---
+
+#### The Predictive Power of Equilibrium Exchange Rate Models  
+**Authors:** Michele Ca’ Zorzi (European Central Bank), Adam Cap (Bank for International Settlements), Andrej Mijakovic (European University Institute), Michał Rubaszek (Warsaw School of Economics)  
+**Date:** January 2020  
+**Links:** [Google Drive](https://drive.google.com/file/d/1XJWcFNb5DNIUlFdC4Kl4DVPB8pWIEm3y/view?usp=sharing), [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3515882)  
+**Notes:**  
+
+- Evaluates the predictive performance of three equilibrium exchange rate models—PPP, BEER, and MB.
+- Finds that PPP provides the most reliable forecasts.
+- BEER fails to outperform PPP.
+- The MB approach, while theoretically rich, performs the worst in forecasting.
+- Robustness checks confirm that model adjustments do not significantly improve prediction accuracy.
+
+---
+
+#### Measuring the Balassa-Samuelson Effect: A Guidance Note on the RPROD Database  
+**Authors:** Cécile Couharde, Anne-Laure Delatte, Carl Grekou, Valérie Mignon, Florian Morvillier  
+**Date:** May 2020  
+**Links:** [Google Drive](https://drive.google.com/file/d/16L1DDmRDnJ33SYlDcjePIBteyV5TkbHU/view?usp=sharing), [ScienceDirect](https://www.sciencedirect.com/science/article/pii/S2110701720300417)  
+**Notes:**  
+
+- Introduces the RPROD database developed by CEPII to complement the EQCHANGE dataset.
+- Serves as an empirical tool for analyzing the Balassa-Samuelson effect.
+
+---
+
+#### The Determinants of Real Exchange Rates in Transition Economies  
+**Authors:** Dan Meshulam, Peter Sanfey (EBRD)  
+**Date:** 2019  
+**Links:** [Google Drive](https://drive.google.com/file/d/1MldCJB2yPD3AEI93kt9qSX11rjcTdySo/view?usp=sharing)  
+**Notes:**  
+
+- Empirical analysis of real exchange rate drivers in transition economies.
+- Strong support for the Balassa-Samuelson hypothesis.
+- RER aligns with productivity trends more than other variables like capital inflows or government consumption.
+
+
+---
+
+#### In Search of Dominant Drivers of the Real Exchange Rate  
+**Authors:** Wataru Miyamoto, Thuy Lan Nguyen, Hyunseung Oh  
+**Date:** May 8, 2025  
+**Links:** [Google Drive](https://drive.google.com/file/d/1v1P90qYEBl_1tm_MXqShOefqqOm5Fr2j/view?usp=sharing)  
+**Notes:**  
+
+- Examines the dominant macroeconomic drivers of real exchange rates and macro aggregates at business cycle frequencies across G7 countries.
+- Dominant drivers of the real exchange rate are orthogonal to the main drivers of business cycles.
+
+---
+
+
+#### The Story of the Real Exchange Rate  
+**Authors:** Oleg Itskhoki  
+**Date:** 2021  
+**Links:** [Google Drive](https://drive.google.com/file/d/1vhVbum9po2xoiaPT8suUqOqjDg5o8EkI/view?usp=sharing)  
+**Notes:**  
+
+- *Must Read.* Presents a comprehensive general equilibrium framework for real exchange rate (RER) determination.
+- Mechanisms such as home bias, incomplete pass-through, expenditure switching, goods market clearing, imperfect international risk sharing, fiscal constraints, and monetary policy regimes.
+- Discusses issues related to the stationarity and predictability of exchange rates.
+
+---
+
+
+### Medium to High Relevance
+
+#### Real Exchange Rate Misalignments and Currency Crises in the Former Soviet Union Countries  
+**Authors:** Viktar Dudzich  
+**Date:**  November 25, 2021  
+**Links:** [Google Drive](https://drive.google.com/file/d/1O9A9N2GmYd0LRPhnE3LdUbVbDA0hd6zk/view?usp=sharing)  
+**Notes:**  
+
+- Estimates equilibrium exchange rates for 10 former Soviet republics using BEER and NATREX concepts with a pooled mean group estimator.
+- Compares estimated misalignments before, during, and after currency crisis episodes, and examines their relationship to crisis-related variables.
+- Journal is not as highly ranked.
+
+---
+
+#### What is Needed for Convergence? The Role of Capital and Finance  
+**Authors:** Bryan Hardy, Can Sever  
+**Date:** June 13, 2025  
+**Links:** [Google Drive](https://drive.google.com/file/d/1UEEN58-yuPErOCtVsMKjYnqeX62k0BU4/view?usp=sharing)  
+**Notes:**  
+
+---
+
+
+#### Housing Rent, Inelastic Housing Supply, and International Business Cycles  
+**Author:** Seungyub Han  
+**Date:** September 21, 2024  
+**Links:** [Google Drive](https://drive.google.com/file/d/1loPvpeqirt1pulEqajxQNMCGLeIFt_AS/view?usp=sharing)  
+**Notes:**  
+
+- Connects to the Balassa-Samuelson effect to housing 
+
+--- 
+
+### Medium Relevance
+
+
+#### Piecing the Puzzle: Real Exchange Rates and Long-Run Fundamentals  
+**Authors:** Hilde C. Bjørnland, Leif Brubakk, Nicolò Maffei-Faccioli  
+**Date:** February 2025  
+**Links:** [Google Drive](https://drive.google.com/file/d/1r4zwdG1oeC5fSfW7nBtjWwDWBQFNNTmZ/view?usp=sharing)  
+**Notes:**  
+
+- Examines the structural determinants of real exchange rates, focusing on persistent low-frequency movements.
+
+---
+
+#### Temperature and Real Exchange Rates  
+**Authors:** Yue Gu, Jing Zhang, Xiaohui Liu  
+**Date:** 11 July 2025  
+**Links:** [Google Drive](https://drive.google.com/file/d/1mEMh-d8eDPpk9WaKuob5Wz34xlObrjSt/view?usp=sharing)  
+**Notes:**  
+
+- Incorporates average temperature into the Balassa–Samuelson model.
+- Examines the impact of temperature differences on real exchange rates (RERs).
+
+---
+
+#### The Price of Development: The Penn–Balassa–Samuelson Effect Revisited  
+**Authors:** Fadi Hassan  
+**Date:** 2016  
+**Links:** [Google Drive](https://drive.google.com/file/d/1bWMV2iq0ZnGvyt1L25UzIOewSEYH5uBC/view?usp=sharing)  
+**Notes:**  
+
+- Revisits the Penn effect, showing a non-linear price–income relationship that turns negative for low-income countries.
+- Suggests structural transformation stages as key to explaining RER variation in developing economies.
+- Robust to PPP measurement bias.
+- May be less directly relevant, as its primary focus is on developing countries.
+
+---
+
+
+#### Competitiveness and Productivity in the Baltics: Common Shocks, Different Implications  
+**Authors:** Saioa Armendariz, Carlos de Resende, Alice Fan, Gianluigi Ferrucci, Bingjie Hu, Sadhna Naik, Can Ugur  
+**Date:** January 17, 2025  
+**Links:** [Google Drive](https://drive.google.com/file/d/1GFUm5ckExKBUJ7CXxZ4ZyplTKT2Krc28/view?usp=sharing)  
+**Notes:**  
+
+- Although focused on competitiveness, it uses multivariate filtering consistent with Balassa-Samuelson. 
+- Relevant Quote: "Multivariate filtering techniques and estimates of the real effective exchange rates based on historical productivity trends, consistent with Balassa-Samuelson, confirm that differences in long-term total factor productivity growth have affected external competitiveness."
+
+---
+
+
+#### The Real Exchange Rate in the Long Run: Balassa-Samuelson Effects Reconsidered  
+**Authors:** Michael D. Bordo, Ehsan U. Choudhri, Giorgio Fazio, Ronald MacDonald  
+**Date:** 2017  
+**Links:** [DOI](https://doi.org/10.1016/j.jimonfin.2017.03.011), [Google Drive](https://drive.google.com/file/d/1wpLTPo2OgVXe54w8JiDwyBwYTGqkBz4I/view?usp=sharing)  
+**Notes:**  
+
+- Uses historical data to investigate the Balassa-Samuelson effect over the long run.  
+- Demonstrates significant variation in productivity effects across different monetary regimes.
+
+---
+
+#### Real Effective Exchange Rate Misalignment in the Euro Area: A Counterfactual Analysis  
+**Authors:** Makram El-Shagi, Axel Lindner, Gregor von Schweinitz  
+**Date:** November 26, 2015  
+**Links:** [Google Drive](https://drive.google.com/file/d/1rg_R7y6ti0Y7HCTl6L9Alxj7nUcQf6Cn/view?usp=sharing)  
+**Notes:**  
+
+- (REER) misalignments within the Euro area using synthetic matching methods.
+- Constructs counterfactuals for member states to quantify the extent of misalignment. 
+- Crisis countries align with a mix of advanced and emerging economy profiles. 
+- Highly relevant to the literature on Eurozone imbalances.
+- Mid-tier journal. 
+
+---
+
+#### The 'Real' Explanation of the PPP Puzzle  
+**Authors:** Nicholas Ford, Charles Yuji Horioka  
+**Date:** April 2016  
+**Links:** [NBER](http://www.nber.org/papers/w22198), [Google Drive](https://drive.google.com/file/d/1dIKOGSL5vl_e6A86TPpEyXVHKGyGa3yG/view?usp=sharing)  
+**Notes:**  
+
+- Argues that global financial markets alone are insufficient to enable net capital transfers and real interest rate equalization across countries.
+
+---
+
+### Low to Medium Relevance
+
+#### Exchange Rate Models Are Better Than You Think, and Why They Didn't Work in the Old Days  
+**Authors:** Charles Engel, Steve Pak Yeung Wu  
+**Date:** 2024  
+**Links:** [Google Drive](https://drive.google.com/file/d/1bKyyCi1qhqifzHM9Sx3ahU_tNOCwdYmz/view?usp=sharing), [NBER](https://www.nber.org/system/files/working_papers/w32808/w32808.pdf)  
+**Notes:**  
+
+- Explores why traditional exchange rate models now better fit U.S. data.
+- Argues that inflation-targeting and improved monetary policy reduce self-fulfilling expectations, improving model fit post-2000s.
+
+---
+
+#### The Purchasing Power Parity and Exchange-Rate Economics Half a Century On  
+**Authors:** Hai Long Vo, Duc Hong Vo  
+**Date:** 2023  
+**Links:** [Google Drive](https://drive.google.com/file/d/1GvSoUtKJiy58EFfif0aoFeuvEYS26tqs/view?usp=sharing)  
+**Notes:**  
+
+- A survey paper providing historical and theoretical context for exchange-rate economics.  
+- Not directly relevant but may be useful for broader insight.
+
+---
+
+#### The Balassa-Samuelson effect reversed: new evidence from OECD countries  
+**Authors:** Matthias Gubler & Christoph Sax  
+**Date:** 27 February 2019  
+**Links:** [Full Text](https://drive.google.com/file/d/1_555bkCnPqh45YBhcRcNZMX4dL5exJOW/view?usp=sharing)  
+**Notes:**  
+
+- Reconsiders the Balassa-Samuelson (BS) hypothesis using an OECD country panel from 1970 to 2008.
+- Compares three data sets on sectoral productivity, including newly constructed data on total factor productivity.
+- Within- and between-dimension estimation results do not support the BS hypothesis.
+- Mid-tier journal.
+
+---
+
+### Low Relevance
+
+#### Subnational Purchasing Power of Parity in OECD Countries: Estimates Based on the Balassa-Samuelson Hypothesis  
+**Authors:** Alex Costa, Jaume Garcia, Josep Lluís Raymond, Daniel Sánchez-Serra  
+**Date:** 2019  
+**Links:** [Google Drive](https://drive.google.com/file/d/1QT0iR2TwIY5ayraL7pAe0Ir_R03U17nR/view?usp=sharing)  
+**Notes:**  
+
+- Examines regional PPP estimation within OECD countries using a method based on the Balassa-Samuelson hypothesis.
+- Methodologically adjacent, but limited applicability to national RER studies.
+
+---
+
+
+#### Real Exchange Rate Misalignments in the Euro Area  
+**Authors:** Michael Fidora, Claire Giordano, Martin Schmitz  
+**Date:** July 28, 2020  
+**Links:** [Google Drive](https://drive.google.com/file/d/1r1e4j018-tVvMPwVqttye_ftEfZTTNsj/view?usp=sharing)  
+**Notes:**  
+
+- Tackles the same topic of real exchange rate misalignments from a Euro Area perspective. 
+- While the journal is not highly ranked, the paper offers relevant comparative insights for understanding regional dynamics in real exchange rate adjustments.
+
+---
+
+
+#### Is the Balassa-Samuelson Hypothesis Still Relevant? Cross-Country Evidence from 1950–2017  
+**Authors:** Mohammed Ershad Hussain, Mahfuzul Haque  
+**Date:** September 28, 2020  
+**Links:** [Google Drive](https://drive.google.com/file/d/1UOk4LsRAddTO--0tr4ulynOaXQht7Agv/view?usp=sharing), [DOI](https://doi.org/10.1453/jepe.v7i3.2096)  
+**Notes:** 
+
+- 182 countries. Employs Arellano-Bond dynamic panel data estimation.
+- Low ranked journal.
+
+---
+
+
+#### Real Exchange Rate Fundamentals: A Synthesis of the Literature  
+**Authors:** Oluremi Davies Ogun (University of Ibadan)  
+**Date:** 2019  
+**Links:** [Google Drive](https://drive.google.com/file/d/1SIhMMtsybhiY3eJg-oGcCAvoqJPDKXtQ/view?usp=sharing), [DOI](https://doi.org/10.6000/1929-7092.2019.08.36)  
+**Notes:**  
+
+- Synthesis of approaches to modeling equilibrium real exchange rates.
+- Limited reputation.
+
+---
+
+#### Is the Balassa-Samuelson Hypothesis Still Relevant? Cross-Country Evidence from 1950–2017  
+**Authors:** Mohammed Ershad Hussain, Mahfuzul Haque  
+**Date:** September 28, 2020  
+**Links:**  [Google Drive](https://drive.google.com/file/d/1UOk4LsRAddTO--0tr4ulynOaXQht7Agv/view?usp=sharing),[DOI](https://doi.org/10.1453/jepe.v7i3.2096)  
+**Notes:** 
+
+- 182 countries. Employs Arellano-Bond dynamic panel data estimation.
+- Low ranked journal.
+
+---
+
+
+#### Real Exchange Rate Fundamentals: A Synthesis of the Literature  
+**Authors:** Oluremi Davies Ogun (University of Ibadan)  
+**Date:** 2019  
+**Links:** [Google Drive](https://drive.google.com/file/d/1SIhMMtsybhiY3eJg-oGcCAvoqJPDKXtQ/view?usp=sharing), [DOI](https://doi.org/10.6000/1929-7092.2019.08.36)  
+**Notes:**  
+
+- Synthesis of approaches to modeling equilibrium real exchange rates.
+- Limited reputation.
+
+#### Recent Papers
+
+**Links:**
+
+- [Disconnect Revisited – Chahrour et al.](https://chahrour.github.io/papers/Disconnect_revisited.pdf?utm_source=chatgpt.com)
+- [Springer Article](https://link.springer.com/article/10.1057/s41308-024-00251-0)
+- [AEA Journal Article](https://www.aeaweb.org/articles?from=f&id=10.1257%2Fmac.20210445&utm_source=chatgpt.com)
+- [Tech Dollars and Exchange Rate Reconnect – UTD](https://bpb-us-e2.wpmucdn.com/sites.utdallas.edu/dist/8/1090/files/2024/08/Tech-Dollars-and-Exchange-Rate-Reconnect.pdf?utm_source=chatgpt.com)
+
+---
+
+
+
+
+
+
+
+
+
+
+
