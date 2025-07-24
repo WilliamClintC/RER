@@ -8,7 +8,7 @@ author:
 date: today
 date-format: "MMMM D, YYYY"
 abstract: |
-  This paper provides an exploratory update in support of the research agenda “Productivity and Wedges: Economic Convergence and the Real Exchange Rate” (Devereux, Fujiwara, & Granados, 2025). It evaluates the possibility of applying a Korea-style case study framework, highlighting structural transformation, independent monetary regimes, and convergence—to selected European Union (EU) economies. We identify datasets on real exchange rates and inflation targeting frameworks using sources such as Eurostat, the IMF (Zhang, 2025), and BIS (Chavaz, 2025). We also assess candidate countries for case study analysis, with particular focus on Estonia, Ireland, Slovakia, and Poland. Estonia and Slovakia are identified as the most promising analogues to Korea, given their respective strengths in technology and automotive exports.
+  This paper provides an exploratory update in support of the research agenda “Productivity and Wedges: Economic Convergence and the Real Exchange Rate” (Devereux, Fujiwara, & Granados, 2025). It evaluates the possibility of applying a Korea-style case study framework, highlighting structural transformation, independent monetary regimes, and convergence to selected European Union (EU) economies. We identify datasets on real exchange rates and inflation targeting frameworks using sources such as Eurostat, the IMF (Zhang, 2025), and BIS (Chavaz, 2025). We also assess candidate countries for case study analysis, with particular focus on Estonia, Ireland, Slovakia, and Poland. Estonia and Slovakia are identified as the most promising analogues to Korea, given their respective strengths in technology and automotive exports.
 format:
   pdf:
     documentclass: article
