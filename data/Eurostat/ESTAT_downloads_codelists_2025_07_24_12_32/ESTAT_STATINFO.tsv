@@ -1,0 +1,104 @@
+CODE	Label - English	Label - French	Label - German	Standard code	Note (EN only)	EC_corporate_code	EC_corporate_uri
+TOTAL	Total	Total	Insgesamt	Y			
+UNI	Universe	Univers	Gesamtheit	Y			
+SPL	Sample	Echantillon	Stichprobe	Y			
+SRC	Survey data source	Source de données	Datenquelle der Umfrage	Y			
+AVG	Average	Moyenne	Durchschnitt	Y			
+AVG_3Y	Three-year average	Moyenne sur trois ans	Dreijahresdurchschnitt	Y			
+AVG_30Y	Thirty-year average	Moyenne sur trente ans	30-Jahres-Durchschnitt	Y			
+MMEAN	Measured mean	Moyenne mesurée	Gemessenes Mittel	Y			
+CMEAN	Calculated mean	Moyen calculé	Berechnetes Mittel	Y			
+MEAN_EI	Mean equivalised income	Revenu équivalent moyen	Durchschnittliches Äquivalenzeinkommen	Y			
+MED_EI	Median equivalised income	Revenu équivalent médian	Medianes Äquivalenzeinkommen	Y			
+MED_ECE	Median equivalised consumption expenditure	Dépenses de consommation équivalentes médianes	Mediane äquivalenzbezogene Konsumausgaben	Y			
+MED	Median	Médiane	Median	Y			
+SD	Standard deviation	Ecart-type	Standardabweichung	Y			
+SE	Standard error	Erreur standard	Standardfehler	Y			
+CV	Coefficient of variation	Coefficient de variation	Variationskoeffizient	Y			
+CVA	Coefficient of variation for absolute value	Coefficient de variation de la valeur absolue	Variationskoeffizient für den absoluten Wert	Y			
+CVR	Coefficient of variation for relative value	Coefficient de variation de la valeur relative	Variationskoeffizient für den relativen Wert	Y			
+CV_PLI	Coefficient of variation of price level indices	Coefficient de variation des indices au niveau des prix	Variationskoeffizient der Preisniveauindizes	Y			
+CV_VI_HAB	Coefficient of variation of volume indices of expenditure per capita	Coefficient de variation des indices de volume des dépenses par habitant	Variationskoeffizient der Volumenindizes der Pro-Kopf Ausgaben	Y			
+CUM	Cumulative series	Séries cumulées	Kumulierte Reihen	Y			
+VAL	Value	Valeur	Wert	Y			
+VAL_A	Annual value	Valeur annuelle	Jährlicher Wert	Y			
+RV	Relative value	Valeur relative	Relativer Wert	Y			
+END	Value at the end of the period	Valeur en fin de période	Wert am Periodenende	Y			
+MAX	Maximum value within period	Valeur maximale au cours de la période	Höchstwert in der Periode	Y			
+MIN	Minimum value within period	Valeur minimale au cours de la période	Mindestwert in der Periode	Y			
+DISP_NUTS2	Dispersion at NUTS level 2	Dispersion au niveau NUTS 2	Streuung auf Ebene NUTS 2	Y			
+DISP_NUTS3	Dispersion at NUTS level 3	Dispersion au niveau NUTS 3	Streuung auf Ebene NUTS 3	Y			
+SUM3Y	Sum of the last 3 years	Somme des 3 dernières années	Summe der letzten 3 Jahren	Y			
+SUM4Y	Sum of the last 4 years	Somme des 4 dernières années	Summe der letzten 4 Jahren	Y			
+SUM6Y	Sum of the last 6 years	Somme des 6 dernières années	Summe der letzten 6 Jahren	Y			
+NSME	Unsmoothed estimate	Estimation non lissée	Nicht geglättete Schätzung	Y			
+SME	Smoothed estimate	Estimation lissée	Geglättete Schätzung	Y			
+SME_UP95	Smoothed estimate - upper boundary of the 95% confidence interval	Estimation lissée - limite supérieure de l'intervalle de confiance de 95%	Geglättete Schätzung - Obergrenze des 95%-Vertrauensintervalls	Y			
+SME_LW95	Smoothed estimate - lower boundary of the 95% confidence interval	Estimation lissée - limite inférieure de l'intervalle de confiance de 95%	Geglättete Schätzung - Untergrenze des 95%-Vertrauensintervalls	Y			
+UP95	Upper boundary of the 95% confidence interval	Limite supérieure de l'intervalle de confiance de 95%	Obergrenze des 95%-Vertrauensintervalls	Y			
+LW95	Lower boundary of the 95% confidence interval	Limite inférieure de l'intervalle de confiance de 95%	Untergrenze des 95%-Vertrauensintervalls	Y			
+STA	Status	Statut	Status	Y			
+CR4	Concentration ratio (four largest entities)	Ratio de concentration (quatre plus grandes entités)	Konzentrationsverhältnis (die vier größten Einheiten)	Y			
+WT	Weight	Pondération	Gewichte	Y			
+COWEU	Country weights for European Union (EU6-1958, EU9-1973, EU10-1981, EU12-1986, EU15-1995, EU25-2004, EU27-2007, EU28-2013, EU27-2020)	Pondérations des pays pour l'Union européenne (UE6-1958, UE9-1973, UE10-1981, UE12-1986, UE15-1995, UE25-2004, UE27-2007, UE28-2013, UE27-2020)	Ländergewichte für die Europäische Union (EU6-1958, EU9-1973, EU10-1981, EU12-1986, EU15-1995, EU25-2004, EU27-2007, EU28-2013, EU27-2020)	Y			
+COWEU27_2020	Country weights for EU27 (from 2020)	Pondérations des pays pour l'UE27 (à partir de 2020)	Ländergewichte für EU27 (ab 2020)	Y			
+COWEU28	Country weights for EU28 (2013-2020)	Pondérations des pays pour l'UE28 (2013-2020)	Ländergewichte für EU28 (2013-2020)	Y			
+COWEU27_2007	Country weights for EU27 (2007-2013)	Pondérations des pays pour l'UE27 (2007-2013)	Ländergewichte für EU27 (2007-2013)	Y			
+COWEU25	Country weights for EU25 (2004-2006)	Pondérations des pays pour l'UE25 (2004-2006)	Ländergewichte für EU25 (2004-2006)	Y			
+COWEU15	Country weights for EU15 (1995-2004)	Pondérations des pays pour l'UE15 (1995-2004)	Ländergewichte für EU15 (1995-2004)	Y			
+COWEA	Country weights for the euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)	Pondérations des pays pour la zone euro (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)	Ländergewichte für den Euroraum (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)	Y			
+COWEA20	Country weights for EA20 (euro area from 2023)	Pondérations des pays pour EA20 (zone euro à partir de 2023)	Ländergewichte für EA20 (Euroraum ab 2023)	Y			
+COWEA19	Country weights for EA19 (euro area 2015-2022)	Pondérations des pays pour EA19 (zone euro 2015-2022)	Ländergewichte für EA19 (Euroraum 2015-2022)	Y			
+COWEA18	Country weights for EA18 (euro area - 2014)	Pondérations des pays pour EA18 (zone euro - 2014)	Ländergewichte für EA18 (Euroraum - 2014)	Y			
+COWEA17	Country weights for EA17 (euro area - 2011-2013)	Pondérations des pays pour EA17 (zone euro - 2011-2013)	Ländergewichte für EA17 (Euroraum - 2011-2013)	Y			
+COWEA16	Country weights for EA16 (euro area - 2009-2010)	Pondérations des pays pour EA16 (zone euro - 2009-2010)	Ländergewichte für EA16 (Euroraum - 2009-2010)	Y			
+COWEA15	Country weights for EA15 (euro area - 2008)	Pondérations des pays pour EA15 (zone euro - 2008)	Ländergewichte für EA15 (Euroraum - 2008)	Y			
+COWEA13	Country weights for EA13 (euro area - 2007)	Pondérations des pays pour EA13 (zone euro - 2007)	Ländergewichte für EA13 (Euroraum - 2007)	Y			
+COWEA12	Country weights for EA12 (euro area - 2001-2006)	Pondérations des pays pour EA12 (zone euro - 2001-2006)	Ländergewichte für EA12 (Euroraum - 2001-2006)	Y			
+COWEEA	Country weights for EEA (European Economic Area)	Pondérations des pays pour l'EEE (Espace économique européen)	Ländergewichte für EWR (Europäischer Wirtschaftsraum)	Y			
+IW	Item weights	Pondération des indices	Gewichte der Indizes	Y			
+IWBS	Item weights for industry, construction and services (except activities of households as employers and extra-territorial organisations and bodies) - NACE rev.2, B to S	Pondération des indices pour l'industrie, la construction et les services (sauf les activités des ménages en tant qu'employeurs et les activités extra-territoriales)  - NACE rév.2, B to S	Gewichte der Indizes für Industrie, Baugewerbe und Dienstleistungen (ohne private Haushalte mit Hauspersonal und extra-territoriale Organisationen und Körperschaften)  - NACE rev.2, B bis S	Y			
+NONE	No income	Aucun revenu	Kein Einkommen	Y			
+Q1	First quartile	Premier quartile	Erstes Quartil	Y			
+Q2	Second quartile	Second quartile	Zweites Quartil	Y			
+Q3	Third quartile	Troisième quartile	Drittes Quartil	Y			
+Q4	Fourth quartile	Quatrième quartile	Viertes Quartil	Y			
+QU1	First quintile	Premier quintile	Erstes Quintil	Y			
+QU2	Second quintile	Second quintile	Zweites Quintil	Y			
+QU3	Third quintile	Troisième quintile	Drittes Quintil	Y			
+QU4	Fourth quintile	Quartième quintile	Viertes Quintil	Y			
+QU5	Fifth quintile	Cinquième quintile	Fünftes Quintil	Y			
+D1	First decile	Premier décile	Erstes Dezil	Y			
+D2	Second decile	Second décile	Zweites Dezil	Y			
+D3	Third decile	Troisième décile	Drittes Dezil	Y			
+D4	Fourth decile	Quatrième décile	Viertes Dezil	Y			
+D5	Fifth decile	Cinquième décile	Fünftes Dezil	Y			
+D6	Sixth decile	Sixième décile	Sechstes Dezil	Y			
+D7	Seventh decile	Septième décile	Siebtes Dezil	Y			
+D8	Eighth decile	Huitième décile	Achtes Dezil	Y			
+D9	Ninth decile	Neuvième décile	Neuntes Dezil	Y			
+D10	Tenth decile	Dixième décile	Zehntes Dezil	Y			
+P1	First percentile	Premier percentile	Erstes Perzentil	Y			
+P2	Second percentile	Second percentile	Zweites Perzentil	Y			
+P3	Third percentile	Troisième percentile	Drittes Perzentil	Y			
+P4	Fourth percentile	Quatrième percentile	Viertes Perzentil	Y			
+P5	Fifth percentile	Cinquième percentile	Fünftes Perzentil	Y			
+P10	Tenth percentile	Dixième percentile	Zehntes Perzentil	Y			
+P25	Twenty-fifth percentile	Vingt-cinquième percentile	Fünfundzwanzigstes Perzentil	Y			
+S2	Second sextile	Second sextile	Zweites Sextil	Y			
+P75	Seventy-fifth percentile	Soixante-quinzième percentile	Fünfundsiebzigstes Perzentil	Y			
+P90	Ninetieth percentile	Quatre-vingt-dizième percentile	Neunzigstes Perzentil	Y			
+P95	Ninety-fifth percentile	Quatre-vingt-quinzième percentile	Fünfundneunzigstes Perzentil	Y			
+P96	Ninety-sixth percentile	Quatre-vingt-seizième percentile	Sechsundneunzigstes Perzentil	Y			
+P97	Ninety-seventh percentile	Quatre-vingt-dix-septième percentile	Siebenundneunzigstes Perzentil	Y			
+P98	Ninety-eighth percentile	Quatre-ving-dix-huitième percentile	Achtundneunzigstes Perzentil	Y			
+P99	Ninety-ninth percentile	Quatre-vingt-dix-neuvième percentile	Neunundneunzigstes Perzentil	Y			
+P100	Hundredth percentile	Centième percentile	Hundertstes Perzentil	Y			
+UNK	Unknown	Inconnu	Unbekannt	Y			
+AVG_TRP	Average per trip	Moyennes par voyage	Durchschnittliche pro Reise	Y			
+AVG_NGT	Average per night	Moyennes par nuitée	Durchschnittliche pro Übernachtung	Y			
+ABVTH	Above threshold	Au-dessus du seuil	Oberhalb der Schwelle	Y			
+BLWTH	Below threshold	Sous le seuil	Unterhalb der Schwelle	Y			
+TC	Top cut-off point	Valeur limite supérieure	Obergrenze	Y			
+SHARE	Share of national equivalised income	Part du revenu national total équivalent	Anteile am nationalen Äquivalenzgesamtnettoeinkommen	Y			
+GINI_HND	Gini coefficient (scale from 0 to 100)	Coefficient de Gini (échelle de 0 à 100)	Gini-Koeffizient (skaliert von 0 bis 100)	Y			
