@@ -1,0 +1,59 @@
+---
+title: "William's Update"
+subtitle: "Identifying Related Papers"
+author: 
+  - name: "William Clinton Co"
+    affiliation: "The University of British Columbia"
+    email: "clinton.will.c@gmail.com"
+date: today
+date-format: "MMMM D, YYYY"
+abstract: |
+  This document compiles and ranks related literature by relevance to "Productivity and Wedges: Economic Convergence and the Real Exchange Rate" (Devereux, Fujiwara, & Granados, 2025). 
+format:
+  pdf:
+    documentclass: article
+    geometry: 
+      - margin=1in
+    fontsize: 11pt
+    linestretch: 1
+    number-sections: true
+    toc: true
+    toc-depth: 3
+    lof: false  # List of figures
+    lot: false  # List of tables
+    colorlinks: true
+    linkcolor: blue
+    urlcolor: blue
+    citecolor: blue
+    cite-method: biblatex
+    keep-tex: true
+    include-in-header:
+      - text: |
+          \usepackage{hyperref}
+          \hypersetup{
+            colorlinks=true,
+            linkcolor=blue,
+            urlcolor=blue,
+            breaklinks=true,
+            pdfborder={0 0 0}
+          }
+bibliography: references.bib
+csl: apa.csl
+---
+
+## Introduction
+
+This document represents additonal literature identified by William.
+
+## Related Literature 
+
+#### Exchange Rate Disconnect Revisited
+
+**Authors:** Ryan Chahrour (Cornell University), Vito Cormun (Santa Clara University), Pierre De Leo (University of Maryland), Pablo Guerrón-Quintana (Boston College), Rosen Valchev (Boston College)\
+**Date:** November 10, 2023\
+**Links:** [Working Paper](https://drive.google.com/file/d/1Di78Mg3vjuy0XLX3APJZYbzAxVlVmKp-/view?usp=sharing)\
+**Notes:**
+
+-  
+
+------------------------------------------------------------------------
