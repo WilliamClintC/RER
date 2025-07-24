@@ -1,6 +1,6 @@
 ---
 title: "William's Update"
-subtitle: "Identifying Related Papers"
+subtitle: "Case Study and Data"
 author: 
   - name: "William Clinton Co"
     affiliation: "The University of British Columbia"
@@ -43,17 +43,39 @@ csl: apa.csl
 
 ## Introduction
 
-This document represents additonal literature identified by William.
+This document presents a potetnial case study for the paper inspired by Douglas A. Irwin Maurice Obstfeld 2024 https://www.nber.org/papers/w32769, wherien it was korea. 
 
-## Related Literature 
+## Data Update
+### European Currency Data
 
-#### Exchange Rate Disconnect Revisited
+The data update is complete. We now have a dataset sourced from **Eurostat** that contains the **real exchange rates** of European Union countries.
 
-**Authors:** Ryan Chahrour (Cornell University), Vito Cormun (Santa Clara University), Pierre De Leo (University of Maryland), Pablo Guerrón-Quintana (Boston College), Rosen Valchev (Boston College)\
-**Date:** November 10, 2023\
-**Links:** [Working Paper](https://drive.google.com/file/d/1Di78Mg3vjuy0XLX3APJZYbzAxVlVmKp-/view?usp=sharing)\
-**Notes:**
+**Dataset details:**
+- **Time period:** Annual data from **2000 to 2021**
+- **Scope:** Exchange rates are **relative to other EU countries**
+- **Countries included:** Limited to those discussed, all of which are EU members (or closely aligned)
 
--  
+**Relevant currencies:**
 
+- **BGN** – Bulgarian Lev *(Bulgaria)*
+- **CZK** – Czech Koruna *(Czech Republic)*
+- **DKK** – Danish Krone *(Denmark)*
+- **HUF** – Hungarian Forint *(Hungary)*
+- **PLN** – Polish Zloty *(Poland)*
+- **RON** – Romanian Leu *(Romania)*
+- **SEK** – Swedish Krona *(Sweden)*
+
+**Link to dataset:**  
+[Eurostat: Real Exchange Rates (Annual)](https://ec.europa.eu/eurostat/databrowser/view/ert_bil_eur_a/default/table?lang=en)
+[Github)](https://github.com/WilliamClintC/RER/tree/main/data/Eurostat/estat_ert_bil_eur_a_en.csv)
+
+### Monetary Policy Dataset
+There are two possible datasets in which we can take into account monetary policy.
+Dataset from Zhongxia Zhang IMF 2025, https://data.mendeley.com/datasets/g9m7rnvtw7/2?utm_source and https://github.com/WilliamClintC/RER/blob/main/data/Inflation%20Targeting%20Dataset%20Inflation%20Targets%2C%20Bands%2C%20and%20Track%20Records/Inflation%20Targeting%20Dataset%20Inflation%20Targets%2C%20Bands%2C%20and%20Track%20Records/Inflation%20targeting%20dataset_Zhang%202025%20May%20online%20version.xlsx
+
+this would cotain We can observe inflation targeting, target and bands, track record. 
+
+the next would be Boris Chavaz 2025
+wherin we can observe monetary policy Horizon, CB objectives weights (Real Economy and FIncanial cstbaility and their corresponding weights)
+this inforgraphic chart would be helpful in understanding the dataset wherien we observe neumeroical target. the target horizion. weather it has objectives other than price stability andthe central bank's weight towards each non price stabiity goal "C:\Users\Owner\Desktop\RER\data\Inflation Targeting Dataset Inflation Targets, Bands, and Track Records\Screenshot 2025-07-24 040943.png"
 ------------------------------------------------------------------------
