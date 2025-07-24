@@ -43,11 +43,31 @@ csl: apa.csl
 
 ## Introduction
 
-This document represents William's current work on identifying related literature. More literature will follow soon.
+This is an updated document, representing William's current work on identifying related literature. 
 
 We have also sent a Zotero library invitation to Michael.Devereux\@ubc.ca (invited on 2025-07-10 16:56:43), which provides access to the current literature we are reviewing.
 
 Any feedback is appreciated.
+
+### Recent Papers
+
+**Links:**
+
+- [Disconnect Revisited – Chahrour et al.](https://chahrour.github.io/papers/Disconnect_revisited.pdf?utm_source=chatgpt.com)
+- [Springer Article](https://link.springer.com/article/10.1057/s41308-024-00251-0)
+- [AEA Journal Article](https://www.aeaweb.org/articles?from=f&id=10.1257%2Fmac.20210445&utm_source=chatgpt.com)
+- [Tech Dollars and Exchange Rate Reconnect – UTD](https://bpb-us-e2.wpmucdn.com/sites.utdallas.edu/dist/8/1090/files/2024/08/Tech-Dollars-and-Exchange-Rate-Reconnect.pdf?utm_source=chatgpt.com)
+
+---
+
+#### Exchange Rate Disconnect Revisited
+
+**Authors:** Ryan Chahrour (Cornell University), Vito Cormun (Santa Clara University), Pierre De Leo (University of Maryland), Pablo Guerrón-Quintana (Boston College), Rosen Valchev (Boston College)\
+**Date:** November 10, 2023\
+**Links:** [Working Paper](https://drive.google.com/file/d/1Di78Mg3vjuy0XLX3APJZYbzAxVlVmKp-/view?usp=sharing)\
+**Notes:**
+
+-  
 
 ## Related Literature (Ranked by Relevance)
 
@@ -353,16 +373,7 @@ Any feedback is appreciated.
 - Synthesis of approaches to modeling equilibrium real exchange rates.
 - Limited reputation.
 
-#### Recent Papers
 
-**Links:**
-
-- [Disconnect Revisited – Chahrour et al.](https://chahrour.github.io/papers/Disconnect_revisited.pdf?utm_source=chatgpt.com)
-- [Springer Article](https://link.springer.com/article/10.1057/s41308-024-00251-0)
-- [AEA Journal Article](https://www.aeaweb.org/articles?from=f&id=10.1257%2Fmac.20210445&utm_source=chatgpt.com)
-- [Tech Dollars and Exchange Rate Reconnect – UTD](https://bpb-us-e2.wpmucdn.com/sites.utdallas.edu/dist/8/1090/files/2024/08/Tech-Dollars-and-Exchange-Rate-Reconnect.pdf?utm_source=chatgpt.com)
-
----
 
 
 
