@@ -1,0 +1,178 @@
+---
+title: "William's Update"
+subtitle: "Remittances"
+author: 
+  - name: "William Clinton Co"
+    affiliation: "The University of British Columbia"
+    email: "clinton.will.c@gmail.com"
+date: today
+date-format: "MMMM D, YYYY"
+abstract: |
+  This paper examines the current environment of remittance measurement, identifying key literature and data sources while also addressing topics discussed during William and Michael's meeting on July 24, 2025.
+format:
+  pdf:
+    documentclass: article
+    geometry: 
+      - margin=1in
+    fontsize: 11pt
+    linestretch: 1
+    number-sections: true
+    toc: true
+    toc-depth: 3
+    lof: false  # List of figures
+    lot: false  # List of tables
+    colorlinks: true
+    linkcolor: blue
+    urlcolor: blue
+    citecolor: blue
+    cite-method: biblatex
+    keep-tex: true
+    include-in-header:
+      - text: |
+          \usepackage{hyperref}
+          \hypersetup{
+            colorlinks=true,
+            linkcolor=blue,
+            urlcolor=blue,
+            breaklinks=true,
+            pdfborder={0 0 0}
+          }
+bibliography: references.bib
+csl: apa.csl
+---
+
+# Introduction
+
+Overall, there are now improved methods for measuring remittances compared to older approaches such as population inference. However, obtaining accurate data on remittances remains a significant challenge. To better understand how remittances are measured, a good starting point is [High Priority](#high-priority)
+ which is from the World Bank Group. Another useful resource is [Medium-High Priority](#medium-high-priority), provided by the United Nations Capital Development Fund. The main challenges in remittance measurement include defining what constitutes a remittance and distinguishing between different measurement approaches, such as macro-level and micro-level methods. Although measurement techniques have become more accurate, considerable errors and uncertainties persist. For further discussion on measurement reliability, see [Arcangelo et al., 2023](https://drive.google.com/file/d/1pAtaJZZPiYqQxYHhQaiGtDIG2D1GC0vw/view?usp=sharing).
+
+# Wise (TransferWise) Business Model
+
+Wise is a fintech company that facilitates **low-cost, international money transfers**. It operates on a unique peer-to-peer model.
+
+------------------------------------------------------------------------
+
+## Core Business Model
+
+### 1. Peer-to-Peer (P2P) Currency Matching
+
+Wise avoids moving money across borders by matching users sending in opposite directions: - E.g., If someone sends CAD to the UK and another sends GBP to Canada, Wise matches them. - Money stays within local banking systems, reducing fees and increasing speed.
+
+### 2. Revenue from Transfer Fees
+
+Wise charges: - **Fixed fee** per transaction. - **Variable fee** (percentage of the amount sent).
+
+*Example:* A \$1,000 USD transfer to the UK might cost only \$5–7, compared to \$40+ via a bank.
+
+------------------------------------------------------------------------
+
+# Dataset on remitances
+
+## Problem (William's Notes) Challenges and Methods in Measuring Remittance Transactions
+
+### Low Quality of Data
+
+-   Statistical remittance data are often unreliable or incomplete.
+
+### Nature of Remittances
+
+-   **Heterogeneous**: Numerous small transactions carried out by individuals.
+-   **Multiple Channels**:
+    -   **Formal**: e.g., electronic wire transfers.
+    -   **Informal**: e.g., hand-carried cash or goods across borders.
+
+### Detection and Reporting Issues
+
+-   **Small transaction sizes** often evade standard data collection systems.
+-   **Informal transactions** are typically underreported or excluded from balance of payments (BoP) data.
+
+## Measurement Approaches
+
+### Direct Measurement
+
+-   Includes **transaction reporting** and **surveys**.
+-   Considered ideal when feasible.
+
+### Combined Methods
+
+-   Some countries use a **hybrid approach**:
+    -   Combine **direct measurement** with **estimates** where data are lacking.
+
+### Model-Based Approaches
+
+-   Models are used to:
+    -   **Fill data gaps**.
+    -   **Estimate global totals**.
+-   The **accuracy** of these models depends on the **reliability of input data**.
+
+### Assumptions and Limitations
+
+-   **Indirect data** require **assumptions** to convert into remittance figures.
+-   Assumptions must be **plausible**, but are often **untestable or unverifiable in practice**.
+
+## Observed Datasets
+
+-   [SDGs Today Remittance](https://sdgstoday.org/dataset/remittances?)
+-   [World Bank Remittance](https://databank.worldbank.org/metadataglossary/world-development-indicators/series/BM.TRF.PWKR.CD.DT?)
+-   [Dropbox Remittance Folder](https://www.dropbox.com/home/remittance)
+
+## Literature
+
+### Takeaway
+
+#### Summary: Challenges and Improvements in Remittance Data Collection
+
+##### Key Challenges
+
+-   **Poor data quality**: Despite increased interest, statistics on remittances are still inconsistent and incomplete.
+-   **Global discrepancies**: In 2023, reported outward flows were only two-thirds of reported inward flows, highlighting growing asymmetries.
+-   **Informal channels**: A significant share of remittances is sent through informal means (e.g., hand-carried cash), which often goes untracked.
+-   **Inconsistent methods**: Countries use different concepts, definitions, and recording practices, leading to classification errors.
+-   **Impact of digitalization**: The rise of digital platforms, especially post-COVID, has reshaped remittance flows, but existing measurement tools lag behind.
+
+##### Ongoing Initiatives
+
+-   **RemitStat (World Bank)** [RemitStat](https://blogs.worldbank.org/en/peoplemove/improving-data-on-remittances--remitstat) : A global initiative involving 46 countries, Eurostat, and the IMF, aiming to improve remittance data.
+-   **TT-GA (IMF Task Team on Global Asymmetries)** [Preliminary Report](https://www.imf.org/external/pubs/ft/bop/2024/pdf/44/BOPCOM%2024-08%20-%20Report%20of%20the%20Task%20Team%20on%20Global%20Asymmetries%20%20Progress%20and%20Work%20Plan%20for%202025.pdf) : Established in October 2023 to investigate data gaps, legal and methodological barriers, and propose solutions.
+
+### High Priority {#high-priority}
+
+#### Understanding what defines a remittance [World Development Report 2023 (Module 8)](https://www.worldbank.org/en/publication/wdr2023/brief/module-8-remittances)
+
+-   [Migrant remittances: Alternative money transfer channels](https://drive.google.com/file/d/1LL87PIen7uBg9XGSSDZkeXzUWA_HbOCt/view?usp=sharing)
+
+-   [Migration and Development Brief (June 2024) (see page 19)](https://documents1.worldbank.org/curated/en/099714008132436612/pdf/IDU1a9cf73b51fcad1425a1a0dd1cc8f2f3331ce.pdf#page=19)
+
+-   [World Development Report 2023: Migrants, Refugees, and Societies](https://openknowledge.worldbank.org/server/api/core/bitstreams/6d4f883a-f89d-4fc1-8753-47fb683a3f33/content)
+
+-   [Remittance Prices Worldwide Quarterly Issue (Dec 2024)](https://remittanceprices.worldbank.org/sites/default/files/rpw_main_report_and_annex_q424_13.pdf)
+
+-   [What Explains Remittance Fees? (Beck et al., 2022)](https://drive.google.com/file/d/1u0iM0rzaXon-ZQFzc-sfElIgMU54tS8d/view?usp=sharing)
+
+#### Macro Level Measurements
+
+-   [International Transactions in Remittances: Guide for Compilers and Users, October 2009](https://www.imf.org/external/np/sta/bop/2008/rcg/pdf/guide.pdf)
+-   [World Bank Measurement of remittances](https://openknowledge.worldbank.org/server/api/core/bitstreams/e90c4fd4-2c7d-4d29-9082-2b4f0484fc2b/content)
+-   [Balance of Payments and International Investment Position Manual - Sixth Edition (BPM6)](https://www.imf.org/external/pubs/ft/bop/2007/pdf/bpm6.pdf)
+
+#### Micro Level Measurements
+
+-   Finding measures with the least noise [Arcangelo et al., 2023](https://drive.google.com/file/d/1pAtaJZZPiYqQxYHhQaiGtDIG2D1GC0vw/view?usp=sharing)
+-   Guides on survey design [Measuring remittances through surveys: Methodological and conceptual issues for survey designers and data analysts](https://www.demographic-research.org/volumes/vol31/41/31-41.pdf)
+-   [How reliable are survey estimates of remittances? Evidence from a cross-reporting survey exercise](https://drive.google.com/file/d/1qHRsa8y1B27oIXDuT47WWF27yRyu5Pyj/view?usp=sharing)
+
+### Medium-High Priority {#medium-high-priority}
+
+-   [United Nations Capital Development Fund](https://migrantmoney.uncdf.org/wp-content/uploads/2023/02/Migrant-Money-Note-7-FINAL-1.pdf)
+    -   [Survey Strategy and Questionnaire (UNCDF)](https://migrantmoney.uncdf.org/wp-content/uploads/2024/03/Survey-Strategy-and-Questionnaire-on-Estimating-Informal-Remittances.pdf)
+    -   [See Chapter 2, page 13 (Brown and Soto, 2015)](https://drive.google.com/file/d/1k0uVC2048y44iZSlEIvRWjE2d-l0HbXu/view?usp=sharing)
+
+### Low Priority
+
+-   [Informal Remitances Estimation](https://www.graduateinstitute.ch/sites/internet/files/2024-09/ARP-38-Final-Report--2024----Zeyu-Wei.pdf)
+    -   Uncertain quality
+-   (Yang,2011) [Migrant Remittances](https://deanyang-econ.github.io/deanyang/files/yang_2011_jep.25.3.pdf)
+    -   High academic standing
+    -   Outdated
+-   [World Bank Working Paper, 2010](https://documents1.worldbank.org/curated/en/850091468163748685/pdf/538840PUB0Migr101Official0Use0Only1.pdf)
+    -   Outdated
