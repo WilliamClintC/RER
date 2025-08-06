@@ -1,0 +1,75 @@
+---
+title: "William's Update"
+subtitle: "Remittances"
+author: 
+  - name: "William Clinton Co"
+    affiliation: "The University of British Columbia"
+    email: "clinton.will.c@gmail.com"
+date: today
+date-format: "MMMM D, YYYY"
+abstract: |
+  This paper examines the current environment of remittance measurement, identifying key literature and data sources while also addressing topics discussed during William and Michael's meeting on July 24, 2025.
+format:
+  pdf:
+    documentclass: article
+    geometry: 
+      - margin=1in
+    fontsize: 11pt
+    linestretch: 1
+    number-sections: true
+    toc: true
+    toc-depth: 3
+    lof: false  # List of figures
+    lot: false  # List of tables
+    colorlinks: true
+    linkcolor: blue
+    urlcolor: blue
+    citecolor: blue
+    cite-method: biblatex
+    keep-tex: true
+    include-in-header:
+      - text: |
+          \usepackage{hyperref}
+          \hypersetup{
+            colorlinks=true,
+            linkcolor=blue,
+            urlcolor=blue,
+            breaklinks=true,
+            pdfborder={0 0 0}
+          }
+bibliography: references.bib
+csl: apa.csl
+---
+
+# Email sent
+
+I contacted remitly and wise. I have been also contacting some of my close contacts for leads. 
+
+Look at other datasets other academics have used 
+focus on marco
+detemrinants of remitances according to fx unemployment rate, interest rate
+
+the problemw ithr emitance is is small sums, not reported theres no aggregareated relibable data
+
+opting for a conservative identificaiton appraoch
+
+there doesnt seem to be much liteature on the topic all of the ltiearture about is is dated.
+
+20-40 coybtues largest economics 
+match it with gdp growth 
+biggest possible dataset 
+with developing and advance econmicsies 
+and change in rela exhcange rate
+
+
+
+https://cidpnsi.ca/remittances-explorer/
+
+https://sdgstoday.org/dataset/remittances?
+
+ive sent a datarequest here for the data https://remittanceprices.worldbank.org/data-download
+
+
+there are many different methodologies with remitances please see https://remittanceprices.worldbank.org/resources
+
+but the best woudl be world bank as they seek to have a unified standard of remitances and they have pubclic data https://remittanceprices.worldbank.org/national-and-regional-databases-certified-by-the-world-bank
