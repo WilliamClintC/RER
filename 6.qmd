@@ -41,35 +41,112 @@ bibliography: references.bib
 csl: apa.csl
 ---
 
-# Email sent
+# Introduction
 
-I contacted remitly and wise. I have been also contacting some of my close contacts for leads. 
+In general the remitance datasets are weak. I will be presenting the followign options which would be the best avaialbel datasets out there on remitances.
 
-Look at other datasets other academics have used 
-focus on marco
-detemrinants of remitances according to fx unemployment rate, interest rate
+# Email Communications
 
-the problemw ithr emitance is is small sums, not reported theres no aggregareated relibable data
+I contacted Remitly and Wise for data access requests.
 
-opting for a conservative identificaiton appraoch
+# Best Dataset is World Bank
 
-there doesnt seem to be much liteature on the topic all of the ltiearture about is is dated.
+## Cost of Remittances Dataset
 
-20-40 coybtues largest economics 
-match it with gdp growth 
-biggest possible dataset 
-with developing and advance econmicsies 
-and change in rela exhcange rate
+This is a more comprehensive dataset. Please see the [sample dataset](https://github.com/WilliamClintC/RER/blob/main/data/Remittance_2/rpw_dataset_2011_2024_q3.xlsx) where we can observe source and destination countries.
+
+We can also observe the firm, payment instrument (bank transfer, cash, etc.), and speed.
+
+There are many different methodologies with regards to remittances. For an overview, please see the [World Bank's resources page](https://remittanceprices.worldbank.org/resources).
+
+The best dataset would be from the World Bank, as they seek to establish a unified standard for remittances and maintain public data availability. See [national and regional databases certified by the World Bank](https://remittanceprices.worldbank.org/national-and-regional-databases-certified-by-the-world-bank).
+
+There is a problem with their data request site maybe you can try as well. I have sent them several requests with no instructions being received. The dataset should be available at: [World Bank Remittance Prices Dataset](https://remittanceprices.worldbank.org/file-download/remittance-prices-worldwide-2011-2024q3-dataset)
+
+## Remittances Sent Dataset
+
+We have the following fields available in the screenshot below:
+
+![Available Fields for Remittances Sent Dataset](images/Screenshot%202025-08-07%20063601.png)
+
+We are not able to observe bilateral remittance flows; we can only observe aggregates unlike the cost dataset. Bilateral flows are like this - I can't seem to find the bilateral dataset anymore. I think they stopped sharing it. The dataset is available in the reports, but that's about it.
+
+According to the literature: "Additionally, the World Bank also publishes estimates on bilateral remittance flows. The basis for bilateral remittances estimates are weighted migrant stock data, the weighted income of migrants based on the per capita income in the country of destination, and the weighted income in the origin country of the migrant (Ratha and Shaw, 2007: 43)."
+
+The main dataset can be found at: [World Bank Development Indicators - Personal Remittances](https://databank.worldbank.org/metadataglossary/world-development-indicators/series/BM.TRF.PWKR.CD.DT)
+
+It is not perfect - see the limitations at the [World Bank metadata page](https://databank.worldbank.org/metadataglossary/world-development-indicators/series/BM.TRF.PWKR.CD.DT), but it's the best we have.
+
+> Because direct measurement (tracking actual transactions) is often incomplete, they use a mix of methods: Direct reporting when possible and estimates and models to fill in gaps.
+
+### Derivative Datasets
+
+1. [Migration Data Portal](https://www.migrationdataportal.org/data-catalogue)
+
+2. [UNCTAD Statistics - US Remittances](https://unctadstat.unctad.org/datacentre/reportInfo/US.Remittances)
+
+3. [Migration Policy Institute - Global Remittances Guide](https://www.migrationpolicy.org/programs/data-hub/global-remittances-guide)
+   
+   These tools are interesting for easy visualization:
+   
+   a. [Total Remittance Inflows and Outflows (1980-Present)](https://www.migrationpolicy.org/programs/data-hub/charts/total-remittance-inflows-and-outflows-1980-present?width=1000&height=850&iframe=true)
+   
+   b. [Remittance Trends Over Time](https://www.migrationpolicy.org/programs/data-hub/charts/remittance-trends-over-time?width=1000&height=850&iframe=true)
+   
+   c. [Bilateral Remittance Flows](https://www.migrationpolicy.org/programs/data-hub/charts/bilateral-remittance-flows?width=1000&height=850&iframe=true)
+
+4. [World Bank - Personal Remittances Received](https://data.worldbank.org/indicator/bx.trf.pwkr.cd.dt?utm_source=chatgpt.com)
+
+## Remitscope
+
+It may be worthwhile to consider [RemitScope](https://remitscope.org/latin-america/themes/) as an additional resource. PLease see this to see hwo to use remitscope https://remitscope.org/how-to-use-remitscope/
+
+RemitScope I think is our best bet given that they aggregate all different sources of remittances. From my understanding the remittances bilateral data exist but they do not exist in an easily accessible format. RemitScope aggregates the data into a format that's accessible.
+
+This is a quote from the website:
+
+> RemitSCOPE brings together data from secondary sources, that are usually scattered in different organisations and agencies, as well as collecting data through primary research and directly from market operators and regulators.
+
+The dataset currently covers Africa and Latin America. Asia is coming soon - please see this image:
+
+![RemitScope Regional Coverage](images/Screenshot%202025-08-11%20005134.png)
+
+Please see this useful dataset. It is very detailed and shows us what datasets are available out there, to what detail, and from what source:
+
+[RemitSCOPE Thematic Dashboards Overview](https://remitscope.org/wp-content/uploads/2023/08/RemitSCOPE-Thematic-Dashboards-Overview.pdf)
+
+Please see this image:
+
+![RemitSCOPE Dataset Overview](images/Screenshot%202025-08-11%20010105.png)
+
+Currently RemitScope only allows for observation through visualizations. I can scrape data from this website if need be.
+
+See this image of an example visualization from RemitScope:
+
+![RemitScope Example Visualization](images/Screenshot%202025-08-11%20014421.png)
+
+See this link to go to the website and see for oneself: [RemitScope Latin America Themes](https://remitscope.org/latin-america/themes/)
+
+## Canadian International Development Platform: CIDP
+
+The [CIDP Remittances Explorer](https://cidpnsi.ca/remittances-explorer/) is a Canadian International Development Platform tool that uses World Bank datasets as a derivative source to create an interactive remittance data visualization website.
+
+## Additional Data Sources
+
+-   [SDGs Today Remittances Dataset](https://sdgstoday.org/dataset/remittances) - Sustainable Development Goals tracking platform for remittance data
+
+## Data Request Status
+
+I have submitted a data request through the [World Bank's data download portal](https://remittanceprices.worldbank.org/data-download) to obtain the most current and comprehensive remittance datasets.
+
+Wise rejected my request - please see the screenshot below:
+
+![Wise Data Request Rejection](images/Screenshot%202025-08-07%20153221.png)
 
 
+# Appendix
 
-https://cidpnsi.ca/remittances-explorer/
+I also found this site where we can download datasets past academics have used regarding remittances which may be useful: [ICPSR - Remittances Studies](https://www.icpsr.umich.edu/web/ICPSR/search/studies?start=0&sort=score%20desc%2CTITLE_SORT%20asc&ARCHIVE=ICPSR&PUBLISH_STATUS=PUBLISHED&rows=50&q=Remittances)
 
-https://sdgstoday.org/dataset/remittances?
+This is also another site. Using this we can find datasets like this: [Harvard Dataverse - Remittances Dataset](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/I6VB8V)
 
-ive sent a datarequest here for the data https://remittanceprices.worldbank.org/data-download
-
-
-there are many different methodologies with remitances please see https://remittanceprices.worldbank.org/resources
-
-but the best woudl be world bank as they seek to have a unified standard of remitances and they have pubclic data https://remittanceprices.worldbank.org/national-and-regional-databases-certified-by-the-world-bank
