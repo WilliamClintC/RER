@@ -18,9 +18,9 @@ format:
     linestretch: 1
     number-sections: true
     toc: true
-    toc-depth: 3
-    lof: false  # List of figures
-    lot: false  # List of tables
+    toc-depth: 10
+    lof: false
+    lot: false
     colorlinks: true
     linkcolor: blue
     urlcolor: blue
@@ -43,13 +43,11 @@ csl: apa.csl
 
 # Introduction
 
-In general the remitance datasets are weak. I will be presenting the followign options which would be the best avaialbel datasets out there on remitances.
+Remittance datasets are generally limited in scope and quality. This report presents the best available datasets and summarizes key literature on remittance measurement. Most research focuses on the effects of remittances rather than forecasting flows. There are two main types of datasets: cost of remittances (detailed, corridor-level) and actual remittance flows (often less accurate and updated infrequently). The World Bank provides the primary source for both, with most other datasets derived from their data. Remitscope is also worth mentioning as a potential dataset, given its completeness. More details can be found in the [Remitscope section](#remitscope).
 
-# Email Communications
 
-I contacted Remitly and Wise for data access requests.
 
-# Best Dataset is World Bank
+# Best Dataset: World Bank
 
 ## Cost of Remittances Dataset
 
@@ -59,94 +57,170 @@ We can also observe the firm, payment instrument (bank transfer, cash, etc.), an
 
 There are many different methodologies with regards to remittances. For an overview, please see the [World Bank's resources page](https://remittanceprices.worldbank.org/resources).
 
-The best dataset would be from the World Bank, as they seek to establish a unified standard for remittances and maintain public data availability. See [national and regional databases certified by the World Bank](https://remittanceprices.worldbank.org/national-and-regional-databases-certified-by-the-world-bank).
-
-There is a problem with their data request site maybe you can try as well. I have sent them several requests with no instructions being received. The dataset should be available at: [World Bank Remittance Prices Dataset](https://remittanceprices.worldbank.org/file-download/remittance-prices-worldwide-2011-2024q3-dataset)
+The World Bank aims to establish unified standards and maintain public data availability. See [certified national and regional databases](https://remittanceprices.worldbank.org/national-and-regional-databases-certified-by-the-world-bank). There are issues with their data request site; I have submitted several requests without receiving instructions. The dataset should be available at: [World Bank Remittance Prices Dataset](https://remittanceprices.worldbank.org/file-download/remittance-prices-worldwide-2011-2024q3-dataset).
 
 ## Remittances Sent Dataset
 
-We have the following fields available in the screenshot below:
+The following fields are available:
 
 ![Available Fields for Remittances Sent Dataset](images/Screenshot%202025-08-07%20063601.png)
 
-We are not able to observe bilateral remittance flows; we can only observe aggregates unlike the cost dataset. Bilateral flows are like this - I can't seem to find the bilateral dataset anymore. I think they stopped sharing it. The dataset is available in the reports, but that's about it.
+Bilateral remittance flows are not directly observable; only aggregate data is available. The corridor-level dataset is released infrequently. According to the literature:
 
-According to the literature: "Additionally, the World Bank also publishes estimates on bilateral remittance flows. The basis for bilateral remittances estimates are weighted migrant stock data, the weighted income of migrants based on the per capita income in the country of destination, and the weighted income in the origin country of the migrant (Ratha and Shaw, 2007: 43)."
+> Additionally, the World Bank also publishes estimates on bilateral remittance flows. The basis for bilateral remittances estimates are weighted migrant stock data, the weighted income of migrants based on the per capita income in the country of destination, and the weighted income in the origin country of the migrant (Ratha and Shaw, 2007: 43).
 
-The main dataset can be found at: [World Bank Development Indicators - Personal Remittances](https://databank.worldbank.org/metadataglossary/world-development-indicators/series/BM.TRF.PWKR.CD.DT)
+The main dataset is available at: [World Bank Development Indicators - Personal Remittances](https://databank.worldbank.org/metadataglossary/world-development-indicators/series/BM.TRF.PWKR.CD.DT). See limitations at the [metadata page](https://databank.worldbank.org/metadataglossary/world-development-indicators/series/BM.TRF.PWKR.CD.DT).
 
-It is not perfect - see the limitations at the [World Bank metadata page](https://databank.worldbank.org/metadataglossary/world-development-indicators/series/BM.TRF.PWKR.CD.DT), but it's the best we have.
-
-> Because direct measurement (tracking actual transactions) is often incomplete, they use a mix of methods: Direct reporting when possible and estimates and models to fill in gaps.
+> Because direct measurement (tracking actual transactions) is often incomplete, they use a mix of methods: direct reporting when possible and estimates/models to fill in gaps.
 
 ### Derivative Datasets
 
 1. [Migration Data Portal](https://www.migrationdataportal.org/data-catalogue)
-
 2. [UNCTAD Statistics - US Remittances](https://unctadstat.unctad.org/datacentre/reportInfo/US.Remittances)
-
 3. [Migration Policy Institute - Global Remittances Guide](https://www.migrationpolicy.org/programs/data-hub/global-remittances-guide)
-   
-   These tools are interesting for easy visualization:
-   
-   a. [Total Remittance Inflows and Outflows (1980-Present)](https://www.migrationpolicy.org/programs/data-hub/charts/total-remittance-inflows-and-outflows-1980-present?width=1000&height=850&iframe=true)
-   
-   b. [Remittance Trends Over Time](https://www.migrationpolicy.org/programs/data-hub/charts/remittance-trends-over-time?width=1000&height=850&iframe=true)
-   
-   c. [Bilateral Remittance Flows](https://www.migrationpolicy.org/programs/data-hub/charts/bilateral-remittance-flows?width=1000&height=850&iframe=true)
-
-4. [World Bank - Personal Remittances Received](https://data.worldbank.org/indicator/bx.trf.pwkr.cd.dt?utm_source=chatgpt.com)
+   - [Total Remittance Inflows and Outflows (1980-Present)](https://www.migrationpolicy.org/programs/data-hub/charts/total-remittance-inflows-and-outflows-1980-present?width=1000&height=850&iframe=true)
+   - [Remittance Trends Over Time](https://www.migrationpolicy.org/programs/data-hub/charts/remittance-trends-over-time?width=1000&height=850&iframe=true)
+   - [Bilateral Remittance Flows](https://www.migrationpolicy.org/programs/data-hub/charts/bilateral-remittance-flows?width=1000&height=850&iframe=true)
+4. [World Bank - Personal Remittances Received](https://data.worldbank.org/indicator/bx.trf.pwkr.cd.dt)
+5. [Asian Development Bank - Remittances Data](https://data.adb.org/taxonomy/term/130)
 
 ## Remitscope
 
-It may be worthwhile to consider [RemitScope](https://remitscope.org/latin-america/themes/) as an additional resource. PLease see this to see hwo to use remitscope https://remitscope.org/how-to-use-remitscope/
-
-RemitScope I think is our best bet given that they aggregate all different sources of remittances. From my understanding the remittances bilateral data exist but they do not exist in an easily accessible format. RemitScope aggregates the data into a format that's accessible.
-
-This is a quote from the website:
+Consider [RemitScope](https://remitscope.org/latin-america/themes/) as an additional resource. See the [guide](https://remitscope.org/how-to-use-remitscope/) for usage. RemitScope aggregates data from various sources, including bilateral flows, but these are not always easily accessible.
 
 > RemitSCOPE brings together data from secondary sources, that are usually scattered in different organisations and agencies, as well as collecting data through primary research and directly from market operators and regulators.
 
-The dataset currently covers Africa and Latin America. Asia is coming soon - please see this image:
+Currently, RemitScope covers Africa and Latin America. Asia is coming soon.
 
 ![RemitScope Regional Coverage](images/Screenshot%202025-08-11%20005134.png)
 
-Please see this useful dataset. It is very detailed and shows us what datasets are available out there, to what detail, and from what source:
-
-[RemitSCOPE Thematic Dashboards Overview](https://remitscope.org/wp-content/uploads/2023/08/RemitSCOPE-Thematic-Dashboards-Overview.pdf)
-
-Please see this image:
+See the [RemitSCOPE Thematic Dashboards Overview](https://remitscope.org/wp-content/uploads/2023/08/RemitSCOPE-Thematic-Dashboards-Overview.pdf):
 
 ![RemitSCOPE Dataset Overview](images/Screenshot%202025-08-11%20010105.png)
 
-Currently RemitScope only allows for observation through visualizations. I can scrape data from this website if need be.
-
-See this image of an example visualization from RemitScope:
+RemitScope provides visualization tools; data scraping may be required for analysis.
 
 ![RemitScope Example Visualization](images/Screenshot%202025-08-11%20014421.png)
 
-See this link to go to the website and see for oneself: [RemitScope Latin America Themes](https://remitscope.org/latin-america/themes/)
+Explore more at [RemitScope Latin America Themes](https://remitscope.org/latin-america/themes/).
 
 ## Canadian International Development Platform: CIDP
 
-The [CIDP Remittances Explorer](https://cidpnsi.ca/remittances-explorer/) is a Canadian International Development Platform tool that uses World Bank datasets as a derivative source to create an interactive remittance data visualization website.
+The [CIDP Remittances Explorer](https://cidpnsi.ca/remittances-explorer/) uses World Bank datasets to create interactive remittance data visualizations. The dataset is available for download from the project repository: [CIDP Remittances Data](https://github.com/WilliamClintC/RER/blob/main/data/Remittance_2/httpscidpnsi.caremittances-explorer%23~text%3DRemittance%2520estimates%2520are%2520larger%2520than%2Cand%2520India%2520(%25243.0%2520billion)..csv).
 
 ## Additional Data Sources
 
--   [SDGs Today Remittances Dataset](https://sdgstoday.org/dataset/remittances) - Sustainable Development Goals tracking platform for remittance data
+- [SDGs Today Remittances Dataset](https://sdgstoday.org/dataset/remittances) - Sustainable Development Goals tracking platform for remittance data
 
 ## Data Request Status
 
-I have submitted a data request through the [World Bank's data download portal](https://remittanceprices.worldbank.org/data-download) to obtain the most current and comprehensive remittance datasets.
+## World Bank
+I have submitted a data request through the [World Bank's data download portal](https://remittanceprices.worldbank.org/data-download) for the most current and comprehensive remittance datasets.
 
-Wise rejected my request - please see the screenshot below:
+Wise rejected my request:
 
 ![Wise Data Request Rejection](images/Screenshot%202025-08-07%20153221.png)
 
 
+# Wise & Remitly
+
+I contacted Remitly and Wise to request data access. Wise denied our request. 
+
+
+# Literature Review
+
+## High Relevance
+
+### Country/Region Case Studies
+#### [The Propensity to Remit: Macro and Micro Factors Driving Remittances to Central America and the Caribbean](https://www.elibrary.imf.org/view/journals/001/2022/203/article-A001-en.xml)
+**Authors:** Hussein Bidawi, Paola Aliperti F. Domingues, Chiara Fratto, Nicole Laframboise  
+**Publication Date:** 2022  
+**Comment:** Promising paper with corridor-level data for Latin American countries.
+
+#### [Macroeconomic Determinants of Remittance Flows to Sub-Saharan Africa](https://www.aercafrica.org/publications/research-papers/macroeconomic-determinants-of-remittance-flows-to-sub-saharan-africa/)
+**Authors:** Deodat E. Adenutsi, Christian R. K. Ahortor  
+**Publication Date:** 2021  
+**Comment:** Focuses on Sub-Saharan Africa.
+
+#### [Determinants and Macroeconomic Impact of Remittances in Sub-Saharan Africa](https://www.elibrary.imf.org/view/journals/001/2009/216/article-A001-en.xml)
+**Authors:** Raju J Singh, Kyung-woo Lee, Markus Haacker  
+**Publication Date:** 2009  
+**Comment:** IMF paper, slightly older.
+
+#### [Determinants of Remittances: Evidence From Tonga](https://www.elibrary.imf.org/view/journals/001/2011/018/article-A001-en.xml?ArticleTabs=Related%20Documents)
+**Author:** Huidan Lin  
+**Publication Date:** 2011  
+**Comment:** Focuses on Tonga.
+
+#### [Macroeconomic Determinants of Remittances: Evidence from India](https://www.imf.org/en/Publications/WP/Issues/2016/12/31/Macroeconomic-Determinants-of-Remittances-Evidence-from-India-18728)
+**Author:** Poonam Gupta  
+**Publication Date:** 2005  
+**Comment:** Relevant but dated.
+
+### [Defying the Odds: Remittances Held Up During the COVID-19 Pandemic](https://cepr.org/voxeu/columns/defying-odds-remittances-held-during-covid-19-pandemic)  
+**Working Paper:** [IMF Working Paper](https://www.imf.org/en/Publications/WP/Issues/2021/07/16/Defying-the-Odds-Remittances-During-the-COVID-19-Pandemic-461321)  
+**Authors:** Saad Quayyum, Kangni Kpodar, Montfort Mlachila, Vigninou Gammadigbe  
+**Publication Date:** 2021  
+**Comment:** Uses COVID-19 as a "shock" to analyze remittances.
+
+### [Remittances and Vulnerability in Developing Countries: Results from a New Dataset on Remittances from Italy](https://cepr.org/voxeu/columns/remittances-and-vulnerability-developing-countries-results-new-dataset-remittances)
+**Authors:** Andrea Presbitero, Nikola Spatafora, Giulia Bettin  
+**Publication Date:** 2014  
+**Comment:** Focuses on Italy.
+
+### [What Explains Remittance Fees? Panel Evidence](https://www.elibrary.imf.org/view/journals/001/2022/087/article-A001-en.xml)
+**Authors:** Thorsten Beck, Mathilde Janfils, Kangni R Kpodar  
+**Publication Date:** 2022  
+**Comment:** IMF paper on remittance fees.
+
+### [Monetary Policy and Remittance Flows in Latin America and the Caribbean](https://pmc.ncbi.nlm.nih.gov/articles/PMC9510564/pdf/10290_2022_Article_478.pdf)
+**Publication Date:** 2022  
+**Comment:** Examines monetary policy and remittance flows in Latin America and the Caribbean.
+
+## Medium Relevance
+
+### [Determinants of International Remittance Inflow in Asia-Pacific Middle-Income Countries](https://www.sciencedirect.com/science/article/pii/S0313592620304094)
+**Authors:** Naoyuki Yoshino, Farhad Taghizadeh-Hesary, Miyu Otsuka  
+**Publication Date:** 2020  
+**Comment:** Directly relevant, but not as academically reputable as high relevance papers.
+
+### [Migrant Remittances](https://drive.google.com/file/d/1e893ibGZcECt9gxIpPgq2XEE2kDGgqx-/view?usp=sharing)
+**Author:** Dean Yang  
+**Publication Date:** 2011  
+**Comment:** Highly regarded, but a bit old.
+
+### [Are Remittances Insurance? Evidence from Rainfall Shocks in the Philippines](https://academic.oup.com/wber/article/21/2/219/1701529)
+**Authors:** Dean Yang, HwaJung Choi  
+**Publication Date:** 2007  
+**Comment:** Uses rainfall shocks to analyze remittance determinants.
+
+### [Remittance Behaviours Among Recent Immigrants in Canada](https://www.statcan.gc.ca/en/catalogue/11-008-X201100211619)
+**Publication Date:** 2011  
+**Comment:** Statistics Canada paper on remittance behaviour in Canada.
+
+### [Migrant Remittances: Alternative Money Transfer Channels](https://www.econstor.eu/handle/10419/204586)
+**Authors:** Martina Metzger, Tim Riedler, Jennifer Pédussel Wu  
+**Publication Date:** 2019  
+**Comment:** Explores remittance transfer channels.
+
+### [Migration and Remittances during the Global Financial Crisis and Beyond](https://documents1.worldbank.org/curated/en/701621468149081927/pdf/693130PUB0publ067926B09780821388266.pdf)
+**Editors:** Dilip Ratha, Jeffrey H. Cohen, Ibrahim Sirkeci  
+**Publication Date:** 2012  
+**Comment:** World Bank book, somewhat dated.
+
+## Low Relevance
+
+### [International Migration, Remittances, and Household Investment: Evidence from Philippine Migrants' Exchange Rate Shocks](http://www.nber.org/papers/w12325)
+**Author:** Dean Yang  
+**Publication Date:** 2006  
+**Comment:** Relevant but old; analyzes currency appreciation as a determinant of remittances.
+
 # Appendix
 
-I also found this site where we can download datasets past academics have used regarding remittances which may be useful: [ICPSR - Remittances Studies](https://www.icpsr.umich.edu/web/ICPSR/search/studies?start=0&sort=score%20desc%2CTITLE_SORT%20asc&ARCHIVE=ICPSR&PUBLISH_STATUS=PUBLISHED&rows=50&q=Remittances)
+Additional datasets used in academic research can be found at:
+- [ICPSR - Remittances Studies](https://www.icpsr.umich.edu/web/ICPSR/search/studies?start=0&sort=score%20desc%2CTITLE_SORT%20asc&ARCHIVE=ICPSR&PUBLISH_STATUS=PUBLISHED&rows=50&q=Remittances)
+- [Harvard Dataverse - Remittances Dataset](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/I6VB8V)
+- [Harvard Dataverse - Additional Remittances Dataset](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/SV0PIW)
 
-This is also another site. Using this we can find datasets like this: [Harvard Dataverse - Remittances Dataset](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/I6VB8V)
+
 
