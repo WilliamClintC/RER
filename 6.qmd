@@ -43,7 +43,7 @@ csl: apa.csl
 
 # Introduction
 
-Remittance datasets are generally limited in scope and quality. This report presents the best available datasets and summarizes key literature on remittance measurement. Most research focuses on the effects of remittances rather than forecasting flows. There are two main types of datasets: cost of remittances (detailed, corridor-level) and actual remittance flows (often less accurate and updated infrequently). The World Bank provides the primary source for both, with most other datasets derived from their data. Remitscope is also worth mentioning as a potential dataset, given its completeness. More details can be found in the [Remitscope section](#remitscope).
+Remittance datasets are generally limited in scope and quality. This report presents the best available datasets and summarizes key literature on remittance measurement. Most research focuses on the effects of remittances rather than forecasting flows. There are two main types of datasets: cost of remittances (detailed, corridor-level) and actual remittance flows (often less accurate and updated infrequently). The World Bank provides the primary source for both, with most other datasets derived from their data. Remitscope is also worth mentioning as a potential dataset, given its completeness. More details can be found in the [Remitscope section](#remitscope). 
 
 
 
@@ -57,7 +57,7 @@ We can also observe the firm, payment instrument (bank transfer, cash, etc.), an
 
 There are many different methodologies with regards to remittances. For an overview, please see the [World Bank's resources page](https://remittanceprices.worldbank.org/resources).
 
-The World Bank aims to establish unified standards and maintain public data availability. See [certified national and regional databases](https://remittanceprices.worldbank.org/national-and-regional-databases-certified-by-the-world-bank). There are issues with their data request site; I have submitted several requests without receiving instructions. The dataset should be available at: [World Bank Remittance Prices Dataset](https://remittanceprices.worldbank.org/file-download/remittance-prices-worldwide-2011-2024q3-dataset).
+The World Bank aims to establish _unified standards and maintain public data availability_. See [certified national and regional databases](https://remittanceprices.worldbank.org/national-and-regional-databases-certified-by-the-world-bank). There are issues with their data request site; I have submitted several requests without receiving instructions. The dataset should be available at: [World Bank Remittance Prices Dataset](https://remittanceprices.worldbank.org/file-download/remittance-prices-worldwide-2011-2024q3-dataset).
 
 ## Remittances Sent Dataset
 
@@ -106,7 +106,7 @@ Explore more at [RemitScope Latin America Themes](https://remitscope.org/latin-a
 
 ## Canadian International Development Platform: CIDP
 
-The [CIDP Remittances Explorer](https://cidpnsi.ca/remittances-explorer/) uses World Bank datasets to create interactive remittance data visualizations. The dataset is available for download from the project repository: [CIDP Remittances Data](https://github.com/WilliamClintC/RER/blob/main/data/Remittance_2/httpscidpnsi.caremittances-explorer%23~text%3DRemittance%2520estimates%2520are%2520larger%2520than%2Cand%2520India%2520(%25243.0%2520billion)..csv).
+The [CIDP Remittances Explorer](https://cidpnsi.ca/remittances-explorer/) uses World Bank datasets to create interactive remittance data visualizations. The dataset is available for download from the project repository: [CIDP Remittances Data](https://github.com/WilliamClintC/RER/blob/main/data/Remittance_2/CIDP.csv)
 
 ## Additional Data Sources
 
@@ -117,15 +117,13 @@ The [CIDP Remittances Explorer](https://cidpnsi.ca/remittances-explorer/) uses W
 ## World Bank
 I have submitted a data request through the [World Bank's data download portal](https://remittanceprices.worldbank.org/data-download) for the most current and comprehensive remittance datasets.
 
-Wise rejected my request:
+
+
+## Wise & Remitly
+
+I contacted Remitly and Wise to request data access. Wise denied our request:
 
 ![Wise Data Request Rejection](images/Screenshot%202025-08-07%20153221.png)
-
-
-# Wise & Remitly
-
-I contacted Remitly and Wise to request data access. Wise denied our request. 
-
 
 # Literature Review
 
@@ -135,7 +133,7 @@ I contacted Remitly and Wise to request data access. Wise denied our request.
 #### [The Propensity to Remit: Macro and Micro Factors Driving Remittances to Central America and the Caribbean](https://www.elibrary.imf.org/view/journals/001/2022/203/article-A001-en.xml)
 **Authors:** Hussein Bidawi, Paola Aliperti F. Domingues, Chiara Fratto, Nicole Laframboise  
 **Publication Date:** 2022  
-**Comment:** Promising paper with corridor-level data for Latin American countries.
+**Comment:** Promising paper (we have corridor-level data (Remitscope)) for Latin American countries.
 
 #### [Macroeconomic Determinants of Remittance Flows to Sub-Saharan Africa](https://www.aercafrica.org/publications/research-papers/macroeconomic-determinants-of-remittance-flows-to-sub-saharan-africa/)
 **Authors:** Deodat E. Adenutsi, Christian R. K. Ahortor  
@@ -187,7 +185,7 @@ I contacted Remitly and Wise to request data access. Wise denied our request.
 ### [Migrant Remittances](https://drive.google.com/file/d/1e893ibGZcECt9gxIpPgq2XEE2kDGgqx-/view?usp=sharing)
 **Author:** Dean Yang  
 **Publication Date:** 2011  
-**Comment:** Highly regarded, but a bit old.
+**Comment:** Highly regarded, but dated.
 
 ### [Are Remittances Insurance? Evidence from Rainfall Shocks in the Philippines](https://academic.oup.com/wber/article/21/2/219/1701529)
 **Authors:** Dean Yang, HwaJung Choi  
