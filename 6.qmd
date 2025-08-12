@@ -60,7 +60,7 @@ There are many different methodologies with regards to remittances. For an overv
 
 The World Bank aims to establish _unified standards and maintain public data availability_. See [certified national and regional databases](https://remittanceprices.worldbank.org/national-and-regional-databases-certified-by-the-world-bank). There are issues with their data request site; I have submitted several requests without receiving instructions. The dataset should be available at: [World Bank Remittance Prices Dataset](https://remittanceprices.worldbank.org/file-download/remittance-prices-worldwide-2011-2024q3-dataset).
 
-## Remittances Sent Dataset
+## Remittances Flows Dataset
 
 The following fields are available:
 
