@@ -27,7 +27,6 @@ format:
     urlcolor: blue
     citecolor: blue
     cite-method: biblatex
-    keep-tex: true
     include-in-header:
       - text: |
           \usepackage{hyperref}
@@ -125,6 +124,10 @@ I have submitted a data request through the [World Bank's data download portal](
 I contacted Remitly and Wise to request data access. Wise denied our request:
 
 ![Wise Data Request Rejection](images/Screenshot%202025-08-07%20153221.png)
+
+## Remitscope
+
+We have also submitted a data request with Remitscope. We are waiting for a responce.
 
 # Literature Review
 
