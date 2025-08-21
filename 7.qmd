@@ -43,7 +43,7 @@ csl: apa.csl
 
 # Introduction
 
-This analysis examines global remittance flows from 2010-2017, focusing on the top sending and receiving countries. The dataset reveals interesting patterns in international money transfers, particularly highlighting Germany's unique position as both a major sender and receiver of remittances.
+This analysis examines global remittance flows from 2010-2017, focusing on the top sending and receiving countries. 
 
 ## Top 10 Sending Countries (2010-2017)
 
@@ -81,7 +81,7 @@ The following table shows the top 10 countries by total remittances received dur
 
 ## William's Observations
 
-An interesting pattern emerges from this data: Germany is the only high-income country among the top 10 receiving countries, while simultaneously being among the top sending countries (ranked 6th in sending and 9th in receiving). This dual position is particularly noteworthy. From my understanding, this occurs because Germany is bordered by significantly wealthier countries with higher GDP per capita, such as Luxembourg and Switzerland.
+An interesting pattern emerges from this data: Germany is the only high-income country among the top 10 receiving countries, while simultaneously being among the top sending countries (ranked 6th in sending and 9th in receiving). This dual position is interesting. From my understanding, this occurs because Germany is bordered by significantly wealthier countries with higher GDP per capita, such as Luxembourg and Switzerland.
 
 
 ## Visual Analysis
@@ -120,13 +120,12 @@ Gulf countries and Canada are notable outliers in terms of the percentage of GDP
 
 Both of these figures confirm the patterns observed in previous graphs, reinforcing our findings about global remittance flows.
 
-## Conclusion
+## Takeaway
 
-This analysis of global remittance flows from 2010-2017 reveals several important patterns:
 
 1. **Dominance of High-Income Sending Countries**: The United States leads significantly in total remittances sent, followed by Gulf countries (Saudi Arabia, UAE) and other developed nations.
 
-2. **Developing Countries as Primary Recipients**: India and China dominate as receiving countries, reflecting their large diaspora populations and economic development needs.
+2. **Developing Countries as Primary Recipients**: India, China and Philippines dominate as receiving countries.
 
-3. **Germany's Unique Position**: Germany's presence in both top sending and receiving lists highlights the complexity of modern migration patterns, potentially driven by its geographic position and economic relationships with neighboring higher-income countries.
+3. **Germany's Unique Position**: Germany's presence in both top sending and receiving lists.
 
