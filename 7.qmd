@@ -1,0 +1,132 @@
+---
+title: "William's Update"
+subtitle: "Remittances"
+author: 
+  - name: "William Clinton Co"
+    affiliation: "The University of British Columbia"
+    email: "clinton.will.c@gmail.com"
+date: today
+date-format: "MMMM D, YYYY"
+abstract: |
+
+
+format:
+  pdf:
+    documentclass: article
+    geometry: 
+      - margin=1in
+    fontsize: 11pt
+    linestretch: 1
+    number-sections: true
+    toc: true
+    toc-depth: 10
+    lof: false
+    lot: false
+    colorlinks: true
+    linkcolor: blue
+    urlcolor: blue
+    citecolor: blue
+    cite-method: biblatex
+    include-in-header:
+      - text: |
+          \usepackage{hyperref}
+          \hypersetup{
+            colorlinks=true,
+            linkcolor=blue,
+            urlcolor=blue,
+            breaklinks=true,
+            pdfborder={0 0 0}
+          }
+bibliography: references.bib
+csl: apa.csl
+---
+
+# Introduction
+
+This analysis examines global remittance flows from 2010-2017, focusing on the top sending and receiving countries. The dataset reveals interesting patterns in international money transfers, particularly highlighting Germany's unique position as both a major sender and receiver of remittances.
+
+## Top 10 Sending Countries (2010-2017)
+
+The following table shows the top 10 countries by total remittances sent during 2010-2017 (in millions USD):
+
+| Rank | Sending Country        | Total Remittances (Million USD) |
+|------|------------------------|----------------------------------|
+| 1    | United States          | 1,025,087.66                    |
+| 2    | Saudi Arabia           | 295,636.66                      |
+| 3    | United Arab Emirates   | 204,207.79                      |
+| 4    | United Kingdom         | 194,395.51                      |
+| 5    | Canada                 | 184,804.10                      |
+| 6    | Germany                | 176,999.86                      |
+| 7    | France                 | 162,190.98                      |
+| 8    | Spain                  | 137,090.99                      |
+| 9    | Hong Kong SAR, China   | 132,248.11                      |
+| 10   | Australia              | 123,373.93                      |
+
+## Top 10 Receiving Countries (2010-2017)
+
+The following table shows the top 10 countries by total remittances received during 2010-2017 (in millions USD):
+
+| Rank | Receiving Country | Total Remittances (Million USD) |
+|------|-------------------|----------------------------------|
+| 1    | India             | 523,835.10                      |
+| 2    | China             | 482,773.75                      |
+| 3    | Philippines       | 212,205.74                      |
+| 4    | Mexico            | 201,757.07                      |
+| 5    | France            | 171,763.41                      |
+| 6    | Nigeria           | 163,255.25                      |
+| 7    | Egypt, Arab Rep.  | 135,392.65                      |
+| 8    | Pakistan          | 124,323.55                      |
+| 9    | Germany           | 122,335.26                      |
+| 10   | Bangladesh        | 102,036.41                      |
+
+## William's Observations
+
+An interesting pattern emerges from this data: Germany is the only high-income country among the top 10 receiving countries, while simultaneously being among the top sending countries (ranked 6th in sending and 9th in receiving). This dual position is particularly noteworthy. From my understanding, this occurs because Germany is bordered by significantly wealthier countries with higher GDP per capita, such as Luxembourg and Switzerland.
+
+
+## Visual Analysis
+
+The following figures provide additional insights into remittance:
+
+### Figure 1: Remittances Received vs GDP
+
+![Remittances Received vs GDP](images/Screenshot 2025-08-21 070908.png)
+
+This relationship follows expected patterns, showing a positive correlation between GDP and total remittances received.
+
+### Figure 2: Remittances as Percentage of GDP Over Time
+
+![Remittances as Percentage of GDP](images/Screenshot 2025-08-21 070932.png)
+
+Remittances as a percentage of GDP have been slightly increasing over time.
+
+### Figure 3: Global Remittance Flows - Sending Countries
+
+![Global Remittance Flows](images/Screenshot 2025-08-21 071732.png)
+
+The United States is disproportionately large in the amount of remittances it sends compared to other countries.
+
+### Figure 4: Remittances Sent as Percentage of GDP
+
+![Remittances Sent as Percentage of GDP](images/Screenshot 2025-08-21 071747.png)
+
+Gulf countries and Canada are notable outliers in terms of the percentage of GDP sent as remittances, reflecting their significant migrant worker populations.
+
+### Figure 5: Additional Remittance Analysis
+
+![Additional Analysis](images/Screenshot 2025-08-21 075933.png)
+
+![Comparative Analysis](images/1.png)
+
+Both of these figures confirm the patterns observed in previous graphs, reinforcing our findings about global remittance flows.
+
+## Conclusion
+
+This analysis of global remittance flows from 2010-2017 reveals several important patterns:
+
+1. **Dominance of High-Income Sending Countries**: The United States leads significantly in total remittances sent, followed by Gulf countries (Saudi Arabia, UAE) and other developed nations.
+
+2. **Developing Countries as Primary Recipients**: India and China dominate as receiving countries, reflecting their large diaspora populations and economic development needs.
+
+3. **Germany's Unique Position**: Germany's presence in both top sending and receiving lists highlights the complexity of modern migration patterns, potentially driven by its geographic position and economic relationships with neighboring higher-income countries.
+
