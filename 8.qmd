@@ -7,7 +7,7 @@ author:
     email: "clinton.will.c@gmail.com"
 date: today
 date-format: "MMMM D, YYYY"
-abstract: |
+abstract: This document is a follow-up to the meeting on August 21st and addresses topics discussed during that meeting.
 
 
 format:
@@ -42,46 +42,79 @@ csl: apa.csl
 ---
 
 # Introduction
-to read https://drive.google.com/file/d/1e893ibGZcECt9gxIpPgq2XEE2kDGgqx-/view
-https://www.elibrary.imf.org/view/journals/001/2022/087/article-A001-en.xml
-https://docs.google.com/document/d/1PJ4rgXxzeJqVkvX6wH1tB43iIK6Im1tsjOp2Sv0S47E/edit?tab=t.qmikftn7ceml
 
+# Bitcoin Cross-Border Flows
+
+## IMF
+Below is a comparison of the data challenges for remittances and Bitcoin flows:
+
+| Channel      | Data Observed         | Data Missing/Challenge                        | Notes                                                      |
+|--------------|----------------------|-----------------------------------------------|------------------------------------------------------------|
+| Remittances  | Macro flows, location| Cannot obtain corridor-level bilateral data; requires population inference | Can observe location, but not detailed bilateral corridors  |
+| Bitcoin      | Micro-level data     | Cannot discern location; requires website traffic inference       | Public datasets available with sufficient processing        |
+
+
+
+For detailed information, see section 2 of  
+[A Primer on Bitcoin Cross-Border Flows: Measurement and Drivers](https://drive.google.com/file/d/1JlapQvyER-SgX0z91l8NzTDcXR9Z5Oo5/view?usp=sharing)
+This document explains in detail how the process works. Bitcoin datasets are publicly available with enough processing.
+
+Below is one of the key images from the paper:
+
+![Key image from the paper](images/Screenshot%202025-08-28%20053010.png)
+
+
+## BIS
+
+
+- [BIS Working Paper No. 1265](https://www.bis.org/publ/work1265.pdf)  
+- [Coinglass News: Bitcoin Flows](https://www.coinglass.com/news/471951?utm_source=chatgpt.com)
+
+Key images from the BIS and Coinglass sources:
+
+![BIS Key Image 1](C:\Users\clint\Desktop\RER\images\0196c41c-3a2a-7979-aab1-bab474641aa7.jpg)
+![BIS Key Image 2](C:\Users\clint\Desktop\RER\images\0196c41c-3696-7ce1-8a25-41b84deae178.png)
 
 # Shocks
 
-https://academic.oup.com/wber/article/21/2/219/1916657?login=true#111402059: Rainfall shocks
-https://www.nber.org/system/files/working_papers/w12325/w12325.pdf this paper used asian finnacial crisis shocks to exhcnage rates
+- [Rainfall shocks](https://academic.oup.com/wber/article/21/2/219/1916657?login=true#111402059)
+- [Asian financial crisis shocks to exchange rates](https://www.nber.org/system/files/working_papers/w12325/w12325.pdf)
 
-potential shocks: 
-crackdown on illegal immigrants would be a shock that reduces remitances
+Potential shocks include:
 
-this is also interesting the Mexican Consular ID Card , which were issues in 2002, which serve as a way to bolster remitances as well. 
-> In addition, for migrant source countries in the developing world, this paper sheds light on the
- potential impact of policies that facilitate migrant savings overseas and stimulate remittances.
- For example, the Mexican government issues to its nationals in the United States official identity
- cards (matriculas consulares)thatmanyfinancial institutions accept as proof of identity for the
- purpose of opening a bank account. If matriculas consulares lead to increases in migrant savings
- rates and remittances sent home, this paper’s results suggest that the Mexican government’s
- policy could also bolster origin-household investments in children and small enterprises.
+- Crackdowns on illegal immigrants, which would reduce remittances.
+- Another interesting case is the Mexican Consular ID Card, issued in 2002, which helped bolster remittances. 
+ 
+> The Mexican government issues its nationals in the United States official identity cards (matriculas consulares) that many financial institutions accept as proof of identity for the purpose of opening a bank account. If matriculas consulares lead to increases in migrant savings rates and remittances sent home...
 
 
+# Another Potential Remittance Dataset
 
-# Potential Dattaset
-
-https://www.imf.org/en/Publications/WP/Issues/2021/07/16/Defying-the-Odds-Remittances-During-the-COVID-19-Pandemic-461321
-
-I have treid contacting these people but maybe you can try as well I could nto find most of them but was only able to contact Saad Quayyum. THey seem to have a working dataset they made themselves. They did not explain their process throughloy. THey mentioned theier dataset comes from "statistical INstitutes" 
-
-Accordingly 
-
-> To overcome these challenges, we compiled a new and unique dataset of monthly remittance 
-flows for a sample of 52 countries, of which 6 are high-income countries, 35 are middle-income 
-countries and 11 are low-income countries (see Annex 1 for the sample composition and data 
-sources). The time dimension of the data collected spans from January 2018 to December 2020. 
-In addition, we gather monthly bilateral remittance flows (corridor data) for 16 countries in the 
-sample, totaling 410 corridors. The data are extracted from detailed balance of payments and statistical notes published by 
-national central banks and statistical institutes.
+[Defying the Odds: Remittances During the COVID-19 Pandemic (IMF Working Paper)](https://www.imf.org/en/Publications/WP/Issues/2021/07/16/Defying-the-Odds-Remittances-During-the-COVID-19-Pandemic-461321)
 
 
-# Alternative Remitance Channel
-https://www.econstor.eu/bitstream/10419/204586/1/1678825786.pdf
+Attempts were made to contact the authors for further clarification regarding their data construction process; only Saad Quayyum's contact is publicly available. While the authors indicate that their dataset was compiled from "statistical institutes," the methodology for dataset construction is not thoroughly detailed in the paper.
+
+According to their paper:
+
+> To overcome these challenges, we compiled a new and unique dataset of monthly remittance flows for a sample of 52 countries, of which 6 are high-income countries, 35 are middle-income countries, and 11 are low-income countries (see Annex 1 for the sample composition and data sources). The time dimension of the data collected spans from January 2018 to December 2020. In addition, we gather monthly bilateral remittance flows (corridor data) for 16 countries in the sample, totaling 410 corridors. The data are extracted from detailed balance of payments and statistical notes published by national central banks and statistical institutes.
+
+
+# Appendix
+
+## Shocks
+- [What Was Mt. Gox? Definition, History, Collapse, and Future (Investopedia)](https://www.investopedia.com/terms/m/mt-gox.asp)
+- [El Salvador made Bitcoin an official currency, now it's backtracking for IMF loan (WSJ)](https://www.wsj.com/world/americas/el-salvador-made-bitcoin-an-official-currency-now-its-backtracking-for-imf-loan-874c6623)
+- [El Salvador's Bitcoin Story (The Tokener)](https://thetokener.com/learn/el-salvadors-bitcoin-story/)
+- [China Crypto Bans: A Complete History (Crypto.news)](https://crypto.news/china-crypto-bans-a-complete-history/)
+
+
+## Bitcoin Datasets
+There exist numerous Bitcoin datasets, each employing distinct methodologies for data collection and analysis. Below are a few notable examples:
+
+- [BABD: A Bitcoin Address Behavior Dataset for Pattern Analysis](https://arxiv.org/abs/2204.05746?utm_source)
+- [A Temporal Graph Dataset of Bitcoin Entity-Entity Transactions](https://www.nature.com/articles/s41597-025-04595-8)
+
+## Alternative Remittance Channel
+
+- [Alternative Remittance Systems and Terrorism Financing: Issues in Risk Management](https://www.econstor.eu/bitstream/10419/204586/1/1678825786.pdf)
