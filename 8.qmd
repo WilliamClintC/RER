@@ -1,0 +1,84 @@
+---
+title: "William's Update"
+subtitle: "Remittances"
+author: 
+  - name: "William Clinton Co"
+    affiliation: "The University of British Columbia"
+    email: "clinton.will.c@gmail.com"
+date: today
+date-format: "MMMM D, YYYY"
+abstract: |
+
+
+format:
+  pdf:
+    documentclass: article
+    geometry: 
+      - margin=1in
+    fontsize: 11pt
+    linestretch: 1
+    number-sections: true
+    toc: true
+    toc-depth: 10
+    lof: false
+    lot: false
+    colorlinks: true
+    linkcolor: blue
+    urlcolor: blue
+    citecolor: blue
+    cite-method: biblatex
+    include-in-header:
+      - text: |
+          \usepackage{hyperref}
+          \hypersetup{
+            colorlinks=true,
+            linkcolor=blue,
+            urlcolor=blue,
+            breaklinks=true,
+            pdfborder={0 0 0}
+          }
+bibliography: references.bib
+csl: apa.csl
+---
+
+# Introduction
+
+
+# Shocks
+
+https://academic.oup.com/wber/article/21/2/219/1916657?login=true#111402059: Rainfall shocks
+https://www.nber.org/system/files/working_papers/w12325/w12325.pdf this paper used asian finnacial crisis shocks to exhcnage rates
+
+potential shocks: 
+crackdown on illegal immigrants would be a shock that reduces remitances
+
+this is also interesting the Mexican Consular ID Card , which were issues in 2002, which serve as a way to bolster remitances as well. 
+> In addition, for migrant source countries in the developing world, this paper sheds light on the
+ potential impact of policies that facilitate migrant savings overseas and stimulate remittances.
+ For example, the Mexican government issues to its nationals in the United States official identity
+ cards (matriculas consulares)thatmanyfinancial institutions accept as proof of identity for the
+ purpose of opening a bank account. If matriculas consulares lead to increases in migrant savings
+ rates and remittances sent home, this paper’s results suggest that the Mexican government’s
+ policy could also bolster origin-household investments in children and small enterprises.
+
+
+
+# Potential Dattaset
+
+https://www.imf.org/en/Publications/WP/Issues/2021/07/16/Defying-the-Odds-Remittances-During-the-COVID-19-Pandemic-461321
+
+I have treid contacting these people but maybe you can try as well I could nto find most of them but was only able to contact Saad Quayyum. THey seem to have a working dataset they made themselves. They did not explain their process throughloy. THey mentioned theier dataset comes from "statistical INstitutes" 
+
+Accordingly 
+
+> To overcome these challenges, we compiled a new and unique dataset of monthly remittance 
+flows for a sample of 52 countries, of which 6 are high-income countries, 35 are middle-income 
+countries and 11 are low-income countries (see Annex 1 for the sample composition and data 
+sources). The time dimension of the data collected spans from January 2018 to December 2020. 
+In addition, we gather monthly bilateral remittance flows (corridor data) for 16 countries in the 
+sample, totaling 410 corridors. The data are extracted from detailed balance of payments and statistical notes published by 
+national central banks and statistical institutes.
+
+
+# Alternative Remitance Channel
+https://www.econstor.eu/bitstream/10419/204586/1/1678825786.pdf
