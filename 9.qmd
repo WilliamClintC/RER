@@ -1,0 +1,207 @@
+---
+title: "William's Update"
+subtitle: "Remittances"
+author: 
+  - name: "William Clinton Co"
+    affiliation: "The University of British Columbia"
+    email: "clinton.will.c@gmail.com"
+date: today
+date-format: "MMMM D, YYYY"
+abstract: This document is a follow-up to the meeting on August 21st and addresses topics discussed during that meeting.
+
+
+format:
+  pdf:
+    documentclass: article
+    geometry: 
+      - margin=1in
+    fontsize: 11pt
+    linestretch: 1
+    number-sections: true
+    toc: true
+    toc-depth: 10
+    lof: false
+    lot: false
+    colorlinks: true
+    linkcolor: blue
+    urlcolor: blue
+    citecolor: blue
+    cite-method: biblatex
+    include-in-header:
+      - text: |
+          \usepackage{hyperref}
+          \hypersetup{
+            colorlinks=true,
+            linkcolor=blue,
+            urlcolor=blue,
+            breaklinks=true,
+            pdfborder={0 0 0}
+          }
+bibliography: references.bib
+csl: apa.csl
+---
+
+
+# Introduction
+
+We introduce a new approach for estimating stablecoin flows, which is likely an improvement over previous methods.
+
+# Update on Remitscope
+
+I have been searching for possible contacts related to Remitscope. It appears to be linked to the email and website migrationdataportal@iom.int and [Migration Data Portal Contact](https://www.migrationdataportal.org/contact).
+
+## Contacted 
+I have reached out to them, but the main Remitscope email (remittances@ifad.org) has not replied yet. Other relevant contacts made include:
+
+- ifad@ifad.org
+- a.trillobarca@ifad.org
+- remittances@ifad.org
+
+I also found and reached out to the following LinkedIn profiles:
+
+- [K.K. Podar](https://www.linkedin.com/in/kkpodar/)
+- [Montie Mlachila](https://www.linkedin.com/in/montie-mlachila-3353928/)
+- [Vigninou Gammadigbe](https://www.linkedin.com/in/vigninou-gammadigbe-49ab9543/?originalSubdomain=sn)
+  - Vigninou replied to me. He is the author of [Defying the Odds: Remittances During the COVID-19 Pandemic](https://www.imf.org/en/Publications/WP/Issues/2021/07/16/Defying-the-Odds-Remittances-During-the-COVID-19-Pandemic-461321), which utilized a relatively modern version of the remittance dataset. This work was also discussed in [8.pdf](https://github.com/WilliamClintC/RER/blob/main/_output/8.pdf).
+
+## Not Contacted 
+Additionally, I was able to find names attached to Remitscope in this image:
+
+![](images/1743167000666.jpg)
+
+and in this [LinkedIn post](https://www.linkedin.com/posts/financing-facility-for-remittances-ffr_remittance-activity-7311372331552014336-y1XR/).
+
+
+I eventually ran out of connection requests, which is probably for the best, but these are people to potentially connect with. I am still considering the best approach for outreach.
+
+Other relevant people I found:
+
+- [Leon Isaacs](https://www.linkedin.com/in/leonisaacs/)
+- [Leonard Makuvaza](https://www.linkedin.com/in/leonardmakuvaza/)
+- [Pedro de Vasconcelos](https://www.linkedin.com/in/pedro-de-vasconcelos-899474a/)
+- [Sarah Hugo](https://www.linkedin.com/in/sarah-hugo-794a853/)
+- [LinkedIn Remittance Activity Post](https://www.linkedin.com/posts/financing-facility-for-remittances-ffr_remittance-activity-7311372331552014336-y1XR/)
+
+# PDF Links
+Here is the previous PDF link, which was previously not working: [8.pdf](https://github.com/WilliamClintC/RER/blob/main/_output/8.pdf)
+
+# Found Remitscope Dataset
+
+During my research, I examined the Remitscope website in detail and discovered raw data embedded within the website's HTML code. While I am unsure if this data is intended to be public, it was located deep within the site code. The extracted files are saved in `data/Remittance_3` within this workspace.
+
+# Clarification on Bitcoin
+The challenge with analyzing Bitcoin transactions is that, while every micro-level transaction is publicly observable, the wallets involved are anonymized. As a result, we cannot directly determine the geographic locations of the transactions.
+
+## 3 approaches
+### Approach 1: Exchange Wallets
+
+This is the initial approach, similar to what we would do with standard fiat currency:
+
+1. We observe wallets.
+2. We can determine where these wallets are based and construct the dataset shown below. Here, the _exchanges_ function as the "banks" in the traditional fiat system.
+
+![](images/Screenshot%202025-08-30%20050944.png)
+
+3. The main limitation is that _exchanges_ are not bound by geography, which restricts this method. An exception is China, where the "Great Firewall" blocks access to foreign websites, requiring exchanges to be registered in China to serve Chinese users. This allows for a distinction between China-based and non-China-based exchanges, as done in [this link](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3956933).
+
+### Approach 2: Exchange Wallets and Web Traffic
+1. This approach builds on the limitations of Approach 1.
+2. We can observe web traffic to the exchanges, including the geographic locations of the visitors. We also observe micro-transactions occurring across various exchanges.
+3. Suppose there are two countries (Canada and China) and two exchanges (FTX and Binance):
+
+Suppose we observe a transaction of 100 BTC (Bitcoin), where a transfer occurs from FTX to Binance. 
+
+Assume the users of FTX (the senders) are:
+
+- 50% from Canada
+- 50% from China
+
+And the users of Binance (the receivers) are:
+
+- 10% in Canada
+- 90% in China
+
+If 100 BTC is sent from FTX to Binance, the flows can be broken down as follows:
+
+- 50 BTC leave Canada (100 BTC × 50%)
+- 50 BTC leave China (100 BTC × 50%)
+- 10 BTC arrive in Canada (100 BTC × 10%)
+- 90 BTC arrive in China (100 BTC × 90%)
+
+This can be further disaggregated:
+
+- 5 BTC: Canada to Canada (50 BTC × 10%)
+- 45 BTC: Canada to China (50 BTC × 90%)
+- 5 BTC: China to Canada (50 BTC × 10%)
+- 45 BTC: China to China (50 BTC × 90%)
+
+The net flow is:
+
+- 45 BTC from Canada to China
+- 5 BTC from China to Canada
+
+#### Assumptions
+
+4. Key assumption: 
+   1. users do not mask online activity by employing virtual private networks (VPNs)
+   2. transaction amounts are, on average, broadly equal across users in different countries
+   3. These assumptions are similar to those used by the IMF when estimating remittances based on population shares. 
+      1. For example, suppose we observe remittances in Canada, where the immigrant population is 50% from China and 50% from the Philippines. If total remittances are $100 CAD, we would attribute $50 CAD to China and $50 CAD to the Philippines, reflecting the 50% immigrant profile. 
+      2. In this IMF example, the key assumption is that transaction amounts are uniform across each individual (similar to the bitcoin assumption)
+
+### Approach 3: Fiat Currencies 
+
+
+1. peer-to-peer exchange called LocalBitcoins: an escrow service for Bitcoin transactions.
+2. When people want to trade Bitcoin, they use LocalBitcoins to exchange Bitcoin for fiat currency.
+3. These transactions are observable: we can see the amount of BTC sold and the amount of fiat currency exchanged. We can not observe the wallets. 
+4. The key innovation is because Bitcoin transactions are public, researchers look for transactions of the same size and timeframe to link wallets with the fiat currency transaction. 
+5. For example, suppose an individual buys Bitcoin with Philippine pesos
+  1. LocalBitcoins records a transaction of 1.000003 BTC for 6 million pesos on August 31st at 2:00 PM.
+  2. Using the developed algorithm, it searches for a matching 1.000003 BTC transaction on the public blockchain.
+  3. Once found, the anonymized wallet involved in the transaction can be observed and associated with the Philippines and Philippine pesos.
+  4. Next, suppose someone sells 1.000003 BTC for 150,000 CAD in Canada at 2:30 PM on the same day.
+  5. The algorithm repeats the process, associating the wallet with both the Philippines and Canada.
+  6. In this way, a cross-border transfer is identified and recorded, Philippines to Canada cross border flow. 
+
+#### Assumptions
+
+6. Key Assumptions:
+  1. The probability of observing two transactions of the same size within a 5-hour period is low.
+  2. People are risk-averse and minimize bitcoin volatility by immediately trading it.
+  3. LocalBitcoins is representative of broader crypto cross-border flows.
+
+More detail can be found in [this paper](https://www.ecb.europa.eu/pub/pdf/scpwps/ecb.wp2868~0c2ad2e6e7.en.pdf).
+
+
+
+## Stablecoin Flows Paper
+
+A recent paper, [Decrypting Crypto: How to Estimate International Stablecoin Flows](https://www.imf.org/en/Publications/WP/Issues/2025/07/11/Decrypting-Crypto-How-to-Estimate-International-Stablecoin-Flows-568260) (IMF, 2025)
+
+1. The study analyzes stablecoin flows by integrating transaction data with exchange locations, timing of activity, and geographic patterns to infer wallet origins.
+2. It leverages user-assigned domain names (e.g., “Pierre”) as identifiers, providing additional context beyond anonymized wallet strings.
+3. AI models combine domain names with transaction timing to estimate user locations for instance, a wallet named “Pierre” active during France business hours is probabilistically associated with Europe.
+4. The model also incorporates data from region-specific exchanges. An example would be suppose we observe a wallet interacting with Coinhouse, a Paris-based crypto exchange, with a domain name "Pierre” combined with France time trading behavior. This information would associate the wallet with a high probability to Europe.
+5. Unlike most prior work, which emphasizes stablecoins as hedges against U.S. dollar instability, this paper highlights their significance in facilitating cross-border flows.
+
+Key findings from the paper include: 
+
+> In absolute terms, Asia and the Pacific lead with the highest stablecoin activity (inflows: $407bn, outflows: $395bn, intraregional flows: $209bn), followed by North America (inflows: $363bn, outflows: $417bn, intraregional flows: $216bn). However, relative to GDP, Africa and the Middle East, and Latin America and the Caribbean stand out, with stablecoin usage reaching 6.7% and 7.7% of GDP, respectively.
+
+> Calculating bilateral net flows highlights North America as the primary source of stablecoin outflows into all other regions of the world, estimated at $54bn in 2024. The data show that net stablecoin flows from North America to other regions increase when domestic currencies are weak.
+
+> This suggests that stablecoins could increasingly serve as an instrument to meet global demand for dollars, particularly in regions where access to traditional dollar markets is constrained.
+
+> Stablecoins are typically minted in the U.S., where issuers convert fiat dollars into digital tokens. The analysis shows that stablecoin net flows are largely outflows from North America. The authors hypothesize that these net outflows are linked to global demand for U.S. dollars, especially when local currencies depreciate.
+
+### Dataset Discrepancies
+
+Big discrepancies between the various methodologies, possibly because of VPN. 
+>  For 2024, we estimate 5.5 times more gross stablecoin flows involving China (i.e., $153bn vs $28bn) and 100 times more net flows of stablecoins into China (i.e., $18bn vs $0.18bn)
+
+# Appendix
+
+## IMF External Sector Report
+
+For further reading, see the [IMF External Sector Report (2025, Chapter 2)](https://www.imf.org/-/media/Files/Publications/ESR/2025/English/ch2.ashx?utm_source).
