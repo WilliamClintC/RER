@@ -7,8 +7,8 @@ author:
     email: "clinton.will.c@gmail.com"
 date: today
 date-format: "MMMM D, YYYY"
-abstract: This document is a follow-up to the meeting on August 21st and addresses topics discussed during that meeting.
 
+abstract: This document is a follow-up to the meeting on September 29th and addresses the items discussed during that meeting. This provides an update on who was contacted regarding the remittance datasets, offers updates on previously problematic pdf file links, and clarifies how the stablecoin/bitcoin cross-border flows dataset works. Most importantly, this presents the extracted remittance data from Remitscope. 
 
 format:
   pdf:
@@ -42,15 +42,13 @@ csl: apa.csl
 ---
 
 
-# Introduction
-
-We introduce a new approach for estimating stablecoin flows, which is likely an improvement over previous methods.
-
 # Update on Remitscope
-
-I have been searching for possible contacts related to Remitscope. It appears to be linked to the email and website migrationdataportal@iom.int and [Migration Data Portal Contact](https://www.migrationdataportal.org/contact).
-
 ## Contacted 
+I have been searching for possible contacts related to Remitscope. It appears to be linked to the email and website 
+
+- migrationdataportal@iom.int
+-  [Migration Data Portal Contact](https://www.migrationdataportal.org/contact).
+
 I have reached out to them, but the main Remitscope email (remittances@ifad.org) has not replied yet. Other relevant contacts made include:
 
 - ifad@ifad.org
@@ -63,6 +61,7 @@ I also found and reached out to the following LinkedIn profiles:
 - [Montie Mlachila](https://www.linkedin.com/in/montie-mlachila-3353928/)
 - [Vigninou Gammadigbe](https://www.linkedin.com/in/vigninou-gammadigbe-49ab9543/?originalSubdomain=sn)
   - Vigninou replied to me. He is the author of [Defying the Odds: Remittances During the COVID-19 Pandemic](https://www.imf.org/en/Publications/WP/Issues/2021/07/16/Defying-the-Odds-Remittances-During-the-COVID-19-Pandemic-461321), which utilized a relatively modern version of the remittance dataset. This work was also discussed in [8.pdf](https://github.com/WilliamClintC/RER/blob/main/_output/8.pdf).
+  - I mainly asked him about datasets. But we can also arrange a meeting if need be. 
 
 ## Not Contacted 
 Additionally, I was able to find names attached to Remitscope in this image:
@@ -82,14 +81,38 @@ Other relevant people I found:
 - [Sarah Hugo](https://www.linkedin.com/in/sarah-hugo-794a853/)
 - [LinkedIn Remittance Activity Post](https://www.linkedin.com/posts/financing-facility-for-remittances-ffr_remittance-activity-7311372331552014336-y1XR/)
 
-# PDF Links
+# PDF Link
 Here is the previous PDF link, which was previously not working: [8.pdf](https://github.com/WilliamClintC/RER/blob/main/_output/8.pdf)
 
 # Found Remitscope Dataset
 
-During my research, I examined the Remitscope website in detail and discovered raw data embedded within the website's HTML code. While I am unsure if this data is intended to be public, it was located deep within the site code. The extracted files are saved in `data/Remittance_3` within this workspace.
+During my research, I examined the Remitscope website in detail and discovered raw data embedded within the website. While I am unsure if this data is intended to be public, it was located deep within the site code. The extracted files are saved in [`data/Remittance_3`](https://github.com/WilliamClintC/RER/tree/main/data/Remittance_3) .
+
+## Remitscope Data analysis
+
+This is a quote from Remitscope 
+
+> The World Bank has historically published estimates on remittance inflows and outflows at a corridor level (in a bilateral matrix). Estimated flows have been based on the number of migrants living in the host country and an estimate on the amount they send home (based on the income differential between the two countries). Whilst this data is understood not to be as accurate and has since been removed from the World Bank website, it is currently the best source available for this data, which provides an indication of the relative value of flows across corridors.
+
+- The central bank data is sparse; from central banks we have data for 2020 to 2024, but many country pairs are missing compared to the World Bank dataset.
+- The World Bank data covers only 2021, but is much more detailed.
+- Currently, the dataset includes only African and Latin American countries. We need to decide whether this limited coverage is sufficient for our analysis.
+
+To see a overview of the  data see the following images:
+
+![](data/Remittance_3/remitscope_africa_page_30.png){fig-cap="Africa Central Bank PDF - Page 30"}
+![](data/Remittance_3/remitscope_africa_page_31.png){fig-cap="Africa Central Bank PDF - Page 31"}
+![](data/Remittance_3/remitscope_africa_page_32.png){fig-cap="Africa Central Bank PDF - Page 32"}
+![](data/Remittance_3/remitscope_page_36.png){fig-cap="LatAm Central Bank PDF - Page 36"}
+![](data/Remittance_3/remitscope_page_37.png){fig-cap="LatAm Central Bank PDF - Page 37"}
+![](data/Remittance_3/remitscope_page_38.png){fig-cap="LatAm Central Bank PDF - Page 38"}
+![](data/Remittance_3/remitscope_page_39.png){fig-cap="LatAm Central Bank PDF - Page 39"}
+![](data/Remittance_3/remitscope_page_40.png){fig-cap="LatAm Central Bank PDF - Page 40"}
+
+This is relatively limited compared to the world bank dataset. 
 
 # Clarification on Bitcoin
+
 The challenge with analyzing Bitcoin transactions is that, while every micro-level transaction is publicly observable, the wallets involved are anonymized. As a result, we cannot directly determine the geographic locations of the transactions.
 
 ## 3 approaches
