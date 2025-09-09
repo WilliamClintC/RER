@@ -1,0 +1,100 @@
+---
+title: "William's Update"
+subtitle: "Remittances"
+author: 
+  - name: "William Clinton Co"
+    affiliation: "The University of British Columbia"
+    email: "clinton.will.c@gmail.com"
+date: today
+date-format: "MMMM D, YYYY"
+
+abstract: This document is a follow-up to the meeting on September 29th and addresses the items discussed during that meeting. This provides an update on who was contacted regarding the remittance datasets, offers updates on previously problematic pdf file links, and clarifies how the stablecoin/bitcoin cross-border flows dataset works. Most importantly, this presents the extracted remittance data from Remitscope. 
+
+format:
+  pdf:
+    documentclass: article
+    geometry: 
+      - margin=1in
+    fontsize: 11pt
+    linestretch: 1
+    number-sections: true
+    toc: true
+    toc-depth: 10
+    lof: false
+    lot: false
+    colorlinks: true
+    linkcolor: blue
+    urlcolor: blue
+    citecolor: blue
+    cite-method: biblatex
+    include-in-header:
+      - text: |
+          \usepackage{hyperref}
+          \hypersetup{
+            colorlinks=true,
+            linkcolor=blue,
+            urlcolor=blue,
+            breaklinks=true,
+            pdfborder={0 0 0}
+          }
+bibliography: references.bib
+csl: apa.csl
+---
+
+
+I have contacted with Kpodar he has replied
+We shall see his reponsce 
+
+=== DATA COMPLETENESS ANALYSIS ===
+Total records: 728
+Date range: 2019 - 2024
+Number of unique sending countries: 206
+Number of unique receiving countries: 20
+
+=== SENDING COUNTRIES ===
+Top 10 sending countries by number of records:
+Sending Country
+Canada                      18
+Italy                       15
+United States of America    15
+Spain                       14
+France                      14
+Germany                     14
+United Kingdom              12
+China                       11
+Sweden                      10
+Switzerland                 10
+Name: count, dtype: int64
+
+=== RECEIVING COUNTRIES ===
+Top 10 receiving countries by number of records:
+Receiving Country
+Ecuador     183
+Mexico      169
+Panama      102
+Senegal      38
+Kenya        34
+Colombia     32
+Uganda       20
+Chile        19
+Morocco      19
+Ethiopia     17
+Name: count, dtype: int64
+
+=== YEAR DISTRIBUTION ===
+Year
+2019     10
+2020     37
+2021    240
+2022    408
+2024     33
+Name: count, dtype: int64
+
+DATA COMPLETENESS SUMMARY ===
+• Total remittance records: 728
+• Time period: 2019-2024
+• Sending countries: 206 (good global coverage)
+• Receiving countries: 20 (limited coverage - only 10.3% of world)
+• Missing 2023 data completely
+• Peak data collection in 2022 (408 records)
+• Most data focused on Latin American countries (Ecuador, Mexico, Panama)

@@ -1,0 +1,90 @@
+0,1,2,3,4,5
+Sending	country,Receive	country,Date,Value,Unit,Source
+Afghanistan,Ecuador,2021,0.03859066,USD	millions,Central	Bank	Data
+,Mexico,2022,0.295915,USD	millions,Central	Bank	Data
+,Panama,2022,0.000387472,USD	millions,INEC
+Albania,Ecuador,2021,1.89796382,USD	millions,Central	Bank	Data
+,Mexico,2022,0.023831,USD	millions,Central	Bank	Data
+,Panama,2022,0.038935399,USD	millions,INEC
+American	Samoa,Ecuador,2021,0.0553291,USD	millions,Central	Bank	Data
+Angola,Brazil,2022,8.32422068,USD	millions,Central	Bank	Data
+,Ecuador,2021,0.00924998,USD	millions,Central	Bank	Data
+,Mexico,2022,0.021185,USD	millions,Central	Bank	Data
+,Panama,2022,0.00090577,USD	millions,INEC
+Anguilla,Ecuador,2021,0.0424175,USD	millions,Central	Bank	Data
+,Mexico,2022,0.056245,USD	millions,Central	Bank	Data
+Antigua	and	Barbuda,Ecuador,2021,0.05750221,USD	millions,Central	Bank	Data
+,Jamaica,2022,7.648208936,USD	millions,Central	Bank	Data
+,Mexico,2022,0.01536,USD	millions,Central	Bank	Data
+,Panama,2022,0.102322835,USD	millions,INEC
+Argentina,Bolivia,2022,68,USD	millions,Central	Bank	Data
+,Chile,2021,8.239642018,USD	millions,Central	Bank	Data
+,Colombia,2022,18.009561145,USD	millions,Central	Bank	Data
+,Ecuador,2021,6.4922729,USD	millions,Central	Bank	Data
+,Mexico,2022,18.71145,USD	millions,Central	Bank	Data
+,Panama,2022,0.802349126,USD	millions,INEC
+,Paraguay,2022,25.403764574,USD	millions,Central	Bank	Data
+Armenia,Ecuador,2021,0.0034,USD	millions,Central	Bank	Data
+,Mexico,2022,0.05807,USD	millions,Central	Bank	Data
+Aruba,Colombia,2022,33.061651351,USD	millions,Central	Bank	Data
+,Ecuador,2021,2.48260401,USD	millions,Central	Bank	Data
+,Mexico,2022,0.052949,USD	millions,Central	Bank	Data
+,Panama,2022,0.371314345,USD	millions,INEC
+,Suriname,2022,0.616751910,USD	millions,Central	Bank	Data
+Australia,Chile,2021,8.455789159,USD	millions,Central	Bank	Data
+,Colombia,2022,139.554616564,USD	millions,Central	Bank	Data
+,Ecuador,2021,5.56670612,USD	millions,Central	Bank	Data
+,Mexico,2022,6.321704,USD	millions,Central	Bank	Data
+,Panama,2022,0.606995904,USD	millions,INEC
+Austria,Ecuador,2021,2.27691379,USD	millions,Central	Bank	Data
+,Mexico,2022,0.3355,USD	millions,Central	Bank	Data
+,Panama,2022,0.260785796,USD	millions,INEC
+Azerbaijan,Ecuador,2021,0.1052554,USD	millions,Central	Bank	Data
+,Mexico,2022,0.000339,USD	millions,Central	Bank	Data
+Bahamas,Ecuador,2021,1.19725033,USD	millions,Central	Bank	Data
+,Haiti,2019,47.883664352,USD	millions,Central	Bank	Data
+,Jamaica,2022,21.752802625,USD	millions,Central	Bank	Data
+,Mexico,2022,1.002488,USD	millions,Central	Bank	Data
+,Panama,2022,0.964305300,USD	millions,INEC
+Bahrain,Ecuador,2021,0.06671668,USD	millions,Central	Bank	Data
+,Mexico,2022,0.053798,USD	millions,Central	Bank	Data
+Barbados,Ecuador,2021,0.01994765,USD	millions,Central	Bank	Data
+,Jamaica,2022,4.181996858,USD	millions,Central	Bank	Data
+,Mexico,2022,0.000827,USD	millions,Central	Bank	Data
+,Panama,2022,0.082558817,USD	millions,INEC
+Belarus,Ecuador,2021,0.12746578,USD	millions,Central	Bank	Data
+,Mexico,2022,0.005382,USD	millions,Central	Bank	Data
+Belgium,Colombia,2022,21.769062927,USD	millions,Central	Bank	Data
+,Ecuador,2021,21.50461288,USD	millions,Central	Bank	Data
+,Mexico,2022,0.632507,USD	millions,Central	Bank	Data
+,Panama,2022,0.493700313,USD	millions,INEC
+,Suriname,2022,6.562809501,USD	millions,Central	Bank	Data
+Belize,Ecuador,2021,0.0741716,USD	millions,Central	Bank	Data
+,Mexico,2022,0.473696,USD	millions,Central	Bank	Data
+,Panama,2022,0.129584041,USD	millions,INEC
+Benin,Ecuador,2021,0.02850657,USD	millions,Central	Bank	Data
+,Mexico,2022,0.008055,USD	millions,Central	Bank	Data
+Bermuda,Ecuador,2021,0.348266,USD	millions,Central	Bank	Data
+,Jamaica,2022,7.524725273,USD	millions,Central	Bank	Data
+,Mexico,2022,0.09333,USD	millions,Central	Bank	Data
+,Panama,2022,0.061535757,USD	millions,INEC
+Bolivia,Chile,2021,9.414321651,USD	millions,Central	Bank	Data
+,Colombia,2022,24.401610999,USD	millions,Central	Bank	Data
+,Ecuador,2021,7.44350471,USD	millions,Central	Bank	Data
+,Mexico,2022,10.471064,USD	millions,Central	Bank	Data
+,Panama,2022,1.540783443,USD	millions,INEC
+Bosnia	and	Herzegovina,Ecuador,2021,0.01810642,USD	millions,Central	Bank	Data
+,Mexico,2022,0.023966,USD	millions,Central	Bank	Data
+Botswana,Ecuador,2021,0.002811,USD	millions,Central	Bank	Data
+,Mexico,2022,0.000963,USD	millions,Central	Bank	Data
+Brazil,Bolivia,2022,83,USD	millions,Central	Bank	Data
+,Chile,2021,5.424475332,USD	millions,Central	Bank	Data
+,Colombia,2022,100.096094712,USD	millions,Central	Bank	Data
+,Ecuador,2021,12.98441998,USD	millions,Central	Bank	Data
+,Haiti,2019,75.644931398,USD	millions,Central	Bank	Data
+,Mexico,2022,39.469823,USD	millions,Central	Bank	Data
+,Panama,2022,9.082440833,USD	millions,INEC
+,Paraguay,2022,11.838549857,USD	millions,Central	Bank	Data
+British	Virgin	Islands,Ecuador,2021,0.01832945,USD	millions,Central	Bank	Data
+,Jamaica,2022,7.559672433,USD	millions,Central	Bank	Data
+,Mexico,2022,0.007236,USD	millions,
