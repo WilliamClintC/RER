@@ -47,9 +47,10 @@ csl: apa.csl
 # Data Update
 
 I have contacted two authors from [Defying the Odds: Remittances During the COVID-19 Pandemic](https://www.imf.org/en/Publications/WP/Issues/2021/07/16/Defying-the-Odds-Remittances-During-the-COVID-19-Pandemic-461321)
+
  - The Remitscope data is reliable but incomplete
  - [Defying the Odds: Remittances During the COVID-19 Pandemic](https://www.imf.org/en/Publications/WP/Issues/2021/07/16/Defying-the-Odds-Remittances-During-the-COVID-19-Pandemic-461321) provides additional data to the Remitscope data. 
- - I am currently requesting acces to their dataset so that we can merge their dataset (2018-2020) to ours (2019-2024)
+ - I am currently requesting access to their dataset so that we can merge their dataset (2018-2020) to ours (2019-2024)
 
 
 # Data Analysis Results
@@ -60,7 +61,7 @@ This analysis examines remittance flows using data extracted from Remitscope, co
 ### Data Completeness Summary
 - **Total records**: 728
 - **Date range**: 2019 - 2024
-- **Sending countries**: 206 (good global coverage)
+- **Sending countries**: 206 
 - **Receiving countries**: 20 (limited coverage - only 10.3% of world)
 
 ## Interactive Visualizations
