@@ -27,9 +27,11 @@ format:
     urlcolor: blue
     citecolor: blue
     cite-method: biblatex
+    fig-pos: "H"
     include-in-header:
       - text: |
           \usepackage{hyperref}
+          \usepackage{float}
           \hypersetup{
             colorlinks=true,
             linkcolor=blue,
@@ -44,7 +46,7 @@ csl: apa.csl
 
 # Data Update
 
- - I have contacted two authors from [Defying the Odds: Remittances During the COVID-19 Pandemic](https://www.imf.org/en/Publications/WP/Issues/2021/07/16/Defying-the-Odds-Remittances-During-the-COVID-19-Pandemic-461321)
+I have contacted two authors from [Defying the Odds: Remittances During the COVID-19 Pandemic](https://www.imf.org/en/Publications/WP/Issues/2021/07/16/Defying-the-Odds-Remittances-During-the-COVID-19-Pandemic-461321)
  - The Remitscope data is reliable but incomplete
  - [Defying the Odds: Remittances During the COVID-19 Pandemic](https://www.imf.org/en/Publications/WP/Issues/2021/07/16/Defying-the-Odds-Remittances-During-the-COVID-19-Pandemic-461321) provides additional data to the Remitscope data. 
  - I am currently requesting acces to their dataset so that we can merge their dataset (2018-2020) to ours (2019-2024)
@@ -120,106 +122,70 @@ The data collection shows significant variation across years:
   - **Receiving**: Highly concentrated with top 3 countries (Ecuador, Mexico, Panama) accounting for 454/728 records (62.4%)
 
 
-Please access the HTML files in: `C:\Users\clint\Desktop\RER\_output\exported_figures\`
+Please access the HTML files in: [`output\exported_figures\`](https://github.com/WilliamClintC/RER/tree/main/_output/exported_figures)
 
 # Visual Analysis
 
-## Geographic Distribution
 
-### Sending Countries Analysis
+## Sending Countries Analysis
 
 ![Top 15 Remittance Sending Countries](images/sending_countries_static.png){#fig-sending-static width=100%}
 
+![Additional Sending Countries Analysis](images/3.png){#fig-sending-additional width=100%}
+
 The analysis reveals that developed nations dominate remittance sending, with Canada leading at 18 records, followed by Italy, USA, Spain, France, and Germany each contributing 14-15 records.
 
-::: {.callout-tip}
-**Interactive Version Available**
-
-For the full interactive choropleth map with hover details and zoom capabilities, open: 
-`_output/exported_figures/01_sending_countries_choropleth.html`
-:::
+![Sending Countries Temporal Heatmap](images/sending_heatmap.png){#fig-sending-heatmap-detail width=100%}
 
 ### Receiving Countries Analysis
 
 ![All 20 Remittance Receiving Countries](images/receiving_countries_static.png){#fig-receiving-static width=100%}
 
+![Additional Receiving Countries Analysis](images/4.png){#fig-receiving-additional width=100%}
+
 The receiving countries show strong concentration in Latin America, with Ecuador (183 records) and Mexico (169 records) dominating the dataset.
 
-::: {.callout-tip}
-**Interactive Version Available**
+![Receiving Countries Temporal Heatmap Detail](images/receiving_heatmap.png){#fig-receiving-heatmap-detail width=100%}
 
-For the full interactive choropleth map, open: 
-`_output/exported_figures/02_receiving_countries_choropleth.html`
-:::
 
-## Temporal Analysis
+## Data concentration:
 
-### Data Availability Over Time
+  - Top 10 receiving countries: 633/728 records (87.0%)
+  - Top 10 sending countries: 133/728 records (18.3%)
 
-![Remittance Data by Year](images/temporal_distribution_static.png){#fig-temporal-static width=100%}
+## Main Flows 
 
-The temporal distribution shows 2022 as the peak year with 408 records, while 2023 data is completely missing from the dataset.
+![Main Remittance Flow Patterns](images/5.png){#fig-main-flows width=100%}
 
-::: {.callout-tip}
-**Interactive Version Available**
+**Interactive HTML Link**: [View Interactive Main Flow Map](https://github.com/WilliamClintC/RER/blob/main/_output/exported_figures/04_initial_flow_map_top50.html)
 
-For the interactive temporal chart, open: 
-`_output/exported_figures/03_temporal_bar_chart.html`
-:::
+## Complete Flows
 
-### Detailed Temporal Patterns
+![Complete Remittance Flow Coverage](images/7.png){#fig-complete-flows width=100%}
 
-#### Receiving Countries by Year
+**Interactive HTML Link**: [View Interactive Complete Flow Map](https://github.com/WilliamClintC/RER/blob/main/_output/exported_figures/07_final_flow_map_100percent_coverage.html)
 
-![Receiving Countries Temporal Heatmap](images/receiving_heatmap.png){#fig-receiving-heatmap width=100%}
+## Complete Flows with Small Flows Visibility
 
-#### Sending Countries by Year  
+![Enhanced Visibility for Small Flows](images/8.png){#fig-enhanced-visibility width=100%}
 
-![Top 30 Sending Countries Temporal Heatmap](images/sending_heatmap.png){#fig-sending-heatmap width=100%}
+**Interactive HTML Link**: [View Interactive Enhanced Visibility Map](https://github.com/WilliamClintC/RER/blob/main/_output/exported_figures/08_diagnostic_enhanced_visibility.html)
 
-## Flow Network Analysis
+## Main Flow vs Complete Flow Comparison
 
-### Network Overview
+![Comparison: Main vs Complete Flows](images/9.png){#fig-flow-comparison width=100%}
 
-![Global Remittance Network Overview](images/flow_network_overview.png){#fig-network-overview width=100%}
+**Interactive HTML Link**: [View Interactive Flow Comparison](https://github.com/WilliamClintC/RER/blob/main/_output/exported_figures/09_comparison_top50_vs_all_flows.html)
 
-The remittance network shows a many-to-few pattern: 206 sending countries directing flows to just 20 receiving countries.
-
-::: {.callout-important}
-**Complete Flow Analysis Available**
-
-The static images above provide an overview, but the full flow analysis includes:
-
-- **Initial Flow Map (Top 50)**: `04_initial_flow_map_top50.html`
-- **Complete Flow Map (All 728)**: `05_complete_flow_map_all728.html`  
-- **Enhanced Coordinate Coverage**: `06_updated_flow_map_expanded_coords.html`
-- **Final 100% Coverage Map**: `07_final_flow_map_100percent_coverage.html`
-- **Diagnostic Enhanced Visibility**: `08_diagnostic_enhanced_visibility.html`
-- **Comparative Analysis**: `09_comparison_top50_vs_all_flows.html`
-
-These interactive maps feature:
-- Curved flow lines between countries
-- Great circle path calculations
-- Zoom and pan capabilities
-- Hover details for each flow
-- Enhanced visibility for small flows
-:::
 
 ## Key Insights
 
-### Geographic Patterns
-- **Sending Concentration**: Developed nations (G7 countries) account for majority of sending records
-- **Receiving Concentration**: Latin America dominates with Ecuador, Mexico, and Panama representing 62.4% of all records
-- **Global Coverage**: 206 sending countries provide good global representation
-
-### Temporal Patterns  
-- **Peak Activity**: 2022 shows maximum data collection (408 records)
-- **Data Gaps**: Complete absence of 2023 data suggests collection challenges
-- **Growth Pattern**: Steady increase from 2019 (10) to 2022 (408)
-
 ### Network Structure
 - **Flow Direction**: Strong unidirectional pattern from developed to developing nations
-- **Corridor Concentration**: Major corridors focus on Latin American destinations
-- **Diaspora Patterns**: Reflects global migration and diaspora settlement patterns
 
 
+# Appendix
+
+## HTML Interactive Versions of Graphs
+
+Please access the HTML files in: [`output\exported_figures\`](https://github.com/WilliamClintC/RER/tree/main/_output/exported_figures)
