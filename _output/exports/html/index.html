@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remittance Flow Analysis - Exported Figures</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background-color: #f5f5f5; }
+        .container { max-width: 1200px; margin: 0 auto; background-color: white; padding: 30px; border-radius: 10px; }
+        h1 { color: #2c3e50; text-align: center; }
+        h2 { color: #34495e; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        .figure-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .figure-item { border: 1px solid #ddd; padding: 15px; border-radius: 8px; background-color: #fafafa; }
+        .figure-item h3 { margin-top: 0; color: #2c3e50; }
+        .button-group { display: flex; gap: 10px; margin-top: 10px; }
+        .btn { padding: 8px 16px; text-decoration: none; border-radius: 4px; color: white; text-align: center; }
+        .btn-html { background-color: #3498db; }
+        .btn-png { background-color: #27ae60; }
+        .stats { background-color: #ecf0f1; padding: 15px; border-radius: 8px; margin: 20px 0; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Global Remittance Flow Analysis - Exported Figures</h1>
+
+        <div class="stats">
+            <strong>Dataset: 728 flows, 206 sending countries, 20 receiving countries, $4.73T total value</strong>
+        </div>
+
+        <h2>Interactive Plotly Figures</h2>
+        <div class="figure-list">
+            <div class="figure-item">
+                <h3>01 Sending Countries Choropleth</h3>
+                <div class="button-group">
+                    <a href="01_sending_countries_choropleth.html" class="btn btn-html">Interactive HTML</a>
+                    <a href="../images/01_sending_countries_choropleth.png" class="btn btn-png">PNG Image</a>
+                </div>
+            </div>
+            <div class="figure-item">
+                <h3>02 Receiving Countries Choropleth</h3>
+                <div class="button-group">
+                    <a href="02_receiving_countries_choropleth.html" class="btn btn-html">Interactive HTML</a>
+                    <a href="../images/02_receiving_countries_choropleth.png" class="btn btn-png">PNG Image</a>
+                </div>
+            </div>
+            <div class="figure-item">
+                <h3>03 Temporal Bar Chart</h3>
+                <div class="button-group">
+                    <a href="03_temporal_bar_chart.html" class="btn btn-html">Interactive HTML</a>
+                    <a href="../images/03_temporal_bar_chart.png" class="btn btn-png">PNG Image</a>
+                </div>
+            </div>
+            <div class="figure-item">
+                <h3>04 Initial Flow Map Top50</h3>
+                <div class="button-group">
+                    <a href="04_initial_flow_map_top50.html" class="btn btn-html">Interactive HTML</a>
+                    <a href="../images/04_initial_flow_map_top50.png" class="btn btn-png">PNG Image</a>
+                </div>
+            </div>
+            <div class="figure-item">
+                <h3>05 Complete Flow Map All728</h3>
+                <div class="button-group">
+                    <a href="05_complete_flow_map_all728.html" class="btn btn-html">Interactive HTML</a>
+                    <a href="../images/05_complete_flow_map_all728.png" class="btn btn-png">PNG Image</a>
+                </div>
+            </div>
+            <div class="figure-item">
+                <h3>06 Updated Flow Map Expanded Coords</h3>
+                <div class="button-group">
+                    <a href="06_updated_flow_map_expanded_coords.html" class="btn btn-html">Interactive HTML</a>
+                    <a href="../images/06_updated_flow_map_expanded_coords.png" class="btn btn-png">PNG Image</a>
+                </div>
+            </div>
+            <div class="figure-item">
+                <h3>07 Final Flow Map 100Percent Coverage</h3>
+                <div class="button-group">
+                    <a href="07_final_flow_map_100percent_coverage.html" class="btn btn-html">Interactive HTML</a>
+                    <a href="../images/07_final_flow_map_100percent_coverage.png" class="btn btn-png">PNG Image</a>
+                </div>
+            </div>
+            <div class="figure-item">
+                <h3>08 Diagnostic Enhanced Visibility</h3>
+                <div class="button-group">
+                    <a href="08_diagnostic_enhanced_visibility.html" class="btn btn-html">Interactive HTML</a>
+                    <a href="../images/08_diagnostic_enhanced_visibility.png" class="btn btn-png">PNG Image</a>
+                </div>
+            </div>
+            <div class="figure-item">
+                <h3>09 Comparison Top50 Vs All Flows</h3>
+                <div class="button-group">
+                    <a href="09_comparison_top50_vs_all_flows.html" class="btn btn-html">Interactive HTML</a>
+                    <a href="../images/09_comparison_top50_vs_all_flows.png" class="btn btn-png">PNG Image</a>
+                </div>
+            </div>
+        </div>
+
+        <h2>Static Matplotlib Heatmaps</h2>
+        <div class="figure-list">
+            <div class="figure-item">
+                <h3>Receiving Countries Heatmap</h3>
+                <div class="button-group">
+                    <a href="../images/10_receiving_countries_heatmap.png" class="btn btn-png">PNG Image</a>
+                </div>
+            </div>
+            <div class="figure-item">
+                <h3>Sending Countries Heatmap</h3>
+                <div class="button-group">
+                    <a href="../images/11_sending_countries_heatmap.png" class="btn btn-png">PNG Image</a>
+                </div>
+            </div>
+        </div>
+
+        <p style="text-align: center; margin-top: 30px; color: #7f8c8d;">
+            Generated on September 10, 2025 at 05:23 AM
+        </p>
+    </div>
+</body>
+</html>
