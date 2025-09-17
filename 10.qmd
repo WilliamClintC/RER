@@ -43,6 +43,18 @@ bibliography: references.bib
 csl: apa.csl
 ---
 
+Thigns ive learened is that most cnetrla banks give tdata for current years
+sop for exmaple if we observe in 20204 it would give maybe 2019-2024
+
+if we observe 2018 it woud show 2014-2018
+
+that is my understanding
+\
+cchcekced other papers for more similar datasets used that didnot use populationabove
+
+Total remittances received should be constructed as the sum of personal transfers (personalcr_usd) and compensation of employees (compcr_usd). For countries which do not have data on personal transfers, you can substitute it with workers remittances (workcr_usd). In the corridor data, the remittances data are already constructed.
+
+monthly then convert to yearly
 
 # Data Update
 
@@ -50,8 +62,10 @@ I have contacted two authors from [Defying the Odds: Remittances During the COVI
 
  - The Remitscope data is reliable but incomplete
  - [Defying the Odds: Remittances During the COVID-19 Pandemic](https://www.imf.org/en/Publications/WP/Issues/2021/07/16/Defying-the-Odds-Remittances-During-the-COVID-19-Pandemic-461321) provides additional data to the Remitscope data. 
- - I am currently requesting access to their dataset so that we can merge their dataset (2018-2020) to ours (2019-2024)
+ - I am currently waiting for access to their dataset so that we can merge their dataset (2018-2020) to ours (2019-2024)
+ - It may be worth consideraing looking at each website ill work on that. 
 
+teh data set can be found on https://github.com/WilliamClintC/RER/blob/main/Code/12.csv
 
 # Data Analysis Results
 

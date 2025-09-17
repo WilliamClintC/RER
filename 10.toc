@@ -1,0 +1,24 @@
+\contentsline {section}{\numberline {1}Data Update}{1}{section.1}%
+\contentsline {section}{\numberline {2}Data Analysis Results}{1}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Overview}{1}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Data Completeness Summary}{1}{subsubsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.2}Interactive Visualizations}{2}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Sending Countries Analysis}{2}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Top 10 Sending Countries}{2}{subsubsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.4}Receiving Countries Analysis}{2}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}Top 10 Receiving Countries}{2}{subsubsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.5}Temporal Distribution}{2}{subsection.2.5}%
+\contentsline {subsubsection}{\numberline {2.5.1}Records by Year}{3}{subsubsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.6}Key Findings}{3}{subsection.2.6}%
+\contentsline {section}{\numberline {3}Visual Analysis}{4}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Sending Countries Analysis}{4}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Receiving Countries Analysis}{7}{subsubsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.2}Data concentration:}{9}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Main Flows}{10}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Complete Flows}{11}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Complete Flows with Small Flows Visibility}{11}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Main Flow vs Complete Flow Comparison}{12}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}Key Insights}{12}{subsection.3.7}%
+\contentsline {subsubsection}{\numberline {3.7.1}Network Structure}{12}{subsubsection.3.7.1}%
+\contentsline {section}{\numberline {4}Appendix}{12}{section.4}%
+\contentsline {subsection}{\numberline {4.1}HTML Interactive Versions of Graphs}{12}{subsection.4.1}%
