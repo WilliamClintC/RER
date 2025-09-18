@@ -8,7 +8,7 @@ author:
 date: today
 date-format: "MMMM D, YYYY"
 
-abstract: This document is a follow-up to the meeting on September 29th and addresses the items discussed during that meeting. This provides an update on who was contacted regarding the remittance datasets, offers updates on previously problematic pdf file links, and clarifies how the stablecoin/bitcoin cross-border flows dataset works. Most importantly, this presents the extracted remittance data from Remitscope. 
+abstract: This document is a follow-up to the meeting on September 29th and addresses the items discussed during that meeting. It provides an update on who was contacted regarding the remittance datasets, offers updates on previously problematic PDF file links, and clarifies how the stablecoin/bitcoin cross-border flows dataset works. Most importantly, it presents the extracted remittance data from Remitscope.
 
 format:
   pdf:
@@ -47,30 +47,25 @@ csl: apa.csl
 
 I have merged Kpodar's dataset with the Remitscope dataset. The following sections present visualizations that highlight the results of this combined analysis.
 
-Current efforts are focused on reviewing additional papers to identify more remittance data. It may also be worthwhile to focus on individual countries, such as Georgia or the Philippines, to obtain more complete datasets.
+- To the best of my knowledge, this is currently the most accurate and complete dataset available. 
+- The next possible step would be to directly access remittance datasets from individual central banks. It may also be worthwhile to focus on specific countries, such as Georgia or the Philippines, as they are significant outliers in terms of the volume of remittance data published. 
 
-Based from other papers More data on remitance can be potentiaonally found on Italy and Tonga
-Based of Dean Yang's work detailed ifnroamtiaon on remtiances cna be found on Philippines, suvrveyers, central banks, remtiance providers, etc. 
+- Other academic papers suggest that additional remittance data may be available for countries such as Italy and Tonga. For Italy, see the [Bank of Italy Remittance Dataset (Excel)](https://github.com/WilliamClintC/RER/blob/main/data/Remittance_4/Bank%20of%20Italy%20Dataset.xlsx) (not part of our main dataset).
 
-I also found soth asia remtiance dataset ehre https://dataverse.harvard.edu/file.xhtml?fileId=10224832&version=1.0
+- Based on Dean Yang's work, detailed information on remittances for the Philippines can be found from surveyors, central banks, and remittance providers.
 
-its made by this guy im not sure if we shoul merge it with ours im happy to hear your thoughts https://cpd.org.bd/distinguished-fellows/professor-mustafizur-rahman/
+- We also found a [South Asia Remittance Dataset (Harvard Dataverse)](https://dataverse.harvard.edu/file.xhtml?fileId=10224832&version=1.0). This dataset was compiled by [Professor Mustafizur Rahman](https://cpd.org.bd/distinguished-fellows/professor-mustafizur-rahman/). While I am not familiar with this institution, the data is reported to originate from the central bank. I would appreciate your thoughts on whether we should consider merging this dataset with ours. The associated dataset link in our repository is available here: [South Asia Dataset (Excel)](https://github.com/WilliamClintC/RER/blob/main/data/Remittance_4/South%20Asia%20Dataset.xlsx).
 
-It says the data came from centrla bank btu tat the sametime i amnot fmailiar with this intistitusion
-
-
-
+I have sent out emails to Dean Yang (general/Philippine remittance), Mustafizur Rahman (South Asian remittance), Giulia Bettin (Italy remittance), and Huidan Lin (Tonga).
 
 **Data Collection Insights:**
 
 Most central banks provide remittance data for the most recent years. For example, if data is collected in 2024, the available range is typically 2019–2024. If collected in 2018, the range would be 2014–2018. This pattern is consistent across most sources I have reviewed.
 
-I also focusing efforts on studying other papers for similar datasets that did not use population thresholds.
-
 **Remittance Data Construction:**
 
 
-Additionally, the Kpodar dataset provides a more detailed disaggregation of remittances by these metrics. I mention it here for reference, if it may be of interest for further analysis.
+Additionally, the Kpodar dataset provides a more detailed disaggregation of remittances by these metrics. I mention it here for reference, in case it may be of interest for further analysis.
 
 > Total remittances received should be calculated as the sum of personal transfers (`personalcr_usd`) and compensation of employees (`compcr_usd`). For countries lacking personal transfer data, workers' remittances (`workcr_usd`) can be used as a substitute. In the corridor data, remittances are already aggregated.
 
@@ -89,21 +84,18 @@ The complete merged dataset is available here: [Code/14.csv](https://github.com/
 # Data Analysis Results
 
 ## Overview
-This analysis examines remittance flows using data extracted from Remitscope, and shows how the remitscope dataset changes upon the addition of Kpodars data
+This analysis examines remittance flows using data extracted from Remitscope, and shows how the Remitscope dataset changes upon the addition of Kpodar's data.
 
 
 
 ### Data Completeness Summary
 
 **Data Completeness Summary**
+
 - **Total records**: 728 → 3980
 - **Date range**: 2019–2024 → 2018–2024
 - **Sending countries**: 206 → 257
 - **Receiving countries**: 20 (10.3% of world) → 214
-
-
-## Interactive Visualizations
-
 
 ## Sending Countries Analysis
 
@@ -161,8 +153,8 @@ The dataset distribution by year after including Kpodar's data is shown below:
 
 ## Key Findings
 
-- Kpodar's dataset is significantly more than Remitscope dataset. Though this is attributed mainly to 2 countries Georgia and Philippines, more details shown below. 
-- **Peak Collection**: 2022 shows the highest data collection with 408 records
+- Kpodar's dataset is significantly larger than the Remitscope dataset. Though this is attributed mainly to two countries, Georgia and the Philippines, more details are shown below.
+- **Peak Collection**: 2022 shows the highest data collection with 408 records.
 
 # Visual Analysis
 
@@ -171,20 +163,8 @@ The dataset distribution by year after including Kpodar's data is shown below:
 
 ![Remitscope Sending Countries Map](images/3.png){#fig-sending-additional width=100%}
 
-![Remitscsope and Kpodar Sending countries map](images/10.png)
+![Remitscope and Kpodar Sending countries map](images/10.png)
 
-
-top 30 sending countries Remitscsope and Kpodar ![](images/14.png)
-
-### Receiving Countries Analysis
-
-![Remitscope Recieving Countries Map](images/4.png){#fig-receiving-additional width=100%}
-
-The receiving countries exhibit a strong concentration in Latin America, with Ecuador (183 records) and Mexico (169 records) leading the original dataset.
-
-![Remitscope and Kpodar Receiving Countries Map](images/11.png)
-
-![top 30 recieving coutnries Remitscsope and Kpodar](images/13.png)
 
 **Top 30 Sending Countries:**
 
@@ -196,12 +176,11 @@ The cross-tabulation heatmap below shows that Georgia and the Philippines domina
 
 ![Remitscope Receiving Countries Map](images/4.png){#fig-receiving-additional width=100%}
 
-The receiving countries are heavily concentrated in Latin America in the original dataset, with Ecuador (183 records) and Mexico (169 records) as the primary recipients.
+The receiving countries exhibit a strong concentration in Latin America, with Ecuador (183 records) and Mexico (169 records) leading the original dataset.
 
 ![Remitscope and Kpodar Receiving Countries Map](images/11.png)
 
 Similar concentration patterns are observed in the cross-tabulation of the top 30 sending countries.
-
 
 **Top 30 Receiving Countries:**
 
