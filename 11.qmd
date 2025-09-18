@@ -103,20 +103,61 @@ The remittance data shows a global distribution of sending countries, with devel
 
 ### Top 10 Sending Countries
 
-| Sending Country (Remitscope)      | Records | → | Sending Country (Merged)      | Records |
-|:----------------------------------|--------:|---|:-----------------------------|--------:|
-| Canada                            |     18  | → | Georgia                      |    641  |
-| Italy                             |     15  | → | Philippines                  |    597  |
-| United States of America          |     15  | → | Pakistan                     |     81  |
-| Spain                             |     14  | → | Brazil                       |     75  |
-| France                            |     14  | → | Cabo Verde                   |     62  |
-| Germany                           |     14  | → | Jamaica                      |     54  |
-| United Kingdom                    |     12  | → | Suriname                     |     51  |
-| China                             |     11  | → | United States                |     47  |
-| Sweden                            |     10  | → | Dominican Republic           |     47  |
-| Switzerland                       |     10  | → | Haiti                        |     45  |
+::: {layout-ncol=3}
 
+::: {}
+**Remitscope Dataset**
 
+| Country | Records |
+|:--------|--------:|
+| Canada | 18 |
+| Italy | 15 |
+| United States | 15 |
+| Spain | 14 |
+| France | 14 |
+| Germany | 14 |
+| United Kingdom | 12 |
+| China | 11 |
+| Sweden | 10 |
+| Switzerland | 10 |
+
+:::
+
+::: {}
+**Merged Dataset**
+
+| Country | Records |
+|:--------|--------:|
+| Georgia | 641 |
+| Philippines | 597 |
+| Pakistan | 81 |
+| Brazil | 75 |
+| Cabo Verde | 62 |
+| Jamaica | 54 |
+| Suriname | 51 |
+| United States | 47 |
+| Dominican Republic | 47 |
+| Haiti | 45 |
+:::
+
+::: {}
+**Merged (Africa & Latin America)**
+
+| Country | Records |
+|:--------|--------:|
+| Georgia | 203 |
+| Philippines | 201 |
+| Brazil | 27 |
+| France | 26 |
+| Canada | 24 |
+| Italy | 24 |
+| Germany | 23 |
+| Spain | 23 |
+| Cabo Verde | 23 |
+| United Kingdom | 21 |
+:::
+
+:::
 
 ## Receiving Countries Analysis
 
@@ -124,18 +165,61 @@ The receiving countries show a strong concentration in Latin America:
 
 ### Top 10 Receiving Countries
 
-| Receiving Country (Remitscope) | Records | → | Receiving Country (Merged) | Records |
-|:------------------------------|--------:|---|:---------------------------|--------:|
-| Ecuador                       |    183  | → | Georgia                    |    639  |
-| Mexico                        |    169  | → | Philippines                |    594  |
-| Panama                        |    102  | → | Ecuador                    |    189  |
-| Senegal                       |     38  | → | Mexico                     |    178  |
-| Kenya                         |     34  | → | Panama                     |    114  |
-| Colombia                      |     32  | → | Brazil                     |     78  |
-| Uganda                        |     20  | → | Pakistan                   |     78  |
-| Chile                         |     19  | → | Jamaica                    |     65  |
-| Morocco                       |     19  | → | Cabo Verde                 |     60  |
-| Ethiopia                      |     17  | → | Suriname                   |     57  |
+::: {layout-ncol=3}
+
+::: {}
+**Remitscope Dataset**
+
+| Country | Records |
+|:--------|--------:|
+| Ecuador | 183 |
+| Mexico | 169 |
+| Panama | 102 |
+| Senegal | 38 |
+| Kenya | 34 |
+| Colombia | 32 |
+| Uganda | 20 |
+| Chile | 19 |
+| Morocco | 19 |
+| Ethiopia | 17 |
+:::
+
+::: {}
+**Merged Dataset**
+
+| Country | Records |
+|:--------|--------:|
+| Georgia | 639 |
+| Philippines | 594 |
+| Ecuador | 189 |
+| Mexico | 178 |
+| Panama | 114 |
+| Brazil | 78 |
+| Pakistan | 78 |
+| Jamaica | 65 |
+| Cabo Verde | 60 |
+| Suriname | 57 |
+:::
+
+::: {}
+**Merged (Africa & Latin America) **
+
+| Country | Records |
+|:--------|--------:|
+| Ecuador | 189 |
+| Mexico | 169 |
+| Panama | 102 |
+| Brazil | 78 |
+| Cabo Verde | 60 |
+| Suriname | 57 |
+| Senegal | 47 |
+| Paraguay | 42 |
+| Colombia | 41 |
+| Kenya | 40 |
+:::
+
+:::
+
 
 ## Temporal Distribution
 
@@ -151,9 +235,12 @@ The dataset distribution by year after including Kpodar's data is shown below:
 
 ![Data Distribution by Year (Merged Dataset)](images/12.png)
 
+![Data Distribution by Year (Merged Dataset - Africa & Latin America)](images/18.png)
+
 ## Key Findings
 
 - Kpodar's dataset is significantly larger than the Remitscope dataset. Though this is attributed mainly to two countries, Georgia and the Philippines, more details are shown below.
+- Once we limit the dataset to African and Latin American countries, the dataset is more reasonable. 
 - **Peak Collection**: 2022 shows the highest data collection with 408 records.
 
 # Visual Analysis
@@ -178,6 +265,8 @@ The cross-tabulation heatmap below shows that Georgia and the Philippines domina
 
 The receiving countries exhibit a strong concentration in Latin America, with Ecuador (183 records) and Mexico (169 records) leading the original dataset.
 
+![Remitscope Receiving Countries Map (Africa & Latin America)](images/19.png)
+
 ![Remitscope and Kpodar Receiving Countries Map](images/11.png)
 
 Similar concentration patterns are observed in the cross-tabulation of the top 30 sending countries.
@@ -186,16 +275,45 @@ Similar concentration patterns are observed in the cross-tabulation of the top 3
 
 ![Top 30 Receiving Countries: Remitscope and Kpodar](images/13.png)
 
+![Top 30 Receiving Countries: Remitscope and Kpodar (Africa and Latin America)](images/20.png)
+
 ## Data Concentration
 
-- **Top 10 receiving countries:**
-  - Remitscope: 633 out of 728 records (87.0%)
-  - Merged dataset: 2052 out of 3980 records (51.6%)
-- **Top 10 sending countries:**
-  - Remitscope: 133 out of 728 records (18.3%)
-  - Merged dataset: 1700 out of 3980 records (42.7%)
+We investigate whether there is an even distribution of countries by counting the top 10 countries with the most observations and comparing them to total observations.
 
+::: {layout-ncol=3}
 
+::: {}
+**Remitscope Dataset**
+
+| Type | Records |
+|:-----|--------:|
+| Receiving | 633/728 (87.0%) |
+| Sending | 133/728 (18.3%) |
+
+:::
+
+::: {}
+**Merged Dataset**
+
+| Type | Records |
+|:-----|--------:|
+| Receiving | 2052/3980 (51.6%) |
+| Sending | 1700/3980 (42.7%) |
+
+:::
+
+::: {}
+**Africa & Latin America**
+
+| Type | Records |
+|:-----|--------:|
+| Receiving | 825/1352 (61.0%) |
+| Sending | 595/1352 (44.0%) |
+
+:::
+
+:::
 
 ## Main Flows 
 
@@ -208,9 +326,11 @@ Similar concentration patterns are observed in the cross-tabulation of the top 3
 **With All Data Incorporated:**
 
 ![Top 50 Remitscope and Kpodar Flows Map](images/16_map1_top50.png)
-[View Interactive Map (HTML)](https://github.com/WilliamClintC/RER/blob/main/images/16_map1_top50.html)
+[View Interactive Map (HTML)](https://github.com/WilliamClintC/RER/blob/main/images/
+![Top 50 Remitscope and Kpodar Flows Map (Africa & Latin America)](images/19_map1_top50_africa_latin_america.png)
+[View Interactive Map (HTML)](https://github.com/WilliamClintC/RER/blob/main/images/19_map1_top50_africa_latin_america.html)
 
 ![Remitscope and Kpodar Flows Map](images/16_map3_complete.png)
 [View Interactive Map (HTML)](https://github.com/WilliamClintC/RER/blob/main/images/16_map3_complete.html)
-
+"C:\Users\clint\Desktop\RER\images\19_map3_complete_network.png"
 ---
