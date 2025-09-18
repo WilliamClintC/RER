@@ -199,6 +199,27 @@ The receiving countries show strong concentration in Latin America, with Ecuador
 - **Flow Direction**: Strong unidirectional pattern from developed to developing nations
 
 
+# Data with Kpodar
+
+see this image of the map of the sending countries data distribution see that its well balances "C:\Users\clint\Desktop\RER\images\10.png"
+
+the same can be said for "C:\Users\clint\Desktop\RER\images\11.png"
+
+see the data distrubtion by year "C:\Users\clint\Desktop\RER\images\12.png"
+
+see that Kpodar's dataset has way more data points. please see "C:\Users\clint\Desktop\RER\images\13.png"
+and "C:\Users\clint\Desktop\RER\images\14.png"
+
+this would be a cross tbaulation heat map. See theat georgia and Philippine dominate the observations.This is likely due tot he amoutn of infomation the centrla bank provides that these coutnires centrla banks foprovide a lot of infomation.  
+
+
+The flows map looks like this without Kpodar's data
+"C:\Users\clint\Desktop\RER\images\17_map1_top50.png"
+it looks like this with incporating all data we have "C:\Users\clint\Desktop\RER\images\16_map1_top50.png"
+
+"C:\Users\clint\Desktop\RER\images\16_map3_complete.png"
+
+the interactive htmls for this can be found heere in this link 
 # Appendix
 
 ## HTML Interactive Versions of Graphs
