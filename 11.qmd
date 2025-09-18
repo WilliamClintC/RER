@@ -326,11 +326,16 @@ We investigate whether there is an even distribution of countries by counting th
 **With All Data Incorporated:**
 
 ![Top 50 Remitscope and Kpodar Flows Map](images/16_map1_top50.png)
-[View Interactive Map (HTML)](https://github.com/WilliamClintC/RER/blob/main/images/
+[View Interactive Map (HTML)](https://github.com/WilliamClintC/RER/blob/main/images/16_map1_top50.html)
+
 ![Top 50 Remitscope and Kpodar Flows Map (Africa & Latin America)](images/19_map1_top50_africa_latin_america.png)
 [View Interactive Map (HTML)](https://github.com/WilliamClintC/RER/blob/main/images/19_map1_top50_africa_latin_america.html)
 
 ![Remitscope and Kpodar Flows Map](images/16_map3_complete.png)
 [View Interactive Map (HTML)](https://github.com/WilliamClintC/RER/blob/main/images/16_map3_complete.html)
-"C:\Users\clint\Desktop\RER\images\19_map3_complete_network.png"
+
+![Remitscope and Kpodar Flows Map (Africa and Latin America)](images/19_map3_complete_network.png)
+[View Interactive Map (HTML)](https://github.com/WilliamClintC/RER/blob/main/images/19_map3_complete_network.html)
+
+
 ---
