@@ -203,23 +203,42 @@ The receiving countries show strong concentration in Latin America, with Ecuador
 
 see this image of the map of the sending countries data distribution see that its well balances "C:\Users\clint\Desktop\RER\images\10.png"
 
-the same can be said for "C:\Users\clint\Desktop\RER\images\11.png"
+See the following images for a visual summary of the data distribution and flows:
 
-see the data distrubtion by year "C:\Users\clint\Desktop\RER\images\12.png"
+**Map of Sending Countries Data Distribution**  
+![](images/10.png)
 
-see that Kpodar's dataset has way more data points. please see "C:\Users\clint\Desktop\RER\images\13.png"
-and "C:\Users\clint\Desktop\RER\images\14.png"
+**Map of Receiving Countries Data Distribution**  
+![](images/11.png)
 
-this would be a cross tbaulation heat map. See theat georgia and Philippine dominate the observations.This is likely due tot he amoutn of infomation the centrla bank provides that these coutnires centrla banks foprovide a lot of infomation.  
+**Data Distribution by Year**  
+![](images/12.png)
+
+**Kpodar's Dataset: More Data Points**  
+![](images/13.png)
+![](images/14.png)
+
+The cross-tabulation heatmap below shows that Georgia and the Philippines dominate the observations. This is likely due to the extensive information provided by their central banks.
+
+---
+
+### Remittance Flow Maps
+
+**Without Kpodar's Data:**
+![](images/17_map1_top50.png)
+[View Interactive Map (HTML)](https://github.com/WilliamClintC/RER/blob/main/images/17_map1_top50.html)
+
+**With All Data Incorporated:**
+![](images/16_map1_top50.png)
+[View Interactive Map (HTML)](https://github.com/WilliamClintC/RER/blob/main/images/16_map1_top50.html)
+
+**Complete Flows Map:**
+![](images/16_map3_complete.png)
+[View Interactive Map (HTML)](https://github.com/WilliamClintC/RER/blob/main/images/16_map3_complete.html)
+
+All interactive HTML versions can be found in the [images folder on GitHub](https://github.com/WilliamClintC/RER/tree/main/images).
 
 
-The flows map looks like this without Kpodar's data
-"C:\Users\clint\Desktop\RER\images\17_map1_top50.png"
-it looks like this with incporating all data we have "C:\Users\clint\Desktop\RER\images\16_map1_top50.png"
-
-"C:\Users\clint\Desktop\RER\images\16_map3_complete.png"
-
-the interactive htmls for this can be found heere in this link 
 # Appendix
 
 ## HTML Interactive Versions of Graphs
