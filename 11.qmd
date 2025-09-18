@@ -8,7 +8,7 @@ author:
 date: today
 date-format: "MMMM D, YYYY"
 
-abstract: This document is a follow-up to the meeting on September 29th and addresses the items discussed during that meeting. It provides an update on who was contacted regarding the remittance datasets, offers updates on previously problematic PDF file links, and clarifies how the stablecoin/bitcoin cross-border flows dataset works. Most importantly, it presents the extracted remittance data from Remitscope.
+abstract: This document is a follow-up to the meeting on September 5th and addresses the items discussed during that meeting. It provides an update on current progress of the dataset completion and potential next steps, while providing an analysis of the current dataset at hand. 
 
 format:
   pdf:
