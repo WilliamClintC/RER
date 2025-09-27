@@ -1,0 +1,78 @@
+---
+title: "William's Update"
+subtitle: "Remittances"
+author: 
+  - name: "William Clinton Co"
+    affiliation: "The University of British Columbia"
+    email: "clinton.will.c@gmail.com"
+date: today
+date-format: "MMMM D, YYYY"
+
+abstract: This document is a follow-up to the meeting on September 5th and addresses the items discussed during that meeting. It provides an update on current progress of the dataset completion and potential next steps, while providing an analysis of the current dataset at hand. 
+
+format:
+  pdf:
+    documentclass: article
+    geometry: 
+      - margin=1in
+    fontsize: 11pt
+    linestretch: 1
+    number-sections: true
+    toc: true
+    toc-depth: 10
+    lof: false
+    lot: false
+    colorlinks: true
+    linkcolor: blue
+    urlcolor: blue
+    citecolor: blue
+    cite-method: biblatex
+    fig-pos: "H"
+    include-in-header:
+      - text: |
+          \usepackage{hyperref}
+          \usepackage{float}
+          \hypersetup{
+            colorlinks=true,
+            linkcolor=blue,
+            urlcolor=blue,
+            breaklinks=true,
+            pdfborder={0 0 0}
+          }
+bibliography: references.bib
+csl: apa.csl
+---
+
+# Introduction 
+I got a reply from Mustafizur Rahman who did the south asian remitance dataset. 
+
+potwtial avenues
+Bank of italy has a rich dataset from 2005-present quarterly
+
+Italy has a dataset of OUTGOING remitances by province so you can test welath of provinces and you can test your regressions at a provincial level as well
+privincila level is from 2011 to 2024
+
+
+Im going to combine some datasets 
+
+bagnladaesh centrla bankd ataset plus bank of italy dataset 
+plus the philippine dataset
+plus south asia dataset
+
+inflatino adjusted GDP regression
+annual base period 2015
+
+world bank gdp
+
+it took em sometime to map the gdp it was very unstrucuture dbut i done it
+
+
+i got something like this the data may not be as accurate as we think this is US outflows analysis "C:\Users\clint\Desktop\RER\images\21.png"
+
+we see that kanya is suspicousley high so i remove i t
+
+Once I remove kenya from the outflows map we see something like this "C:\Users\clint\Desktop\RER\images\22.png"
+html can be found here if you want to see tha map ind etail
+
+
+---
