@@ -1,0 +1,52 @@
+LINEAR REGRESSION ANALYSIS RESULTS
+Date: 20361 
+Time: 1759263686 
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+
+DATASET INFORMATION:
+File: C:/Users/clint/Desktop/RER/Code/22.csv 
+Total observations: 3980 
+Observations used in analysis: 3830 
+Missing values removed: 150 
+
+REGRESSION EQUATION:
+Value = 499.399949 + 0.000160 * Sending_Country_GDP + -0.000043 * Receiving_Country_GDP
+
+MODEL SUMMARY:
+
+Call:
+lm(formula = Value_cleaned ~ Sending_Country_GDP + Receiving_Country_GDP, 
+    data = regression_data)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+ -4119   -553   -501   -484 403469 
+
+Coefficients:
+                        Estimate Std. Error t value Pr(>|t|)   
+(Intercept)            4.994e+02  1.833e+02   2.724  0.00648 **
+Sending_Country_GDP    1.599e-04  5.870e-05   2.724  0.00647 **
+Receiving_Country_GDP -4.333e-05  7.318e-05  -0.592  0.55385   
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 10560 on 3827 degrees of freedom
+Multiple R-squared:  0.002053,	Adjusted R-squared:  0.001531 
+F-statistic: 3.936 on 2 and 3827 DF,  p-value: 0.01961
+
+
+COEFFICIENTS TABLE:
+                                       term      estimate    std.error
+(Intercept)                     (Intercept)  4.993999e+02 1.833464e+02
+Sending_Country_GDP     Sending_Country_GDP  1.599273e-04 5.870027e-05
+Receiving_Country_GDP Receiving_Country_GDP -4.332692e-05 7.318105e-05
+                       statistic     p.value
+(Intercept)            2.7238060 0.006482740
+Sending_Country_GDP    2.7244736 0.006469674
+Receiving_Country_GDP -0.5920511 0.553851313
+
+CORRELATION MATRIX:
+                      Value_cleaned Sending_Country_GDP Receiving_Country_GDP
+Value_cleaned                1.0000              0.0443               -0.0108
+Sending_Country_GDP          0.0443              1.0000               -0.0285
+Receiving_Country_GDP       -0.0108             -0.0285                1.0000

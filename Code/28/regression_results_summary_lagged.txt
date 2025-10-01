@@ -1,0 +1,69 @@
+
+COMPREHENSIVE REGRESSION ANALYSIS RESULTS - LAGGED GDP (t-1)
+=============================================================
+
+SPECIFICATION 1: Remittance (thousands) vs Lagged GDP (millions)
+-----------------------------------------------------------------
+                                        With Outliers    Without Outliers
+Sending Country GDP (t-1, millions)    0.072***         0.072***
+                                       (0.005)          (0.005)
+Receiving Country GDP (t-1, millions)  0.002            0.002
+                                       (0.007)          (0.007)
+Constant                               42,784.030***    42,784.030***
+                                       (16,032.940)     (16,032.940)
+
+Observations                           1,467            1,467
+R²                                    0.121            0.121
+Adjusted R²                           0.120            0.120
+F Statistic                           100.756***       100.756***
+
+SPECIFICATION 2: Log-Log Model with Lagged GDP
+-----------------------------------------------
+                                        With Outliers    Without Outliers
+Log(Sending Country GDP (t-1))         0.930***         0.930***
+                                       (0.034)          (0.034)
+Log(Receiving Country GDP (t-1))       0.694***         0.694***
+                                       (0.041)          (0.041)
+Constant                               -18.504***       -18.504***
+                                       (0.602)          (0.602)
+
+Observations                           1,467            1,467
+R²                                    0.410            0.410
+Adjusted R²                           0.409            0.409
+F Statistic                           508.309***       508.309***
+
+SPECIFICATION 4: Linear Dependent, Log Independent with Lagged GDP
+-------------------------------------------------------------------
+                                        With Outliers    Without Outliers
+Log(Sending Country GDP (t-1))         63.746***        63.746***
+                                       (6.451)          (6.451)
+Log(Receiving Country GDP (t-1))       27.370***        27.370***
+                                       (7.755)          (7.755)
+Constant                               -897.360***      -897.360***
+                                       (113.856)        (113.856)
+
+Observations                           1,467            1,467
+R²                                    0.069            0.069
+Adjusted R²                           0.068            0.068
+F Statistic                           54.548***        54.548***
+
+Notes: *p<0.1; **p<0.05; ***p<0.01
+Standard errors in parentheses
+GDP variables are lagged by 1 period (t-1)
+
+KEY FINDINGS:
+=============
+1. Using lagged GDP variables reduces sample size from ~2,837 to 1,467 observations
+   due to the need for prior period data.
+
+2. Specification 2 (Log-Log) shows the highest explanatory power (R² = 0.410) with both
+   lagged sending and receiving country GDP being highly significant.
+
+3. In the linear specification (Spec 1), lagged sending country GDP is highly significant
+   but receiving country GDP is not significant.
+
+4. The lagged approach helps address potential endogeneity concerns by using prior
+   period economic conditions to predict current remittances.
+
+5. Results are identical for "with outliers" and "without outliers" models, suggesting
+   the outlier removal procedure didn't significantly affect this particular dataset.

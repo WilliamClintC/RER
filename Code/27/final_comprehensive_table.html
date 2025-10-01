@@ -1,0 +1,38 @@
+
+<table style="text-align:center">
+<caption><strong>Comprehensive Regression Analysis: All Three Specifications</strong></caption>
+<tr><td colspan="7" style="border-bottom: 1px solid black"></td></tr>
+<tr><td style="text-align:left"></td><td colspan="6"><em>Dependent variable:</em></td></tr>
+<tr><td></td><td colspan="6" style="border-bottom: 1px solid black"></td></tr>
+<tr><td style="text-align:left"></td><td colspan="2">Remittance (thousands USD)</td><td colspan="2">Log(Remittance millions USD)</td><td colspan="2">Remittance (millions USD)</td></tr>
+<tr><td style="text-align:left"></td><td>With Outliers</td><td>Without Outliers</td><td>With Outliers</td><td>Without Outliers</td><td>With Outliers</td><td>Without Outliers</td></tr>
+<tr><td style="text-align:left">Specification</td><td>1: Linear</td><td>1: Linear</td><td>2: Log-Log</td><td>2: Log-Log</td><td>4: Linear Dep, Log Indep</td><td>4: Linear Dep, Log Indep</td></tr>
+<tr><td style="text-align:left"></td><td>(1)</td><td>(2)</td><td>(3)</td><td>(4)</td><td>(5)</td><td>(6)</td></tr>
+<tr><td colspan="7" style="border-bottom: 1px solid black"></td></tr>
+
+<tr><td style="text-align:left">Sending Country GDP (millions USD)</td><td>0.164<sup>**</sup></td><td>0.138<sup>***</sup></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left"></td><td>(0.071)</td><td>(0.040)</td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Receiving Country GDP (millions USD)</td><td>-0.061</td><td>-0.034</td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left"></td><td>(0.112)</td><td>(0.063)</td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Log(Sending Country GDP)</td><td></td><td></td><td>0.959<sup>***</sup></td><td>0.955<sup>***</sup></td><td>420.896<sup>***</sup></td><td>269.502<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td>(0.026)</td><td>(0.026)</td><td>(94.764)</td><td>(53.469)</td></tr>
+<tr><td style="text-align:left">Log(Receiving Country GDP)</td><td></td><td></td><td>0.561<sup>***</sup></td><td>0.561<sup>***</sup></td><td>67.770</td><td>54.125</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td>(0.033)</td><td>(0.033)</td><td>(120.338)</td><td>(67.852)</td></tr>
+<tr><td style="text-align:left">Constant</td><td>691,495.500<sup>***</sup></td><td>434,211.800<sup>***</sup></td><td>-17.492<sup>***</sup></td><td>-17.451<sup>***</sup></td><td>-4,583.081<sup>***</sup></td><td>-3,032.175<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(247,444.700)</td><td>(139,545.700)</td><td>(0.474)</td><td>(0.473)</td><td>(1,740.371)</td><td>(981.506)</td></tr>
+
+<tr><td colspan="7" style="border-bottom: 1px solid black"></td></tr>
+<tr><td style="text-align:left">Observations</td><td>2,837</td><td>2,835</td><td>2,837</td><td>2,835</td><td>2,837</td><td>2,835</td></tr>
+<tr><td style="text-align:left">R<sup>2</sup></td><td>0.002</td><td>0.004</td><td>0.370</td><td>0.370</td><td>0.007</td><td>0.009</td></tr>
+<tr><td style="text-align:left">Adjusted R<sup>2</sup></td><td>0.001</td><td>0.004</td><td>0.370</td><td>0.369</td><td>0.006</td><td>0.008</td></tr>
+<tr><td style="text-align:left">Residual Std. Error</td><td>12,261,774.000 (df = 2834)</td><td>6,913,052.000 (df = 2832)</td><td>3.334 (df = 2834)</td><td>3.324 (df = 2832)</td><td>12,231.000 (df = 2834)</td><td>6,896.314 (df = 2832)</td></tr>
+<tr><td style="text-align:left">F Statistic</td><td>2.855<sup>*</sup> (df = 2; 2834)</td><td>6.088<sup>***</sup> (df = 2; 2832)</td><td>832.296<sup>***</sup> (df = 2; 2834)</td><td>830.160<sup>***</sup> (df = 2; 2832)</td><td>10.009<sup>***</sup> (df = 2; 2834)</td><td>13.000<sup>***</sup> (df = 2; 2832)</td></tr>
+
+<tr><td colspan="7" style="border-bottom: 1px solid black"></td></tr>
+<tr><td style="text-align:left"><em>Note:</em></td><td colspan="6" style="text-align:right">
+Specification 1: Remittances (thousands) vs GDP (millions)<br>
+Specification 2: Log-Log Model<br>
+Specification 4: Linear Dependent, Log Independent<br>
+<sup>*</sup>p<0.1; <sup>**</sup>p<0.05; <sup>***</sup>p<0.01
+</td></tr>
+</table>

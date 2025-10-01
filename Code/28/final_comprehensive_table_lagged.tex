@@ -1,0 +1,38 @@
+
+% Comprehensive Regression Table with Lagged GDP
+\begin{table}[!htbp] \centering
+  \caption{Comprehensive Regression Analysis: Remittances and Lagged GDP (t-1)}
+  \label{}
+\begin{tabular}{@{\extracolsep{5pt}}lcccccc}
+\\[-1.8ex]\hline
+\hline \\[-1.8ex]
+ & \multicolumn{6}{c}{\textit{Dependent variable:}} \\
+\cline{2-7}
+\\[-1.8ex] & \multicolumn{2}{c}{Remittance (thousands USD)} & \multicolumn{2}{c}{Log(Remittance millions USD)} & \multicolumn{2}{c}{Remittance (millions USD)} \\
+ & With Outliers & Without Outliers & With Outliers & Without Outliers & With Outliers & Without Outliers \\
+ & Spec 1 & Spec 1 & Spec 2 & Spec 2 & Spec 4 & Spec 4 \\
+\\[-1.8ex] & (1) & (2) & (3) & (4) & (5) & (6)\\
+\hline \\[-1.8ex]
+ Sending Country GDP (t-1, millions USD) & 0.072$^{***}$ & 0.072$^{***}$ & & & & \\
+  & (0.005) & (0.005) & & & & \\
+ Receiving Country GDP (t-1, millions USD) & 0.002 & 0.002 & & & & \\
+  & (0.007) & (0.007) & & & & \\
+ Log(Sending Country GDP (t-1)) & & & 0.930$^{***}$ & 0.930$^{***}$ & 63.746$^{***}$ & 63.746$^{***}$ \\
+  & & & (0.034) & (0.034) & (6.451) & (6.451) \\
+ Log(Receiving Country GDP (t-1)) & & & 0.694$^{***}$ & 0.694$^{***}$ & 27.370$^{***}$ & 27.370$^{***}$ \\
+  & & & (0.041) & (0.041) & (7.755) & (7.755) \\
+ Constant & 42,784.030$^{***}$ & 42,784.030$^{***}$ & $-$18.504$^{***}$ & $-$18.504$^{***}$ & $-$897.360$^{***}$ & $-$897.360$^{***}$ \\
+  & (16,032.940) & (16,032.940) & (0.602) & (0.602) & (113.856) & (113.856) \\
+ \hline \\[-1.8ex]
+Observations & 1,467 & 1,467 & 1,467 & 1,467 & 1,467 & 1,467 \\
+R$^{2}$ & 0.121 & 0.121 & 0.410 & 0.410 & 0.069 & 0.069 \\
+Adjusted R$^{2}$ & 0.120 & 0.120 & 0.409 & 0.409 & 0.068 & 0.068 \\
+Residual Std. Error & 573,098.400 (df = 1464) & 573,098.400 (df = 1464) & 3.118 (df = 1464) & 3.118 (df = 1464) & 589.692 (df = 1464) & 589.692 (df = 1464) \\
+F Statistic & 100.756$^{***}$ (df = 2; 1464) & 100.756$^{***}$ (df = 2; 1464) & 508.309$^{***}$ (df = 2; 1464) & 508.309$^{***}$ (df = 2; 1464) & 54.548$^{***}$ (df = 2; 1464) & 54.548$^{***}$ (df = 2; 1464) \\
+\hline
+\hline \\[-1.8ex]
+\textit{Note:}  & \multicolumn{6}{r}{Specification 1: Linear (thousands), Specification 2: Log-Log, Specification 4: Linear-Log} \\
+ & \multicolumn{6}{r}{GDP variables are lagged by 1 period (t-1)} \\
+ & \multicolumn{6}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\
+\end{tabular}
+\end{table}

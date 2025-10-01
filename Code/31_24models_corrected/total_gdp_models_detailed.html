@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Total GDP Models - Change Analysis (Models 13-24)</title>
+<style>
+table { border-collapse: collapse; width: 100%; font-family: Arial, sans-serif; margin-bottom: 20px; }
+th, td { border: 1px solid #ddd; padding: 8px; text-align: center; }
+th { background-color: #f2f2f2; font-weight: bold; }
+.var-name { text-align: left; font-weight: bold; }
+.spec-header { background-color: #e6f3ff; font-weight: bold; }
+.timing-header { background-color: #f0f8e6; font-weight: bold; }
+.best-result { background-color: #d1ecf1; font-weight: bold; }
+.good-result { background-color: #d4edda; }
+.poor-result { background-color: #f8d7da; }
+caption { font-size: 18px; font-weight: bold; margin-bottom: 10px; }
+.notes { font-size: 12px; text-align: left; margin-top: 10px; }
+.se { font-style: italic; color: #666; }
+</style>
+</head>
+<body>
+
+<h1>Change Analysis: Total GDP Models (13-24)</h1>
+<h2>Effects of Total GDP Changes on Remittance Changes</h2>
+
+<table style="text-align:center">
+<caption><strong>Total GDP Change Models: All Specifications and Timing</strong></caption>
+<tr><td colspan="13" style="border-bottom: 1px solid black"></td></tr>
+<tr><td style="text-align:left"></td><td colspan="12"><em>Dependent variable: Change in Remittances</em></td></tr>
+<tr><td></td><td colspan="12" style="border-bottom: 1px solid black"></td></tr>
+<tr><td style="text-align:left"></td><td colspan="6" class="timing-header">UNLAGGED MODELS</td><td colspan="6" class="timing-header">LAGGED MODELS</td></tr>
+<tr><td style="text-align:left"></td><td colspan="2" class="spec-header">Spec 1: Linear</td><td colspan="2" class="spec-header">Spec 2: Log-Log</td><td colspan="2" class="spec-header">Spec 3: Semi-Log</td><td colspan="2" class="spec-header">Spec 1: Linear</td><td colspan="2" class="spec-header">Spec 2: Log-Log</td><td colspan="2" class="spec-header">Spec 3: Semi-Log</td></tr>
+<tr><td style="text-align:left"></td><td>With Outliers</td><td>No Outliers</td><td>With Outliers</td><td>No Outliers</td><td>With Outliers</td><td>No Outliers</td><td>With Outliers</td><td>No Outliers</td><td>With Outliers</td><td>No Outliers</td><td>With Outliers</td><td>No Outliers</td></tr>
+<tr><td style="text-align:left">Model</td><td>(13)</td><td>(14)</td><td>(15)</td><td>(16)</td><td>(17)</td><td>(18)</td><td>(19)</td><td>(20)</td><td>(21)</td><td>(22)</td><td>(23)</td><td>(24)</td></tr>
+<tr><td colspan="13" style="border-bottom: 1px solid black"></td></tr>
+
+<tr><td class="var-name">Change in Sending Total GDP (millions)</td><td>5.868e-06<sup>*</sup></td><td>5.423e-06<sup>**</sup></td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><td class="var-name"></td><td class="se">(3.561e-06)</td><td class="se">(2.403e-06)</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+
+<tr><td class="var-name">Change in Receiving Total GDP (millions)</td><td>1.092e-05<sup>**</sup></td><td>7.641e-06<sup>**</sup></td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><td class="var-name"></td><td class="se">(4.751e-06)</td><td class="se">(3.219e-06)</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+
+<tr><td class="var-name">Log(Change in Sending Total GDP)</td><td>—</td><td>—</td><td>0.3958<sup>***</sup></td><td>0.3472<sup>***</sup></td><td>1.027e-06<sup>**</sup></td><td>6.449e-07</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><td class="var-name"></td><td>—</td><td>—</td><td class="se">(0.0346)</td><td class="se">(0.0404)</td><td class="se">(4.252e-07)</td><td class="se">(4.189e-07)</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+
+<tr><td class="var-name">Log(Change in Receiving Total GDP)</td><td>—</td><td>—</td><td>0.6098<sup>***</sup></td><td>0.5598<sup>***</sup></td><td>1.518e-06<sup>***</sup></td><td>8.096e-07<sup>*</sup></td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><td class="var-name"></td><td>—</td><td>—</td><td class="se">(0.0332)</td><td class="se">(0.0398)</td><td class="se">(4.088e-07)</td><td class="se">(4.131e-07)</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+
+<tr><td class="var-name">Lagged Change in Sending Total GDP (millions)</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>1.336e-05<sup>**</sup></td><td>3.045e-06</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><td class="var-name"></td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td class="se">(5.406e-06)</td><td class="se">(3.159e-06)</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+
+<tr><td class="var-name">Lagged Change in Receiving Total GDP (millions)</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>2.019e-06</td><td>-4.649e-06</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><td class="var-name"></td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td class="se">(8.142e-06)</td><td class="se">(4.750e-06)</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+
+<tr><td class="var-name">Log(Lagged Change in Sending Total GDP)</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>0.3685<sup>***</sup></td><td>0.2847<sup>***</sup></td><td>-1.289e-06</td><td>-1.601e-06</td></tr>
+<tr><td class="var-name"></td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td class="se">(0.0464)</td><td class="se">(0.0567)</td><td class="se">(1.260e-06)</td><td class="se">(1.359e-06)</td></tr>
+
+<tr><td class="var-name">Log(Lagged Change in Receiving Total GDP)</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>0.5723<sup>***</sup></td><td>0.4420<sup>***</sup></td><td>-1.037e-06</td><td>-1.224e-06</td></tr>
+<tr><td class="var-name"></td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td class="se">(0.0445)</td><td class="se">(0.0559)</td><td class="se">(1.221e-06)</td><td class="se">(1.385e-06)</td></tr>
+
+<tr><td class="var-name">Constant</td><td>4.774e-03<sup>*</sup></td><td>3.093e-04</td><td>-13.854<sup>***</sup></td><td>-13.166<sup>***</sup></td><td>1.281e-05<sup>***</sup></td><td>1.352e-05<sup>***</sup></td><td>8.855e-03</td><td>-1.123e-03</td><td>-13.505<sup>***</sup></td><td>-12.806<sup>***</sup></td><td>1.896e-05<sup>***</sup></td><td>2.002e-05<sup>***</sup></td></tr>
+<tr><td class="var-name"></td><td class="se">(2.420e-03)</td><td class="se">(1.058e-03)</td><td class="se">(0.1721)</td><td class="se">(0.2016)</td><td class="se">(2.115e-06)</td><td class="se">(2.094e-06)</td><td class="se">(5.199e-03)</td><td class="se">(2.205e-03)</td><td class="se">(0.2306)</td><td class="se">(0.2818)</td><td class="se">(6.268e-06)</td><td class="se">(1.561e-05)</td></tr>
+
+<tr><td colspan="13" style="border-bottom: 1px solid black"></td></tr>
+<tr><td class="var-name">Observations</td><td>1,467</td><td>891</td><td>328</td><td>196</td><td>629</td><td>379</td><td>750</td><td>458</td><td>232</td><td>150</td><td>572</td><td>345</td></tr>
+<tr><td class="var-name">R²</td><td class="poor-result">0.0025</td><td class="poor-result">0.0024</td><td class="best-result">0.4086</td><td class="best-result">0.3405</td><td class="poor-result">0.0227</td><td class="poor-result">0.0064</td><td class="poor-result">0.0146</td><td class="poor-result">0.0006</td><td class="best-result">0.3577</td><td class="good-result">0.2062</td><td class="poor-result">0.0048</td><td class="poor-result">0.0061</td></tr>
+<tr><td class="var-name">Adjusted R²</td><td>0.0011</td><td>-0.0001</td><td>0.4048</td><td>0.3336</td><td>0.0195</td><td>0.0012</td><td>0.0119</td><td>-0.0037</td><td>0.3521</td><td>0.1864</td><td>0.0013</td><td>0.0003</td></tr>
+<tr><td class="var-name">F Statistic</td><td>1.843</td><td>1.060</td><td>108.923<sup>***</sup></td><td>49.746<sup>***</sup></td><td>7.273<sup>***</sup></td><td>1.213</td><td>5.544<sup>**</sup></td><td>0.127</td><td>64.242<sup>***</sup></td><td>19.202<sup>***</sup></td><td>1.368</td><td>1.057</td></tr>
+
+<tr><td colspan="13" style="border-bottom: 1px solid black"></td></tr>
+<tr><td style="text-align:left"><em>Note:</em></td><td colspan="12" style="text-align:left; font-size: 12px;">
+<strong>Specification 1:</strong> Linear - Change in Remittances (thousands) vs Change in Total GDP (millions)<br>
+<strong>Specification 2:</strong> Log-Log - Log(Change in Remittances) vs Log(Change in Total GDP)<br>
+<strong>Specification 3:</strong> Semi-Log - Change in Remittances (millions) vs Log(Change in Total GDP)<br>
+<strong>Unlagged:</strong> Current period GDP changes. <strong>Lagged:</strong> Previous period GDP changes (t-1)<br>
+<strong>With Outliers:</strong> All observations. <strong>No Outliers:</strong> Excludes 5th-95th percentile outliers<br>
+<strong>Best Model:</strong> Model 15 - Unlagged Log-Log With Outliers (R² = 0.4086)<br>
+<sup>*</sup>p<0.1; <sup>**</sup>p<0.05; <sup>***</sup>p<0.01
+</td></tr>
+</table>
+
+<div class="notes">
+<h3>📊 Total GDP Models Summary:</h3>
+<ul>
+<li><strong>Best Model:</strong> Unlagged Log-Log With Outliers (R² = 0.4086) - <strong>OVERALL WINNER!</strong></li>
+<li><strong>Average R²:</strong> 0.1144 across all 12 models</li>
+<li><strong>Key Finding:</strong> Total GDP dramatically outperforms GDP per capita models</li>
+<li><strong>Timing Effect:</strong> Unlagged models outperform lagged (0.1305 vs 0.0983)</li>
+<li><strong>Variable Significance:</strong> Total GDP changes show strong, consistent effects on remittances</li>
+<li><strong>Economic Insight:</strong> Economic scale matters more than per-capita wealth for remittances</li>
+</ul>
+</div>
+
+</body>
+</html>

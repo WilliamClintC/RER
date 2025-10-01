@@ -1,0 +1,614 @@
+=== CHANGE IN REMITTANCES ANALYSIS ===
+Date: 20362 
+
+=== DATA SUMMARY ===
+Total observations in dataset: 2837 
+Complete cases for contemporaneous analysis: 1467 
+Complete cases without outliers: 1067 
+Complete cases for lagged analysis: 750 
+Complete cases for lagged analysis without outliers: 550 
+
+=== MODEL 1: Contemporaneous with Outliers ===
+
+Call:
+lm(formula = Y ~ X1 + X2, data = df_complete_clean)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-697437   -5709   -4890   -3825 1779953 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)  
+(Intercept) 5003.8289  2391.0166   2.093   0.0365 *
+X1             0.1205     0.9827   0.123   0.9024  
+X2             2.6243     2.7470   0.955   0.3396  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 89580 on 1464 degrees of freedom
+Multiple R-squared:  0.0006646,	Adjusted R-squared:  -0.0007006 
+F-statistic: 0.4868 on 2 and 1464 DF,  p-value: 0.6147
+
+
+=== MODEL 2: Contemporaneous without Outliers ===
+
+Call:
+lm(formula = Y ~ X1 + X2, data = df_no_outliers_clean)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-691167   -1045    -410     422  145497 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)  
+(Intercept) 423.9368   866.5253   0.489   0.6248  
+X1            2.6539     1.3837   1.918   0.0554 .
+X2           -0.7886     3.0939  -0.255   0.7989  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 27150 on 1064 degrees of freedom
+Multiple R-squared:  0.003952,	Adjusted R-squared:  0.00208 
+F-statistic: 2.111 on 2 and 1064 DF,  p-value: 0.1217
+
+
+=== MODEL 3: Lagged (1 period) with Outliers ===
+
+Call:
+lm(formula = Y ~ X1_lag + X2_lag, data = df_complete_lagged_clean)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-699255   -6584   -2680    -431 1777149 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)
+(Intercept) 5757.272   4179.628   1.377    0.169
+X1_lag         3.753      3.545   1.059    0.290
+X2_lag       -20.400     12.516  -1.630    0.104
+
+Residual standard error: 104500 on 747 degrees of freedom
+Multiple R-squared:  0.003978,	Adjusted R-squared:  0.001311 
+F-statistic: 1.492 on 2 and 747 DF,  p-value: 0.2257
+
+
+=== MODEL 4: Lagged (1 period) without Outliers ===
+
+Call:
+lm(formula = Y ~ X1_lag + X2_lag, data = df_no_outliers_lagged_clean)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-691353     797    1399    1912  156093 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)
+(Intercept) -1999.8669  2797.0047  -0.715    0.475
+X1_lag          2.3964     5.5185   0.434    0.664
+X2_lag          0.3755    12.0929   0.031    0.975
+
+Residual standard error: 36020 on 547 degrees of freedom
+Multiple R-squared:  0.0003448,	Adjusted R-squared:  -0.00331 
+F-statistic: 0.09434 on 2 and 547 DF,  p-value: 0.91
+
+
+=== MODEL 5: Log-Log Contemporaneous with Outliers ===
+
+Call:
+lm(formula = Y_log ~ X1_log + X2_log, data = df_complete_loglog_clean)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-5.2310 -0.3131 -0.0002  0.3078  6.4262 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)   
+(Intercept) -0.01776    0.02576  -0.689  0.49070   
+X1_log       0.41910    0.34282   1.223  0.22171   
+X2_log       1.13490    0.39390   2.881  0.00402 **
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.9507 on 1464 degrees of freedom
+Multiple R-squared:  0.01124,	Adjusted R-squared:  0.009886 
+F-statistic: 8.319 on 2 and 1464 DF,  p-value: 0.0002555
+
+
+=== MODEL 6: Log-Log Contemporaneous without Outliers ===
+
+Call:
+lm(formula = Y_log ~ X1_log + X2_log, data = df_no_outliers_loglog_clean)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-5.2601 -0.3441 -0.0293  0.2796  6.3717 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)
+(Intercept)  0.01276    0.02866   0.445    0.656
+X1_log       0.16547    0.71116   0.233    0.816
+X2_log       0.73867    0.58332   1.266    0.206
+
+Residual standard error: 0.9199 on 1117 degrees of freedom
+Multiple R-squared:  0.002857,	Adjusted R-squared:  0.001072 
+F-statistic:   1.6 on 2 and 1117 DF,  p-value: 0.2023
+
+
+=== MODEL 7: Log-Log Lagged with Outliers ===
+
+Call:
+lm(formula = Y_log ~ X1_log_lag + X2_log_lag, data = df_complete_loglog_lagged_clean)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-5.1965 -0.3399  0.0101  0.3443  5.4970 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)  
+(Intercept) -0.05868    0.03998  -1.468   0.1426  
+X1_log_lag  -0.63076    0.77587  -0.813   0.4165  
+X2_log_lag  -2.05131    0.87639  -2.341   0.0195 *
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.9219 on 747 degrees of freedom
+Multiple R-squared:  0.01092,	Adjusted R-squared:  0.008269 
+F-statistic: 4.123 on 2 and 747 DF,  p-value: 0.01657
+
+
+=== MODEL 8: Log-Log Lagged without Outliers ===
+
+Call:
+lm(formula = Y_log ~ X1_log_lag + X2_log_lag, data = df_no_outliers_loglog_lagged_clean)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-5.2269 -0.3533 -0.0221  0.2925  5.5153 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)   
+(Intercept)  -0.2065     0.0763  -2.706  0.00702 **
+X1_log_lag    0.9403     1.4655   0.642  0.52137   
+X2_log_lag    3.1176     1.6508   1.889  0.05947 . 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.8923 on 554 degrees of freedom
+Multiple R-squared:  0.006777,	Adjusted R-squared:  0.003192 
+F-statistic:  1.89 on 2 and 554 DF,  p-value: 0.152
+
+
+=== MODEL 9: Log-Linear Contemporaneous with Outliers ===
+
+Call:
+lm(formula = Y_log ~ X1 + X2, data = df_complete_loglinear_clean)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-5.2566 -0.3195  0.0077  0.3080  6.3875 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -2.292e-02  2.534e-02  -0.904    0.366    
+X1           1.033e-05  1.041e-05   0.992    0.321    
+X2           1.256e-04  2.911e-05   4.313 1.72e-05 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.9493 on 1464 degrees of freedom
+Multiple R-squared:  0.01416,	Adjusted R-squared:  0.01281 
+F-statistic: 10.51 on 2 and 1464 DF,  p-value: 2.926e-05
+
+
+=== MODEL 10: Log-Linear Contemporaneous without Outliers ===
+
+Call:
+lm(formula = Y_log ~ X1 + X2, data = df_no_outliers_loglinear_clean)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-5.2682 -0.3694 -0.0443  0.2977  6.3315 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)  
+(Intercept)  2.595e-02  2.967e-02   0.874   0.3821  
+X1          -1.509e-05  4.738e-05  -0.318   0.7502  
+X2           2.158e-04  1.059e-04   2.037   0.0419 *
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.9296 on 1064 degrees of freedom
+Multiple R-squared:  0.00438,	Adjusted R-squared:  0.002509 
+F-statistic: 2.341 on 2 and 1064 DF,  p-value: 0.09676
+
+
+=== MODEL 11: Linear-Log Contemporaneous with Outliers ===
+
+Call:
+lm(formula = Y ~ X1 + X2, data = df_clean_linearlog)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-696798   -7898   -5008   -1483 1780328 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)  
+(Intercept)     5363       2426   2.211   0.0272 *
+X1             -5724      32288  -0.177   0.8593  
+X2             52138      37098   1.405   0.1601  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 89540 on 1464 degrees of freedom
+Multiple R-squared:  0.001542,	Adjusted R-squared:  0.0001785 
+F-statistic: 1.131 on 2 and 1464 DF,  p-value: 0.323
+
+
+=== MODEL 12: Linear-Log Contemporaneous without Outliers ===
+
+Call:
+lm(formula = Y ~ X1 + X2, data = df_clean_linearlog_no_outliers)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-690911   -1419     -32    1700  157642 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)
+(Intercept)    131.6      878.2   0.150    0.881
+X1           24112.9    21794.2   1.106    0.269
+X2            6233.4    17876.3   0.349    0.727
+
+Residual standard error: 28190 on 1117 degrees of freedom
+Multiple R-squared:  0.002573,	Adjusted R-squared:  0.0007873 
+F-statistic: 1.441 on 2 and 1117 DF,  p-value: 0.2372
+
+
+=== MODEL 13: GDP Total Contemporaneous with Outliers ===
+
+Call:
+lm(formula = Y ~ X1 + X2, data = df_complete_gdp_clean)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-696274   -5310   -4549   -3390 1781274 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)  
+(Intercept) 4.542e+03  2.337e+03   1.944   0.0521 .
+X1          3.733e-02  2.651e-02   1.408   0.1594  
+X2          3.711e-02  3.049e-02   1.217   0.2237  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 89490 on 1464 degrees of freedom
+Multiple R-squared:  0.00253,	Adjusted R-squared:  0.001168 
+F-statistic: 1.857 on 2 and 1464 DF,  p-value: 0.1565
+
+
+=== MODEL 14: GDP Total Contemporaneous without Outliers ===
+
+Call:
+lm(formula = Y ~ X1 + X2, data = df_no_outliers_gdp_clean)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-685862    -541     -56     490  143978 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 2.771e+01  7.967e+02   0.035    0.972    
+X1          3.407e-01  7.796e-02   4.370 1.36e-05 ***
+X2          7.515e-03  4.641e-02   0.162    0.871    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 26480 on 1117 degrees of freedom
+Multiple R-squared:  0.01803,	Adjusted R-squared:  0.01627 
+F-statistic: 10.25 on 2 and 1117 DF,  p-value: 3.864e-05
+
+
+=== MODEL 15: GDP Total Lagged (1 period) with Outliers ===
+
+Call:
+lm(formula = Y ~ X1_lag + X2_lag, data = df_complete_lagged_gdp_clean)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-696877   -3478   -2724   -1476 1780779 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)   
+(Intercept) 2733.62142 3907.28669   0.700   0.4844   
+X1_lag         0.13199    0.04314   3.059   0.0023 **
+X2_lag        -0.06072    0.04538  -1.338   0.1813   
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 104000 on 747 degrees of freedom
+Multiple R-squared:  0.0146,	Adjusted R-squared:  0.01196 
+F-statistic: 5.532 on 2 and 747 DF,  p-value: 0.004121
+
+
+=== MODEL 16: GDP Total Lagged (1 period) without Outliers ===
+
+Call:
+lm(formula = Y ~ X1_lag + X2_lag, data = df_no_outliers_lagged_gdp_clean)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-687469       3     500    1820  130744 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)
+(Intercept)   81.50416 2146.86124   0.038    0.970
+X1_lag        -0.30505    0.18598  -1.640    0.102
+X2_lag        -0.06301    0.14929  -0.422    0.673
+
+Residual standard error: 35680 on 551 degrees of freedom
+Multiple R-squared:  0.005108,	Adjusted R-squared:  0.001497 
+F-statistic: 1.414 on 2 and 551 DF,  p-value: 0.2439
+
+
+=== MODEL 17: GDP Total Log-Log Contemporaneous with Outliers ===
+
+Call:
+lm(formula = Y_log ~ X1_log + X2_log, data = df_complete_loglog_gdp_clean)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-5.2162 -0.3106  0.0012  0.3121  6.4053 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)   
+(Intercept) -0.02979    0.02513  -1.186  0.23599   
+X1_log       0.38357    0.34460   1.113  0.26585   
+X2_log       1.18897    0.39554   3.006  0.00269 **
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.9505 on 1464 degrees of freedom
+Multiple R-squared:  0.01167,	Adjusted R-squared:  0.01032 
+F-statistic: 8.646 on 2 and 1464 DF,  p-value: 0.0001849
+
+
+=== MODEL 18: GDP Total Log-Log Contemporaneous without Outliers ===
+
+Call:
+lm(formula = Y_log ~ X1_log + X2_log, data = df_no_outliers_loglog_gdp_clean)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-5.2306 -0.3452 -0.0304  0.2827  6.3515 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)  
+(Intercept)  0.00211    0.02793   0.076   0.9398  
+X1_log       0.02103    0.71116   0.030   0.9764  
+X2_log       0.97769    0.59251   1.650   0.0992 .
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.9195 on 1100 degrees of freedom
+Multiple R-squared:  0.003917,	Adjusted R-squared:  0.002106 
+F-statistic: 2.163 on 2 and 1100 DF,  p-value: 0.1155
+
+
+=== MODEL 19: GDP Total Log-Log Lagged with Outliers ===
+
+Call:
+lm(formula = Y_log ~ X1_log_lag + X2_log_lag, data = df_complete_loglog_lagged_gdp_clean)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-5.1723 -0.3335  0.0089  0.3558  5.5195 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)  
+(Intercept) -0.03375    0.04438  -0.760   0.4472  
+X1_log_lag  -0.50631    0.82754  -0.612   0.5408  
+X2_log_lag  -2.27942    0.93559  -2.436   0.0151 *
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.9214 on 747 degrees of freedom
+Multiple R-squared:  0.01187,	Adjusted R-squared:  0.009225 
+F-statistic: 4.487 on 2 and 747 DF,  p-value: 0.01156
+
+
+=== MODEL 20: GDP Total Log-Log Lagged without Outliers ===
+
+Call:
+lm(formula = Y_log ~ X1_log_lag + X2_log_lag, data = df_no_outliers_loglog_lagged_gdp_clean)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-5.2707 -0.3604 -0.0322  0.2838  5.4788 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)  
+(Intercept) -0.19109    0.09214  -2.074   0.0386 *
+X1_log_lag   0.37090    1.60710   0.231   0.8176  
+X2_log_lag   2.48864    1.78422   1.395   0.1636  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.8972 on 547 degrees of freedom
+Multiple R-squared:  0.0037,	Adjusted R-squared:  5.678e-05 
+F-statistic: 1.016 on 2 and 547 DF,  p-value: 0.3629
+
+
+=== MODEL 21: GDP Total Log-Linear Contemporaneous with Outliers ===
+
+Call:
+lm(formula = Y_log ~ X1 + X2, data = df_complete_loglinear_gdp_clean)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-5.2604 -0.3346  0.0146  0.3023  6.4059 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)  
+(Intercept) -4.583e-02  2.494e-02  -1.837   0.0663 .
+X1           7.000e-08  2.830e-07   0.247   0.8047  
+X2           5.401e-07  3.254e-07   1.660   0.0972 .
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.9551 on 1464 degrees of freedom
+Multiple R-squared:  0.001967,	Adjusted R-squared:  0.0006037 
+F-statistic: 1.443 on 2 and 1464 DF,  p-value: 0.2366
+
+
+=== MODEL 22: GDP Total Log-Linear Contemporaneous without Outliers ===
+
+Call:
+lm(formula = Y_log ~ X1 + X2, data = df_no_outliers_loglinear_gdp_clean)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-5.3185 -0.3645 -0.0547  0.3054  6.3323 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)   
+(Intercept) 2.940e-02  2.860e-02   1.028  0.30427   
+X1          1.868e-06  2.799e-06   0.667  0.50472   
+X2          5.282e-06  1.666e-06   3.170  0.00157 **
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.9506 on 1117 degrees of freedom
+Multiple R-squared:  0.0107,	Adjusted R-squared:  0.008932 
+F-statistic: 6.043 on 2 and 1117 DF,  p-value: 0.002454
+
+
+=== MODEL 23: GDP Total Linear-Log Contemporaneous with Outliers ===
+
+Call:
+lm(formula = Y ~ X1 + X2, data = df_clean_linearlog_gdp)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-697259   -8050   -5269   -1010 1780065 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)  
+(Intercept)     5050       2366   2.134    0.033 *
+X1             -5577      32456  -0.172    0.864  
+X2             58509      37253   1.571    0.116  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 89520 on 1464 degrees of freedom
+Multiple R-squared:  0.001967,	Adjusted R-squared:  0.0006032 
+F-statistic: 1.442 on 2 and 1464 DF,  p-value: 0.2367
+
+
+=== MODEL 24: GDP Total Linear-Log Contemporaneous without Outliers ===
+
+Call:
+lm(formula = Y ~ X1 + X2, data = df_clean_linearlog_gdp_no_outliers)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-691569    -962       6    1709  156966 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)
+(Intercept)   -237.2      861.3  -0.275    0.783
+X1           11784.9    21933.2   0.537    0.591
+X2           14008.6    18273.9   0.767    0.443
+
+Residual standard error: 28360 on 1100 degrees of freedom
+Multiple R-squared:  0.001931,	Adjusted R-squared:  0.0001161 
+F-statistic: 1.064 on 2 and 1100 DF,  p-value: 0.3454
+
+
+=== MODEL 25: GDP Per Capita Contemporaneous with Outliers (Millions) ===
+
+Call:
+lm(formula = Y ~ X1 + X2, data = df_complete_millions_clean)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-697.44   -5.71   -4.89   -3.82 1779.95 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)  
+(Intercept) 5.0038289  2.3910166   2.093   0.0365 *
+X1          0.0001205  0.0009827   0.123   0.9024  
+X2          0.0026243  0.0027470   0.955   0.3396  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 89.58 on 1464 degrees of freedom
+Multiple R-squared:  0.0006646,	Adjusted R-squared:  -0.0007006 
+F-statistic: 0.4868 on 2 and 1464 DF,  p-value: 0.6147
+
+
+=== MODEL 26: GDP Per Capita Contemporaneous without Outliers (Millions) ===
+
+Call:
+lm(formula = Y ~ X1 + X2, data = df_no_outliers_millions_clean)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-691.17   -1.05   -0.41    0.42  145.50 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)  
+(Intercept)  0.4239368  0.8665253   0.489   0.6248  
+X1           0.0026539  0.0013837   1.918   0.0554 .
+X2          -0.0007886  0.0030939  -0.255   0.7989  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 27.15 on 1064 degrees of freedom
+Multiple R-squared:  0.003952,	Adjusted R-squared:  0.00208 
+F-statistic: 2.111 on 2 and 1064 DF,  p-value: 0.1217
+
+
+=== MODEL 27: GDP Total Contemporaneous with Outliers (Millions) ===
+
+Call:
+lm(formula = Y ~ X1 + X2, data = df_complete_gdp_millions_clean)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-696.27   -5.31   -4.55   -3.39 1781.27 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)  
+(Intercept) 4.542e+00  2.337e+00   1.944   0.0521 .
+X1          3.733e-05  2.651e-05   1.408   0.1594  
+X2          3.711e-05  3.049e-05   1.217   0.2237  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 89.49 on 1464 degrees of freedom
+Multiple R-squared:  0.00253,	Adjusted R-squared:  0.001168 
+F-statistic: 1.857 on 2 and 1464 DF,  p-value: 0.1565
+
+
+=== MODEL 28: GDP Total Contemporaneous without Outliers (Millions) ===
+
+Call:
+lm(formula = Y ~ X1 + X2, data = df_no_outliers_gdp_millions_clean)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-685.86   -0.54   -0.06    0.49  143.98 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 2.771e-02  7.967e-01   0.035    0.972    
+X1          3.407e-04  7.796e-05   4.370 1.36e-05 ***
+X2          7.515e-06  4.641e-05   0.162    0.871    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 26.48 on 1117 degrees of freedom
+Multiple R-squared:  0.01803,	Adjusted R-squared:  0.01627 
+F-statistic: 10.25 on 2 and 1117 DF,  p-value: 3.864e-05
+
+

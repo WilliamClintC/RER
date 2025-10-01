@@ -1,0 +1,150 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\usepackage{booktabs}
+\usepackage{array}
+
+\geometry{margin=1in}
+
+\title{Regression Model Specifications: Remittances and GDP Analysis}
+\author{Economic Research}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Regression Model Specifications}
+
+This document presents the mathematical forms of the four regression specifications used in the remittances and GDP analysis.
+
+\subsection{Specification 1: Linear Model}
+\textbf{Remittances (thousands) vs GDP (millions)}
+
+\begin{equation}
+\text{Remittance}_{thousands} = \beta_0 + \beta_1 \cdot \text{GDP}_{sending,millions} + \beta_2 \cdot \text{GDP}_{receiving,millions} + \varepsilon
+\end{equation}
+
+Where:
+\begin{itemize}
+    \item Dependent variable: Remittance flows in thousands USD
+    \item Independent variables: Sending and receiving country GDPs in millions USD
+    \item This is a standard linear regression model
+    \item Coefficients represent direct unit-to-unit relationships
+\end{itemize}
+
+\subsection{Specification 2: Log-Log Model}
+\textbf{Double Logarithmic Model}
+
+\begin{equation}
+\ln(\text{Remittance}_{millions}) = \beta_0 + \beta_1 \ln(\text{GDP}_{sending,millions}) + \beta_2 \ln(\text{GDP}_{receiving,millions}) + \varepsilon
+\end{equation}
+
+Where:
+\begin{itemize}
+    \item All variables are in natural logarithms
+    \item Coefficients represent elasticities
+    \item $\beta_1$ = elasticity of remittances with respect to sending country GDP
+    \item $\beta_2$ = elasticity of remittances with respect to receiving country GDP
+    \item A 1\% change in GDP leads to a $\beta \times 1$\% change in remittances
+\end{itemize}
+
+\subsection{Specification 3: Log-Linear Model}
+\textbf{Log Dependent, Linear Independent}
+
+\begin{equation}
+\ln(\text{Remittance}_{millions}) = \beta_0 + \beta_1 \cdot \text{GDP}_{sending,millions} + \beta_2 \cdot \text{GDP}_{receiving,millions} + \varepsilon
+\end{equation}
+
+Where:
+\begin{itemize}
+    \item Dependent variable is logged, independent variables are linear
+    \item Coefficients represent semi-elasticities
+    \item A one-unit increase in GDP leads to a $(\beta \times 100)$\% change in remittances
+    \item Interpretation: $\frac{\partial \ln(\text{Remittance})}{\partial \text{GDP}} = \beta$
+\end{itemize}
+
+\subsection{Specification 4: Linear-Log Model}
+\textbf{Linear Dependent, Log Independent}
+
+\begin{equation}
+\text{Remittance}_{millions} = \beta_0 + \beta_1 \ln(\text{GDP}_{sending,millions}) + \beta_2 \ln(\text{GDP}_{receiving,millions}) + \varepsilon
+\end{equation}
+
+Where:
+\begin{itemize}
+    \item Dependent variable is linear, independent variables are logged
+    \item A 1\% increase in GDP leads to a $\frac{\beta}{100}$ unit change in remittances
+    \item Interpretation: $\frac{\partial \text{Remittance}}{\partial \ln(\text{GDP})} = \beta$
+\end{itemize}
+
+\section{Model Summary Table}
+
+\begin{table}[h!]
+\centering
+\caption{Summary of Regression Model Specifications}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+\textbf{Specification} & \textbf{Form} & \textbf{Dependent Variable} & \textbf{Interpretation} \\
+\midrule
+Spec 1 & Linear-Linear & $\text{Remittance}_{thousands}$ & Direct unit relationship \\
+Spec 2 & Log-Log & $\ln(\text{Remittance}_{millions})$ & Elasticity (\% to \%) \\
+Spec 3 & Log-Linear & $\ln(\text{Remittance}_{millions})$ & Semi-elasticity (unit to \%) \\
+Spec 4 & Linear-Log & $\text{Remittance}_{millions}$ & Semi-elasticity (\% to unit) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Best Performing Model (Specification 2 without outliers)}
+
+Based on the empirical results with Adjusted $R^2 = 0.134$:
+
+\begin{equation}
+\ln(\text{Remittance}) = -6.821 - 0.250 \times \ln(\text{GDP}_{sending}) + 0.519 \times \ln(\text{GDP}_{receiving}) + \varepsilon
+\end{equation}
+
+\textbf{Economic Interpretation:}
+\begin{itemize}
+    \item A 1\% increase in sending country GDP is associated with a 0.25\% \textbf{decrease} in remittances
+    \item A 1\% increase in receiving country GDP is associated with a 0.519\% \textbf{increase} in remittances
+    \item The model explains approximately 13.4\% of the variation in remittance flows
+    \item The negative coefficient on sending country GDP suggests that as the sending country becomes wealthier, remittance outflows decrease (economically intuitive)
+\end{itemize}
+
+\section{General Form}
+
+For all specifications, the general form can be written as:
+
+\begin{equation}
+f(Y) = \beta_0 + \beta_1 g(X_1) + \beta_2 g(X_2) + \varepsilon
+\end{equation}
+
+Where:
+\begin{itemize}
+    \item $Y$ = Remittance flows
+    \item $X_1$ = Sending country GDP
+    \item $X_2$ = Receiving country GDP
+    \item $f(\cdot)$ and $g(\cdot)$ are transformation functions (identity or natural log)
+    \item $\varepsilon \sim N(0, \sigma^2)$ is the error term
+\end{itemize}
+
+\section{Variable Definitions}
+
+\begin{table}[h!]
+\centering
+\caption{Variable Definitions and Units}
+\begin{tabular}{@{}lll@{}}
+\toprule
+\textbf{Variable} & \textbf{Definition} & \textbf{Units} \\
+\midrule
+$\text{Remittance}_{thousands}$ & Remittance flows & Thousands USD \\
+$\text{Remittance}_{millions}$ & Remittance flows & Millions USD \\
+$\text{GDP}_{sending,millions}$ & Sending country GDP & Millions USD \\
+$\text{GDP}_{receiving,millions}$ & Receiving country GDP & Millions USD \\
+$\ln(\cdot)$ & Natural logarithm transformation & Logarithmic units \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\end{document}

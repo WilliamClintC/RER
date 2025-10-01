@@ -1,0 +1,5 @@
+"Specification","R2_With_Outliers","R2_Without_Outliers","AdjR2_With_Outliers","AdjR2_Without_Outliers"
+"1: Remit(000s) vs GDP(M)",0.0021,0.008,0.0015,0.0072
+"2: Log-Log",0.1274,0.1347,0.127,0.134
+"3: Log-Linear",0.0806,0.1061,0.0801,0.1053
+"4: Linear-Log",0.005,0.0088,0.0045,0.008

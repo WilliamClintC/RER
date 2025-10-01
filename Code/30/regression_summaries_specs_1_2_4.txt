@@ -1,0 +1,160 @@
+COMPREHENSIVE REGRESSION ANALYSIS - SPECIFICATIONS 1, 2, 4
+=========================================================
+
+OUTLIER METHOD: 5th-95th Percentile
+ORIGINAL OBSERVATIONS: 1472 
+OBSERVATIONS WITHOUT OUTLIERS: 1324 
+OUTLIERS REMOVED: 148 
+
+SPECIFICATION 1: Remittances (thousands) vs Lagged GDP Per Capita
+------------------------------------------------------------------
+WITH OUTLIERS:
+
+Call:
+lm(formula = remittance_thousands ~ gdp_per_capita_sending_lag1 + 
+    gdp_per_capita_receiving_lag1, data = df)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+ -878221   -90556   -45748   -27711 11010537 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                   27486.2394 23165.8600   1.186    0.236    
+gdp_per_capita_sending_lag1       4.7343     0.6990   6.773 1.82e-11 ***
+gdp_per_capita_receiving_lag1    -0.8449     1.1849  -0.713    0.476    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 600300 on 1469 degrees of freedom
+Multiple R-squared:  0.03245,	Adjusted R-squared:  0.03113 
+F-statistic: 24.63 on 2 and 1469 DF,  p-value: 3.006e-11
+
+
+WITHOUT OUTLIERS:
+
+Call:
+lm(formula = remittance_thousands ~ gdp_per_capita_sending_lag1 + 
+    gdp_per_capita_receiving_lag1, data = df_no_outliers)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-122988  -17594  -13711  -10591  346452 
+
+Coefficients:
+                               Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                   1.036e+04  2.197e+03   4.714 2.69e-06 ***
+gdp_per_capita_sending_lag1   6.470e-01  6.654e-02   9.723  < 2e-16 ***
+gdp_per_capita_receiving_lag1 1.431e-01  1.154e-01   1.240    0.215    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 54020 on 1321 degrees of freedom
+Multiple R-squared:  0.06687,	Adjusted R-squared:  0.06546 
+F-statistic: 47.33 on 2 and 1321 DF,  p-value: < 2.2e-16
+
+
+
+SPECIFICATION 2: Log-Log Model with Lagged GDP Per Capita
+--------------------------------------------------------
+WITH OUTLIERS:
+
+Call:
+lm(formula = log_remittance ~ log_gdp_per_capita_sending_lag1 + 
+    log_gdp_per_capita_receiving_lag1, data = df)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-11.5504  -2.4598   0.1004   2.5982   9.7906 
+
+Coefficients:
+                                   Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                       -15.61463    1.17293 -13.313   <2e-16 ***
+log_gdp_per_capita_sending_lag1     1.52899    0.07276  21.014   <2e-16 ***
+log_gdp_per_capita_receiving_lag1   0.14397    0.10449   1.378    0.168    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 3.556 on 1469 degrees of freedom
+Multiple R-squared:  0.2318,	Adjusted R-squared:  0.2307 
+F-statistic: 221.6 on 2 and 1469 DF,  p-value: < 2.2e-16
+
+
+WITHOUT OUTLIERS:
+
+Call:
+lm(formula = log_remittance ~ log_gdp_per_capita_sending_lag1 + 
+    log_gdp_per_capita_receiving_lag1, data = df_no_outliers)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-8.9110 -2.2666  0.0742  2.3005  8.7366 
+
+Coefficients:
+                                   Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                       -14.25284    1.05894 -13.460  < 2e-16 ***
+log_gdp_per_capita_sending_lag1     1.26818    0.06669  19.015  < 2e-16 ***
+log_gdp_per_capita_receiving_lag1   0.26507    0.09462   2.801  0.00516 ** 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 3.078 on 1321 degrees of freedom
+Multiple R-squared:  0.2152,	Adjusted R-squared:  0.214 
+F-statistic: 181.1 on 2 and 1321 DF,  p-value: < 2.2e-16
+
+
+
+SPECIFICATION 4: Linear Dependent, Log Independent with Lagged GDP Per Capita
+-----------------------------------------------------------------------------
+WITH OUTLIERS:
+
+Call:
+lm(formula = remittance_millions ~ log_gdp_per_capita_sending_lag1 + 
+    log_gdp_per_capita_receiving_lag1, data = df)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+ -373.4  -151.0   -65.7    20.6 11030.7 
+
+Coefficients:
+                                  Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                        -347.27     197.36  -1.760   0.0787 .  
+log_gdp_per_capita_sending_lag1      85.96      12.24   7.021 3.35e-12 ***
+log_gdp_per_capita_receiving_lag1   -38.18      17.58  -2.172   0.0300 *  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 598.4 on 1469 degrees of freedom
+Multiple R-squared:  0.03846,	Adjusted R-squared:  0.03715 
+F-statistic: 29.38 on 2 and 1469 DF,  p-value: 3.097e-13
+
+
+WITHOUT OUTLIERS:
+
+Call:
+lm(formula = remittance_millions ~ log_gdp_per_capita_sending_lag1 + 
+    log_gdp_per_capita_receiving_lag1, data = df_no_outliers)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-65.59 -22.12 -15.09   2.49 338.34 
+
+Coefficients:
+                                    Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                       -103.82668   18.23196  -5.695 1.52e-08 ***
+log_gdp_per_capita_sending_lag1     13.98057    1.14826  12.175  < 2e-16 ***
+log_gdp_per_capita_receiving_lag1    0.09447    1.62915   0.058    0.954    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 52.99 on 1321 degrees of freedom
+Multiple R-squared:  0.1019,	Adjusted R-squared:  0.1005 
+F-statistic: 74.92 on 2 and 1321 DF,  p-value: < 2.2e-16
+
+
+
+MODEL COMPARISON SUMMARY:
+========================
+Spec 1 R² (with/without outliers): 0.0324 / 0.0669 
+Spec 2 R² (with/without outliers): 0.2318 / 0.2152 
+Spec 4 R² (with/without outliers): 0.0385 / 0.1019 

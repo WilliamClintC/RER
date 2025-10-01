@@ -1,0 +1,46 @@
+COMPREHENSIVE REGRESSION ANALYSIS RESULTS
+==========================================
+
+Dataset: 22.csv
+Total observations before cleaning: 3980 
+Observations after cleaning: 3830 
+Observations without outliers: 2509 
+Outliers removed: 1321 
+
+SPECIFICATION DESCRIPTIONS:
+Spec 1: Remittances (thousands) vs GDP (millions)
+Spec 2: Log-Log Model - Log(Remittances) vs Log(GDP)
+Spec 3: Log-Linear - Log(Remittances) vs GDP (linear)
+Spec 4: Linear-Log - Remittances (linear) vs Log(GDP)
+
+RESULTS SUMMARY:
+          Model                              Description Observations R_Squared
+1    Spec1_With    Remit(000s) vs GDP(M) - With Outliers         3830    0.0021
+2 Spec1_Without Remit(000s) vs GDP(M) - Without Outliers         2509    0.0080
+3    Spec2_With                  Log-Log - With Outliers         3830    0.1274
+4 Spec2_Without               Log-Log - Without Outliers         2509    0.1347
+5    Spec3_With               Log-Linear - With Outliers         3830    0.0806
+6 Spec3_Without            Log-Linear - Without Outliers         2509    0.1061
+7    Spec4_With               Linear-Log - With Outliers         3830    0.0050
+8 Spec4_Without            Linear-Log - Without Outliers         2509    0.0088
+  Adj_R_Squared F_Statistic
+1        0.0015        3.94
+2        0.0072       10.07
+3        0.1270      279.42
+4        0.1340      195.09
+5        0.0801      167.73
+6        0.1053      148.65
+7        0.0045        9.57
+8        0.0080       11.06
+
+
+BEST PERFORMING MODELS:
+With outliers: Log-Log - With Outliers - Adj R² = 0.127 
+Without outliers: Log-Log - Without Outliers - Adj R² = 0.134 
+
+
+KEY INSIGHTS:
+1. Log transformations significantly improve model fit
+2. Outlier removal generally improves model performance
+3. Log-Log specification performs best overall
+4. R-squared values range from 0.0021 to 0.1347 

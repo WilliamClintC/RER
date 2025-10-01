@@ -1,0 +1,630 @@
+COMPREHENSIVE CHANGE ANALYSIS - ALL 24 MODELS
+============================================
+
+MODEL STRUCTURE: 2 (Lagged/Unlagged) × 2 (With/Without Outliers) × 3 (Specifications) × 2 (GDP per capita vs Total GDP) = 24 Total Models
+
+DATASET SUMMARY:
+Unlagged models - With outliers: 1472 observations
+Unlagged models - Without outliers: 1324 observations
+Lagged models - With outliers: 752 observations
+Lagged models - Without outliers: 676 observations
+
+===== GDP PER CAPITA MODELS (Models 1-12) =====
+
+UNLAGGED GDP PER CAPITA SPECIFICATION 1: Linear Changes
+------------------------------------------------------
+WITH OUTLIERS:
+
+Call:
+lm(formula = change_remittance_thousands ~ change_sending_gdp_per_capita + 
+    change_receiving_gdp_per_capita, data = df_changes)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-697421   -5691   -4873   -3812 1779967 
+
+Coefficients:
+                                 Estimate Std. Error t value Pr(>|t|)  
+(Intercept)                     4987.4091  2382.8971   2.093   0.0365 *
+change_sending_gdp_per_capita      0.1197     0.9810   0.122   0.9029  
+change_receiving_gdp_per_capita    2.6231     2.7420   0.957   0.3389  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 89430 on 1469 degrees of freedom
+Multiple R-squared:  0.000664,	Adjusted R-squared:  -0.0006966 
+F-statistic: 0.488 on 2 and 1469 DF,  p-value: 0.6139
+
+
+WITHOUT OUTLIERS:
+
+Call:
+lm(formula = change_remittance_thousands ~ change_sending_gdp_per_capita + 
+    change_receiving_gdp_per_capita, data = df_changes_no_outliers)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-20918   -766   -553   -211  38354 
+
+Coefficients:
+                                 Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                     580.76045  158.66079   3.660 0.000262 ***
+change_sending_gdp_per_capita     0.14280    0.07275   1.963 0.049854 *  
+change_receiving_gdp_per_capita   0.45484    0.17635   2.579 0.010011 *  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 5640 on 1321 degrees of freedom
+Multiple R-squared:  0.008962,	Adjusted R-squared:  0.007462 
+F-statistic: 5.973 on 2 and 1321 DF,  p-value: 0.002616
+
+
+
+UNLAGGED GDP PER CAPITA SPECIFICATION 2: Log Changes
+---------------------------------------------------
+WITH OUTLIERS:
+
+Call:
+lm(formula = log_change_remittance ~ log_change_sending_gdp_per_capita + 
+    log_change_receiving_gdp_per_capita, data = df_changes)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-5.2338 -0.3096 -0.0001  0.3122  6.4287 
+
+Coefficients:
+                                    Estimate Std. Error t value Pr(>|t|)   
+(Intercept)                         -0.01864    0.02576  -0.724  0.46938   
+log_change_sending_gdp_per_capita    0.43388    0.34305   1.265  0.20616   
+log_change_receiving_gdp_per_capita  1.16876    0.39401   2.966  0.00306 **
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.9522 on 1469 degrees of freedom
+Multiple R-squared:  0.01191,	Adjusted R-squared:  0.01056 
+F-statistic: 8.852 on 2 and 1469 DF,  p-value: 0.0001509
+
+
+WITHOUT OUTLIERS:
+
+Call:
+lm(formula = log_change_remittance ~ log_change_sending_gdp_per_capita + 
+    log_change_receiving_gdp_per_capita, data = df_changes_no_outliers)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-5.2315 -0.3170  0.0051  0.3045  6.4395 
+
+Coefficients:
+                                    Estimate Std. Error t value Pr(>|t|)   
+(Intercept)                         -0.02646    0.02821  -0.938  0.34838   
+log_change_sending_gdp_per_capita    0.48341    0.37821   1.278  0.20142   
+log_change_receiving_gdp_per_capita  1.15361    0.42664   2.704  0.00694 **
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.9882 on 1321 degrees of freedom
+Multiple R-squared:  0.01142,	Adjusted R-squared:  0.009923 
+F-statistic:  7.63 on 2 and 1321 DF,  p-value: 0.0005075
+
+
+
+UNLAGGED GDP PER CAPITA SPECIFICATION 3: Semi-Log Changes
+--------------------------------------------------------
+WITH OUTLIERS:
+
+Call:
+lm(formula = change_remittance_millions ~ log_change_sending_gdp_per_capita + 
+    log_change_receiving_gdp_per_capita, data = df_changes)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-696.79   -7.88   -4.92   -1.46 1780.34 
+
+Coefficients:
+                                    Estimate Std. Error t value Pr(>|t|)  
+(Intercept)                            5.352      2.419   2.213   0.0271 *
+log_change_sending_gdp_per_capita     -5.708     32.205  -0.177   0.8593  
+log_change_receiving_gdp_per_capita   52.061     36.989   1.407   0.1595  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 89.39 on 1469 degrees of freedom
+Multiple R-squared:  0.001543,	Adjusted R-squared:  0.0001839 
+F-statistic: 1.135 on 2 and 1469 DF,  p-value: 0.3216
+
+
+WITHOUT OUTLIERS:
+
+Call:
+lm(formula = change_remittance_millions ~ log_change_sending_gdp_per_capita + 
+    log_change_receiving_gdp_per_capita, data = df_changes_no_outliers)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-20.408  -1.005  -0.522   0.037  38.178 
+
+Coefficients:
+                                    Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                           0.6260     0.1609   3.892 0.000104 ***
+log_change_sending_gdp_per_capita     4.4055     2.1567   2.043 0.041281 *  
+log_change_receiving_gdp_per_capita   4.5380     2.4329   1.865 0.062363 .  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 5.635 on 1321 degrees of freedom
+Multiple R-squared:  0.01051,	Adjusted R-squared:  0.009015 
+F-statistic: 7.018 on 2 and 1321 DF,  p-value: 0.0009298
+
+
+
+LAGGED GDP PER CAPITA SPECIFICATION 1: Linear Changes
+----------------------------------------------------
+WITH OUTLIERS:
+
+Call:
+lm(formula = change_remittance_thousands ~ change_sending_gdp_per_capita_lag1 + 
+    change_receiving_gdp_per_capita_lag1, data = df_changes_lagged)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-699242   -6576   -2671    -426 1777162 
+
+Coefficients:
+                                     Estimate Std. Error t value Pr(>|t|)
+(Intercept)                          5745.368   4168.967   1.378    0.169
+change_sending_gdp_per_capita_lag1      3.751      3.540   1.059    0.290
+change_receiving_gdp_per_capita_lag1  -20.384     12.495  -1.631    0.103
+
+Residual standard error: 104400 on 749 degrees of freedom
+Multiple R-squared:  0.003974,	Adjusted R-squared:  0.001315 
+F-statistic: 1.494 on 2 and 749 DF,  p-value: 0.2251
+
+
+WITHOUT OUTLIERS:
+
+Call:
+lm(formula = change_remittance_thousands ~ change_sending_gdp_per_capita_lag1 + 
+    change_receiving_gdp_per_capita_lag1, data = df_changes_lagged_no_outliers)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-37034   -510    146    515  45038 
+
+Coefficients:
+                                     Estimate Std. Error t value Pr(>|t|)   
+(Intercept)                          443.4021   353.3915   1.255  0.21002   
+change_sending_gdp_per_capita_lag1    -0.4336     0.3034  -1.429  0.15349   
+change_receiving_gdp_per_capita_lag1  -3.1648     1.0462  -3.025  0.00258 **
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 8342 on 673 degrees of freedom
+Multiple R-squared:  0.02204,	Adjusted R-squared:  0.01913 
+F-statistic: 7.584 on 2 and 673 DF,  p-value: 0.0005532
+
+
+
+LAGGED GDP PER CAPITA SPECIFICATION 2: Log Changes
+-------------------------------------------------
+WITH OUTLIERS:
+
+Call:
+lm(formula = log_change_remittance ~ log_change_sending_gdp_per_capita_lag1 + 
+    log_change_receiving_gdp_per_capita_lag1, data = df_changes_lagged)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-5.1943 -0.3426  0.0110  0.3451  5.4963 
+
+Coefficients:
+                                         Estimate Std. Error t value Pr(>|t|)  
+(Intercept)                              -0.05885    0.03989  -1.475   0.1406  
+log_change_sending_gdp_per_capita_lag1   -0.61096    0.77398  -0.789   0.4301  
+log_change_receiving_gdp_per_capita_lag1 -2.07614    0.87413  -2.375   0.0178 *
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.9209 on 749 degrees of freedom
+Multiple R-squared:  0.01102,	Adjusted R-squared:  0.008377 
+F-statistic: 4.172 on 2 and 749 DF,  p-value: 0.01578
+
+
+WITHOUT OUTLIERS:
+
+Call:
+lm(formula = log_change_remittance ~ log_change_sending_gdp_per_capita_lag1 + 
+    log_change_receiving_gdp_per_capita_lag1, data = df_changes_lagged_no_outliers)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-5.2005 -0.3311  0.0160  0.3482  5.5233 
+
+Coefficients:
+                                         Estimate Std. Error t value Pr(>|t|)  
+(Intercept)                              -0.07222    0.04455  -1.621   0.1055  
+log_change_sending_gdp_per_capita_lag1   -0.88960    0.83992  -1.059   0.2899  
+log_change_receiving_gdp_per_capita_lag1 -1.91044    0.94145  -2.029   0.0428 *
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.9523 on 673 degrees of freedom
+Multiple R-squared:  0.01032,	Adjusted R-squared:  0.007377 
+F-statistic: 3.508 on 2 and 673 DF,  p-value: 0.0305
+
+
+
+LAGGED GDP PER CAPITA SPECIFICATION 3: Semi-Log Changes
+------------------------------------------------------
+WITH OUTLIERS:
+
+Call:
+lm(formula = change_remittance_millions ~ log_change_sending_gdp_per_capita_lag1 + 
+    log_change_receiving_gdp_per_capita_lag1, data = df_changes_lagged)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-699.20   -7.76   -0.85    1.79 1778.34 
+
+Coefficients:
+                                         Estimate Std. Error t value Pr(>|t|)  
+(Intercept)                                 6.500      4.522   1.437   0.1510  
+log_change_sending_gdp_per_capita_lag1     48.385     87.741   0.551   0.5815  
+log_change_receiving_gdp_per_capita_lag1 -163.303     99.094  -1.648   0.0998 .
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 104.4 on 749 degrees of freedom
+Multiple R-squared:  0.003613,	Adjusted R-squared:  0.0009527 
+F-statistic: 1.358 on 2 and 749 DF,  p-value: 0.2578
+
+
+WITHOUT OUTLIERS:
+
+Call:
+lm(formula = change_remittance_millions ~ log_change_sending_gdp_per_capita_lag1 + 
+    log_change_receiving_gdp_per_capita_lag1, data = df_changes_lagged_no_outliers)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-37.964  -0.622   0.399   0.725  45.413 
+
+Coefficients:
+                                         Estimate Std. Error t value Pr(>|t|)
+(Intercept)                                0.6796     0.3916   1.736  0.08310
+log_change_sending_gdp_per_capita_lag1    -6.0733     7.3818  -0.823  0.41095
+log_change_receiving_gdp_per_capita_lag1 -23.0892     8.2740  -2.791  0.00541
+                                           
+(Intercept)                              . 
+log_change_sending_gdp_per_capita_lag1     
+log_change_receiving_gdp_per_capita_lag1 **
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 8.37 on 673 degrees of freedom
+Multiple R-squared:  0.01552,	Adjusted R-squared:  0.0126 
+F-statistic: 5.306 on 2 and 673 DF,  p-value: 0.005173
+
+
+
+===== TOTAL GDP MODELS (Models 13-24) =====
+
+UNLAGGED TOTAL GDP SPECIFICATION 1: Linear Changes
+--------------------------------------------------
+WITH OUTLIERS:
+
+Call:
+lm(formula = change_remittance_thousands ~ change_sending_total_gdp + 
+    change_receiving_total_gdp, data = df_changes)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-697421   -5691   -4873   -3812 1779967 
+
+Coefficients:
+                            Estimate Std. Error t value Pr(>|t|)  
+(Intercept)                4.987e+03  2.383e+03   2.093   0.0365 *
+change_sending_total_gdp   1.197e-04  9.810e-04   0.122   0.9029  
+change_receiving_total_gdp 2.623e-03  2.742e-03   0.957   0.3389  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 89430 on 1469 degrees of freedom
+Multiple R-squared:  0.000664,	Adjusted R-squared:  -0.0006966 
+F-statistic: 0.488 on 2 and 1469 DF,  p-value: 0.6139
+
+
+WITHOUT OUTLIERS:
+
+Call:
+lm(formula = change_remittance_thousands ~ change_sending_total_gdp + 
+    change_receiving_total_gdp, data = df_changes_no_outliers)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-20918   -766   -553   -211  38354 
+
+Coefficients:
+                            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                5.808e+02  1.587e+02   3.660 0.000262 ***
+change_sending_total_gdp   1.428e-04  7.275e-05   1.963 0.049854 *  
+change_receiving_total_gdp 4.548e-04  1.764e-04   2.579 0.010011 *  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 5640 on 1321 degrees of freedom
+Multiple R-squared:  0.008962,	Adjusted R-squared:  0.007462 
+F-statistic: 5.973 on 2 and 1321 DF,  p-value: 0.002616
+
+
+
+UNLAGGED TOTAL GDP SPECIFICATION 2: Log Changes
+-----------------------------------------------
+WITH OUTLIERS:
+
+Call:
+lm(formula = log_change_remittance ~ log_change_sending_total_gdp + 
+    log_change_receiving_total_gdp, data = df_changes)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-5.2338 -0.3096 -0.0001  0.3122  6.4287 
+
+Coefficients:
+                               Estimate Std. Error t value Pr(>|t|)   
+(Intercept)                    -0.01864    0.02576  -0.724  0.46938   
+log_change_sending_total_gdp    0.43388    0.34305   1.265  0.20616   
+log_change_receiving_total_gdp  1.16876    0.39401   2.966  0.00306 **
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.9522 on 1469 degrees of freedom
+Multiple R-squared:  0.01191,	Adjusted R-squared:  0.01056 
+F-statistic: 8.852 on 2 and 1469 DF,  p-value: 0.0001509
+
+
+WITHOUT OUTLIERS:
+
+Call:
+lm(formula = log_change_remittance ~ log_change_sending_total_gdp + 
+    log_change_receiving_total_gdp, data = df_changes_no_outliers)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-5.2315 -0.3170  0.0051  0.3045  6.4395 
+
+Coefficients:
+                               Estimate Std. Error t value Pr(>|t|)   
+(Intercept)                    -0.02646    0.02821  -0.938  0.34838   
+log_change_sending_total_gdp    0.48341    0.37821   1.278  0.20142   
+log_change_receiving_total_gdp  1.15361    0.42664   2.704  0.00694 **
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.9882 on 1321 degrees of freedom
+Multiple R-squared:  0.01142,	Adjusted R-squared:  0.009923 
+F-statistic:  7.63 on 2 and 1321 DF,  p-value: 0.0005075
+
+
+
+UNLAGGED TOTAL GDP SPECIFICATION 3: Semi-Log Changes
+---------------------------------------------------
+WITH OUTLIERS:
+
+Call:
+lm(formula = change_remittance_millions ~ log_change_sending_total_gdp + 
+    log_change_receiving_total_gdp, data = df_changes)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-696.79   -7.88   -4.92   -1.46 1780.34 
+
+Coefficients:
+                               Estimate Std. Error t value Pr(>|t|)  
+(Intercept)                       5.352      2.419   2.213   0.0271 *
+log_change_sending_total_gdp     -5.708     32.205  -0.177   0.8593  
+log_change_receiving_total_gdp   52.061     36.989   1.407   0.1595  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 89.39 on 1469 degrees of freedom
+Multiple R-squared:  0.001543,	Adjusted R-squared:  0.0001839 
+F-statistic: 1.135 on 2 and 1469 DF,  p-value: 0.3216
+
+
+WITHOUT OUTLIERS:
+
+Call:
+lm(formula = change_remittance_millions ~ log_change_sending_total_gdp + 
+    log_change_receiving_total_gdp, data = df_changes_no_outliers)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-20.408  -1.005  -0.522   0.037  38.178 
+
+Coefficients:
+                               Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                      0.6260     0.1609   3.892 0.000104 ***
+log_change_sending_total_gdp     4.4055     2.1567   2.043 0.041281 *  
+log_change_receiving_total_gdp   4.5380     2.4329   1.865 0.062363 .  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 5.635 on 1321 degrees of freedom
+Multiple R-squared:  0.01051,	Adjusted R-squared:  0.009015 
+F-statistic: 7.018 on 2 and 1321 DF,  p-value: 0.0009298
+
+
+
+LAGGED TOTAL GDP SPECIFICATION 1: Linear Changes
+-----------------------------------------------
+WITH OUTLIERS:
+
+Call:
+lm(formula = change_remittance_thousands ~ change_sending_total_gdp_lag1 + 
+    change_receiving_total_gdp_lag1, data = df_changes_lagged)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-699242   -6576   -2671    -426 1777162 
+
+Coefficients:
+                                  Estimate Std. Error t value Pr(>|t|)
+(Intercept)                      5.745e+03  4.169e+03   1.378    0.169
+change_sending_total_gdp_lag1    3.751e-03  3.540e-03   1.059    0.290
+change_receiving_total_gdp_lag1 -2.038e-02  1.249e-02  -1.631    0.103
+
+Residual standard error: 104400 on 749 degrees of freedom
+Multiple R-squared:  0.003974,	Adjusted R-squared:  0.001315 
+F-statistic: 1.494 on 2 and 749 DF,  p-value: 0.2251
+
+
+WITHOUT OUTLIERS:
+
+Call:
+lm(formula = change_remittance_thousands ~ change_sending_total_gdp_lag1 + 
+    change_receiving_total_gdp_lag1, data = df_changes_lagged_no_outliers)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-37034   -510    146    515  45038 
+
+Coefficients:
+                                  Estimate Std. Error t value Pr(>|t|)   
+(Intercept)                      4.434e+02  3.534e+02   1.255  0.21002   
+change_sending_total_gdp_lag1   -4.336e-04  3.034e-04  -1.429  0.15349   
+change_receiving_total_gdp_lag1 -3.165e-03  1.046e-03  -3.025  0.00258 **
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 8342 on 673 degrees of freedom
+Multiple R-squared:  0.02204,	Adjusted R-squared:  0.01913 
+F-statistic: 7.584 on 2 and 673 DF,  p-value: 0.0005532
+
+
+
+LAGGED TOTAL GDP SPECIFICATION 2: Log Changes
+--------------------------------------------
+WITH OUTLIERS:
+
+Call:
+lm(formula = log_change_remittance ~ log_change_sending_total_gdp_lag1 + 
+    log_change_receiving_total_gdp_lag1, data = df_changes_lagged)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-5.1943 -0.3426  0.0110  0.3451  5.4963 
+
+Coefficients:
+                                    Estimate Std. Error t value Pr(>|t|)  
+(Intercept)                         -0.05885    0.03989  -1.475   0.1406  
+log_change_sending_total_gdp_lag1   -0.61096    0.77398  -0.789   0.4301  
+log_change_receiving_total_gdp_lag1 -2.07614    0.87413  -2.375   0.0178 *
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.9209 on 749 degrees of freedom
+Multiple R-squared:  0.01102,	Adjusted R-squared:  0.008377 
+F-statistic: 4.172 on 2 and 749 DF,  p-value: 0.01578
+
+
+WITHOUT OUTLIERS:
+
+Call:
+lm(formula = log_change_remittance ~ log_change_sending_total_gdp_lag1 + 
+    log_change_receiving_total_gdp_lag1, data = df_changes_lagged_no_outliers)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-5.2005 -0.3311  0.0160  0.3482  5.5233 
+
+Coefficients:
+                                    Estimate Std. Error t value Pr(>|t|)  
+(Intercept)                         -0.07222    0.04455  -1.621   0.1055  
+log_change_sending_total_gdp_lag1   -0.88960    0.83992  -1.059   0.2899  
+log_change_receiving_total_gdp_lag1 -1.91044    0.94145  -2.029   0.0428 *
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.9523 on 673 degrees of freedom
+Multiple R-squared:  0.01032,	Adjusted R-squared:  0.007377 
+F-statistic: 3.508 on 2 and 673 DF,  p-value: 0.0305
+
+
+
+LAGGED TOTAL GDP SPECIFICATION 3: Semi-Log Changes
+-------------------------------------------------
+WITH OUTLIERS:
+
+Call:
+lm(formula = change_remittance_millions ~ log_change_sending_total_gdp_lag1 + 
+    log_change_receiving_total_gdp_lag1, data = df_changes_lagged)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-699.20   -7.76   -0.85    1.79 1778.34 
+
+Coefficients:
+                                    Estimate Std. Error t value Pr(>|t|)  
+(Intercept)                            6.500      4.522   1.437   0.1510  
+log_change_sending_total_gdp_lag1     48.385     87.741   0.551   0.5815  
+log_change_receiving_total_gdp_lag1 -163.303     99.094  -1.648   0.0998 .
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 104.4 on 749 degrees of freedom
+Multiple R-squared:  0.003613,	Adjusted R-squared:  0.0009527 
+F-statistic: 1.358 on 2 and 749 DF,  p-value: 0.2578
+
+
+WITHOUT OUTLIERS:
+
+Call:
+lm(formula = change_remittance_millions ~ log_change_sending_total_gdp_lag1 + 
+    log_change_receiving_total_gdp_lag1, data = df_changes_lagged_no_outliers)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-37.964  -0.622   0.399   0.725  45.413 
+
+Coefficients:
+                                    Estimate Std. Error t value Pr(>|t|)   
+(Intercept)                           0.6796     0.3916   1.736  0.08310 . 
+log_change_sending_total_gdp_lag1    -6.0733     7.3818  -0.823  0.41095   
+log_change_receiving_total_gdp_lag1 -23.0892     8.2740  -2.791  0.00541 **
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 8.37 on 673 degrees of freedom
+Multiple R-squared:  0.01552,	Adjusted R-squared:  0.0126 
+F-statistic: 5.306 on 2 and 673 DF,  p-value: 0.005173
+
+
+
+===== MODEL COMPARISON SUMMARY =====
+All 24 Models Performance Overview:
+                           Model    R_squared Observations
+1     1. Unlag GDPPC Spec1 W/Out 0.0006639721         1472
+2    2. Unlag GDPPC Spec1 No Out 0.0089620557         1324
+3     3. Unlag GDPPC Spec2 W/Out 0.0119082371         1472
+4    4. Unlag GDPPC Spec2 No Out 0.0114196882         1324
+5     5. Unlag GDPPC Spec3 W/Out 0.0015432922         1472
+6    6. Unlag GDPPC Spec3 No Out 0.0105128906         1324
+7       7. Lag GDPPC Spec1 W/Out 0.0039741435          752
+8      8. Lag GDPPC Spec1 No Out 0.0220410311          676
+9       9. Lag GDPPC Spec2 W/Out 0.0110181409          752
+10    10. Lag GDPPC Spec2 No Out 0.0103181324          676
+11     11. Lag GDPPC Spec3 W/Out 0.0036132991          752
+12    12. Lag GDPPC Spec3 No Out 0.0155225249          676
+13  13. Unlag TotGDP Spec1 W/Out 0.0006639721         1472
+14 14. Unlag TotGDP Spec1 No Out 0.0089620557         1324
+15  15. Unlag TotGDP Spec2 W/Out 0.0119082371         1472
+16 16. Unlag TotGDP Spec2 No Out 0.0114196882         1324
+17  17. Unlag TotGDP Spec3 W/Out 0.0015432922         1472
+18 18. Unlag TotGDP Spec3 No Out 0.0105128906         1324
+19    19. Lag TotGDP Spec1 W/Out 0.0039741435          752
+20   20. Lag TotGDP Spec1 No Out 0.0220410311          676
+21    21. Lag TotGDP Spec2 W/Out 0.0110181409          752
+22   22. Lag TotGDP Spec2 No Out 0.0103181324          676
+23    23. Lag TotGDP Spec3 W/Out 0.0036132991          752
+24   24. Lag TotGDP Spec3 No Out 0.0155225249          676

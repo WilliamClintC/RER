@@ -1,0 +1,161 @@
+COEFFICIENT EXTRACTION FOR TABLE CREATION
+==========================================
+
+Spec 1 - With Outliers :
+Coefficients:
+                                   Estimate   Std. Error    t value
+(Intercept)                   27486.2394069 2.316586e+04  1.1864977
+gdp_per_capita_sending_lag1       4.7342801 6.989725e-01  6.7731995
+gdp_per_capita_receiving_lag1    -0.8448586 1.184899e+00 -0.7130214
+                                  Pr(>|t|)
+(Intercept)                   2.356177e-01
+gdp_per_capita_sending_lag1   1.816575e-11
+gdp_per_capita_receiving_lag1 4.759458e-01
+R-squared: 0.0324474 
+Adj R-squared: 0.0311301 
+F-statistic: 24.63185 
+F p-value: 3.005959e-11 
+Observations: 1472 
+Residual SE: 600276.4 
+
+Spec 1 - Without Outliers :
+Coefficients:
+                                  Estimate   Std. Error  t value     Pr(>|t|)
+(Intercept)                   1.035743e+04 2.197237e+03 4.713843 2.688179e-06
+gdp_per_capita_sending_lag1   6.470069e-01 6.654073e-02 9.723472 1.246271e-21
+gdp_per_capita_receiving_lag1 1.431519e-01 1.154156e-01 1.240317 2.150785e-01
+R-squared: 0.06686905 
+Adj R-squared: 0.06545628 
+F-statistic: 47.33205 
+F p-value: 1.403087e-20 
+Observations: 1324 
+Residual SE: 54017.13 
+
+Spec 2 - With Outliers :
+Coefficients:
+                                     Estimate Std. Error    t value
+(Intercept)                       -15.6146267  1.1729280 -13.312519
+log_gdp_per_capita_sending_lag1     1.5289898  0.0727606  21.013979
+log_gdp_per_capita_receiving_lag1   0.1439747  0.1044907   1.377872
+                                      Pr(>|t|)
+(Intercept)                       2.927362e-38
+log_gdp_per_capita_sending_lag1   6.250010e-86
+log_gdp_per_capita_receiving_lag1 1.684528e-01
+R-squared: 0.2317659 
+Adj R-squared: 0.23072 
+F-statistic: 221.5888 
+F p-value: 7.852895e-85 
+Observations: 1472 
+Residual SE: 3.55649 
+
+Spec 2 - Without Outliers :
+Coefficients:
+                                     Estimate Std. Error    t value
+(Intercept)                       -14.2528359 1.05893796 -13.459557
+log_gdp_per_capita_sending_lag1     1.2681763 0.06669264  19.015238
+log_gdp_per_capita_receiving_lag1   0.2650678 0.09462326   2.801296
+                                      Pr(>|t|)
+(Intercept)                       8.584195e-39
+log_gdp_per_capita_sending_lag1   1.877474e-71
+log_gdp_per_capita_receiving_lag1 5.164014e-03
+R-squared: 0.2151587 
+Adj R-squared: 0.2139704 
+F-statistic: 181.0714 
+F p-value: 3.187229e-70 
+Observations: 1324 
+Residual SE: 3.07798 
+
+Spec 3 - With Outliers :
+Coefficients:
+                                    Estimate Std. Error   t value     Pr(>|t|)
+(Intercept)                       -347266.19  197355.08 -1.759601 7.868361e-02
+log_gdp_per_capita_sending_lag1     85960.35   12242.59  7.021419 3.345848e-12
+log_gdp_per_capita_receiving_lag1  -38180.18   17581.44 -2.171619 3.004402e-02
+R-squared: 0.03845593 
+Adj R-squared: 0.03714682 
+F-statistic: 29.37554 
+F p-value: 3.096515e-13 
+Observations: 1472 
+Residual SE: 598409.6 
+
+Spec 3 - Without Outliers :
+Coefficients:
+                                       Estimate Std. Error     t value
+(Intercept)                       -103826.68124  18231.958 -5.69476318
+log_gdp_per_capita_sending_lag1     13980.57307   1148.261 12.17542991
+log_gdp_per_capita_receiving_lag1      94.47427   1629.149  0.05798996
+                                      Pr(>|t|)
+(Intercept)                       1.520802e-08
+log_gdp_per_capita_sending_lag1   2.127804e-32
+log_gdp_per_capita_receiving_lag1 9.537654e-01
+R-squared: 0.1018749 
+Adj R-squared: 0.1005152 
+F-statistic: 74.92095 
+F p-value: 1.509983e-31 
+Observations: 1324 
+Residual SE: 52994.24 
+
+Spec 4 - With Outliers :
+Coefficients:
+                                    Estimate Std. Error   t value     Pr(>|t|)
+(Intercept)                       -347.26619  197.35508 -1.759601 7.868361e-02
+log_gdp_per_capita_sending_lag1     85.96035   12.24259  7.021419 3.345848e-12
+log_gdp_per_capita_receiving_lag1  -38.18018   17.58144 -2.171619 3.004402e-02
+R-squared: 0.03845593 
+Adj R-squared: 0.03714682 
+F-statistic: 29.37554 
+F p-value: 3.096515e-13 
+Observations: 1472 
+Residual SE: 598.4096 
+
+Spec 4 - Without Outliers :
+Coefficients:
+                                       Estimate Std. Error     t value
+(Intercept)                       -103.82668124  18.231958 -5.69476318
+log_gdp_per_capita_sending_lag1     13.98057307   1.148261 12.17542991
+log_gdp_per_capita_receiving_lag1    0.09447427   1.629149  0.05798996
+                                      Pr(>|t|)
+(Intercept)                       1.520802e-08
+log_gdp_per_capita_sending_lag1   2.127804e-32
+log_gdp_per_capita_receiving_lag1 9.537654e-01
+R-squared: 0.1018749 
+Adj R-squared: 0.1005152 
+F-statistic: 74.92095 
+F p-value: 1.509983e-31 
+Observations: 1324 
+Residual SE: 52.99424 
+
+Spec 5 - With Outliers :
+Coefficients:
+                                   Estimate   Std. Error    t value
+(Intercept)                   -2.036201e+00 1.417378e-01 -14.365969
+gdp_per_capita_sending_lag1    7.674748e-05 4.276587e-06  17.945963
+gdp_per_capita_receiving_lag1  1.106804e-05 7.249678e-06   1.526695
+                                  Pr(>|t|)
+(Intercept)                   6.871765e-44
+gdp_per_capita_sending_lag1   2.871778e-65
+gdp_per_capita_receiving_lag1 1.270522e-01
+R-squared: 0.1807293 
+Adj R-squared: 0.1796139 
+F-statistic: 162.0291 
+F p-value: 2.584804e-64 
+Observations: 1472 
+Residual SE: 3.672726 
+
+Spec 5 - Without Outliers :
+Coefficients:
+                                   Estimate   Std. Error    t value
+(Intercept)                   -1.816243e+00 1.292887e-01 -14.047959
+gdp_per_capita_sending_lag1    6.281844e-05 3.915357e-06  16.044115
+gdp_per_capita_receiving_lag1  1.726901e-05 6.791229e-06   2.542841
+                                  Pr(>|t|)
+(Intercept)                   6.972656e-42
+gdp_per_capita_sending_lag1   4.623708e-53
+gdp_per_capita_receiving_lag1 1.110882e-02
+R-squared: 0.163086 
+Adj R-squared: 0.1618189 
+F-statistic: 128.7089 
+F p-value: 8.525217e-52 
+Observations: 1324 
+Residual SE: 3.17845 
+

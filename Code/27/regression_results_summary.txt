@@ -1,0 +1,51 @@
+
+COMPREHENSIVE REGRESSION ANALYSIS RESULTS
+==========================================
+
+SPECIFICATION 1: Remittance (thousands) vs GDP (millions)
+----------------------------------------------------------
+                                    With Outliers    Without Outliers
+Sending Country GDP (millions)      0.164**          0.138***
+                                   (0.071)          (0.040)
+Receiving Country GDP (millions)   -0.061           -0.034
+                                   (0.112)          (0.063)
+Constant                           691,495.500***   434,211.800***
+                                   (247,444.700)    (139,545.700)
+
+Observations                       2,837            2,835
+R²                                0.002            0.004
+Adjusted R²                       0.001            0.004
+F Statistic                       2.855*           6.088***
+
+SPECIFICATION 2: Log-Log Model
+------------------------------
+                                    With Outliers    Without Outliers
+Log(Sending Country GDP)           0.959***         0.955***
+                                   (0.026)          (0.026)
+Log(Receiving Country GDP)         0.561***         0.561***
+                                   (0.033)          (0.033)
+Constant                          -17.492***       -17.451***
+                                   (0.474)          (0.473)
+
+Observations                       2,837            2,835
+R²                                0.370            0.370
+Adjusted R²                       0.370            0.369
+F Statistic                       832.296***       830.160***
+
+SPECIFICATION 4: Linear Dependent, Log Independent
+--------------------------------------------------
+                                    With Outliers    Without Outliers
+Log(Sending Country GDP)           420.896***       269.502***
+                                   (94.764)         (53.469)
+Log(Receiving Country GDP)         67.770           54.125
+                                   (120.338)        (67.852)
+Constant                          -4,583.081***    -3,032.175***
+                                   (1,740.371)      (981.506)
+
+Observations                       2,837            2,835
+R²                                0.007            0.009
+Adjusted R²                       0.006            0.008
+F Statistic                       10.009***        13.000***
+
+Notes: *p<0.1; **p<0.05; ***p<0.01
+Standard errors in parentheses

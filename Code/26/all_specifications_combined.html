@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Comprehensive Regression Analysis Results</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        h1 { color: #2c3e50; text-align: center; }
+        h2 { color: #34495e; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        .summary { background-color: #f8f9fa; padding: 20px; border-radius: 5px; margin: 20px 0; }
+        table { margin: 20px auto; }
+        .note { font-style: italic; color: #7f8c8d; margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <h1>Comprehensive Regression Analysis: Remittances and GDP</h1>
+    
+    <div class="summary">
+        <h3>Analysis Overview</h3>
+        <p><strong>Dataset:</strong> 22.csv</p>
+        <p><strong>Total observations:</strong> 3830 </p>
+        <p><strong>Observations without outliers:</strong> 2509 </p>
+        <p><strong>Outliers removed:</strong> 1321 </p>
+        
+        <h4>Specifications Tested:</h4>
+        <ul>
+            <li><strong>Specification 1:</strong> Remittances (thousands) vs GDP (millions)</li>
+            <li><strong>Specification 2:</strong> Log-Log Model</li>
+            <li><strong>Specification 3:</strong> Log Dependent, Linear Independent</li>
+            <li><strong>Specification 4:</strong> Linear Dependent, Log Independent</li>
+        </ul>
+    </div>
+
+    <h2>Specification 1: Remittances (thousands) vs GDP (millions)</h2>
+<table style="text-align:center"><caption><strong>Specification 1: Remittances (thousands) vs GDP (millions)</strong></caption>
+<tr><td colspan="3" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td colspan="2"><em>Dependent variable:</em></td></tr>
+<tr><td></td><td colspan="2" style="border-bottom: 1px solid black"></td></tr>
+<tr><td style="text-align:left"></td><td colspan="2">Remittance Value (thousands USD)</td></tr>
+<tr><td style="text-align:left"></td><td>With Outliers</td><td>Without Outliers</td></tr>
+<tr><td style="text-align:left"></td><td>(1)</td><td>(2)</td></tr>
+<tr><td colspan="3" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Sending Country GDP (millions USD)</td><td>0.160<sup>***</sup></td><td>0.0004<sup>**</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.059)</td><td>(0.0002)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Receiving Country GDP (millions USD)</td><td>-0.043</td><td>0.001<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.073)</td><td>(0.0002)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Constant</td><td>499,399.900<sup>***</sup></td><td>441.458<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(183,346.400)</td><td>(49.703)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td colspan="3" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Observations</td><td>3,830</td><td>2,509</td></tr>
+<tr><td style="text-align:left">R<sup>2</sup></td><td>0.002</td><td>0.008</td></tr>
+<tr><td style="text-align:left">Adjusted R<sup>2</sup></td><td>0.002</td><td>0.007</td></tr>
+<tr><td style="text-align:left">Residual Std. Error</td><td>10,557,524.000 (df = 3827)</td><td>1,654.523 (df = 2506)</td></tr>
+<tr><td style="text-align:left">F Statistic</td><td>3.936<sup>**</sup> (df = 2; 3827)</td><td>10.069<sup>***</sup> (df = 2; 2506)</td></tr>
+<tr><td colspan="3" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Note:</em></td><td colspan="2" style="text-align:right"><sup>*</sup>p<0.1; <sup>**</sup>p<0.05; <sup>***</sup>p<0.01</td></tr>
+</table>
+<br><br>
+<h2>Specification 2: Log-Log Model</h2>
+<table style="text-align:center"><caption><strong>Specification 2: Log-Log Model</strong></caption>
+<tr><td colspan="3" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td colspan="2"><em>Dependent variable:</em></td></tr>
+<tr><td></td><td colspan="2" style="border-bottom: 1px solid black"></td></tr>
+<tr><td style="text-align:left"></td><td colspan="2">Log(Remittance Value)</td></tr>
+<tr><td style="text-align:left"></td><td>With Outliers</td><td>Without Outliers</td></tr>
+<tr><td style="text-align:left"></td><td>(1)</td><td>(2)</td></tr>
+<tr><td colspan="3" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Log(Sending Country GDP)</td><td>0.559<sup>***</sup></td><td>-0.250<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.029)</td><td>(0.029)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Log(Receiving Country GDP)</td><td>0.447<sup>***</sup></td><td>0.519<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.031)</td><td>(0.030)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Constant</td><td>-13.404<sup>***</sup></td><td>-6.821<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.491)</td><td>(0.452)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td colspan="3" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Observations</td><td>3,830</td><td>2,509</td></tr>
+<tr><td style="text-align:left">R<sup>2</sup></td><td>0.127</td><td>0.135</td></tr>
+<tr><td style="text-align:left">Adjusted R<sup>2</sup></td><td>0.127</td><td>0.134</td></tr>
+<tr><td style="text-align:left">Residual Std. Error</td><td>4.169 (df = 3827)</td><td>2.717 (df = 2506)</td></tr>
+<tr><td style="text-align:left">F Statistic</td><td>279.415<sup>***</sup> (df = 2; 3827)</td><td>195.087<sup>***</sup> (df = 2; 2506)</td></tr>
+<tr><td colspan="3" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Note:</em></td><td colspan="2" style="text-align:right"><sup>*</sup>p<0.1; <sup>**</sup>p<0.05; <sup>***</sup>p<0.01</td></tr>
+</table>
+<br><br>
+<h2>Specification 3: Log Dependent, Linear Independent</h2>
+<table style="text-align:center"><caption><strong>Specification 3: Log Dependent, Linear Independent</strong></caption>
+<tr><td colspan="3" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td colspan="2"><em>Dependent variable:</em></td></tr>
+<tr><td></td><td colspan="2" style="border-bottom: 1px solid black"></td></tr>
+<tr><td style="text-align:left"></td><td colspan="2">Log(Remittance Value)</td></tr>
+<tr><td style="text-align:left"></td><td>With Outliers</td><td>Without Outliers</td></tr>
+<tr><td style="text-align:left"></td><td>(1)</td><td>(2)</td></tr>
+<tr><td colspan="3" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Sending Country GDP (millions USD)</td><td>0.00000<sup>***</sup></td><td>-0.00000<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.00000)</td><td>(0.00000)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Receiving Country GDP (millions USD)</td><td>0.00000<sup>*</sup></td><td>0.00000<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.00000)</td><td>(0.00000)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Constant</td><td>-2.499<sup>***</sup></td><td>-3.990<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.074)</td><td>(0.083)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td colspan="3" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Observations</td><td>3,830</td><td>2,509</td></tr>
+<tr><td style="text-align:left">R<sup>2</sup></td><td>0.081</td><td>0.106</td></tr>
+<tr><td style="text-align:left">Adjusted R<sup>2</sup></td><td>0.080</td><td>0.105</td></tr>
+<tr><td style="text-align:left">Residual Std. Error</td><td>4.279 (df = 3827)</td><td>2.761 (df = 2506)</td></tr>
+<tr><td style="text-align:left">F Statistic</td><td>167.734<sup>***</sup> (df = 2; 3827)</td><td>148.652<sup>***</sup> (df = 2; 2506)</td></tr>
+<tr><td colspan="3" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Note:</em></td><td colspan="2" style="text-align:right"><sup>*</sup>p<0.1; <sup>**</sup>p<0.05; <sup>***</sup>p<0.01</td></tr>
+</table>
+<br><br>
+<h2>Specification 4: Linear Dependent, Log Independent</h2>
+<table style="text-align:center"><caption><strong>Specification 4: Linear Dependent, Log Independent</strong></caption>
+<tr><td colspan="3" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td colspan="2"><em>Dependent variable:</em></td></tr>
+<tr><td></td><td colspan="2" style="border-bottom: 1px solid black"></td></tr>
+<tr><td style="text-align:left"></td><td colspan="2">Value_millions</td></tr>
+<tr><td style="text-align:left"></td><td>With Outliers</td><td>Without Outliers</td></tr>
+<tr><td style="text-align:left"></td><td>(1)</td><td>(2)</td></tr>
+<tr><td colspan="3" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Log(Sending Country GDP)</td><td>318.324<sup>***</sup></td><td>0.026</td></tr>
+<tr><td style="text-align:left"></td><td>(73.692)</td><td>(0.017)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Log(Receiving Country GDP)</td><td>61.964</td><td>0.082<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(79.461)</td><td>(0.018)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Constant</td><td>-3,663.680<sup>***</sup></td><td>-0.551<sup>**</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(1,241.514)</td><td>(0.275)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td></tr>
+<tr><td colspan="3" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Observations</td><td>3,830</td><td>2,509</td></tr>
+<tr><td style="text-align:left">R<sup>2</sup></td><td>0.005</td><td>0.009</td></tr>
+<tr><td style="text-align:left">Adjusted R<sup>2</sup></td><td>0.004</td><td>0.008</td></tr>
+<tr><td style="text-align:left">Residual Std. Error</td><td>10,542.050 (df = 3827)</td><td>1.654 (df = 2506)</td></tr>
+<tr><td style="text-align:left">F Statistic</td><td>9.570<sup>***</sup> (df = 2; 3827)</td><td>11.063<sup>***</sup> (df = 2; 2506)</td></tr>
+<tr><td colspan="3" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Note:</em></td><td colspan="2" style="text-align:right"><sup>*</sup>p<0.1; <sup>**</sup>p<0.05; <sup>***</sup>p<0.01</td></tr>
+</table>
+<br><br>
+<h2>Model Comparison Summary</h2>
+<table border="1" style="border-collapse:collapse; margin: 20px auto;">
+<tr><th>Model</th><th>Description</th><th>Observations</th><th>R²</th><th>Adj R²</th></tr><tr><td> Spec1_With </td> <td> Remit(000s) vs GDP(M) - With Outliers </td> <td> 3830 </td> <td> 0.0021 </td> <td> 0.0015 </td></tr><tr><td> Spec1_Without </td> <td> Remit(000s) vs GDP(M) - Without Outliers </td> <td> 2509 </td> <td> 0.008 </td> <td> 0.0072 </td></tr><tr><td> Spec2_With </td> <td> Log-Log - With Outliers </td> <td> 3830 </td> <td> 0.1274 </td> <td> 0.127 </td></tr><tr><td> Spec2_Without </td> <td> Log-Log - Without Outliers </td> <td> 2509 </td> <td> 0.1347 </td> <td> 0.134 </td></tr><tr><td> Spec3_With </td> <td> Log-Linear - With Outliers </td> <td> 3830 </td> <td> 0.0806 </td> <td> 0.0801 </td></tr><tr><td> Spec3_Without </td> <td> Log-Linear - Without Outliers </td> <td> 2509 </td> <td> 0.1061 </td> <td> 0.1053 </td></tr><tr><td> Spec4_With </td> <td> Linear-Log - With Outliers </td> <td> 3830 </td> <td> 0.005 </td> <td> 0.0045 </td></tr><tr><td> Spec4_Without </td> <td> Linear-Log - Without Outliers </td> <td> 2509 </td> <td> 0.0088 </td> <td> 0.008 </td></tr></table>
+
+    <div class="summary">
+        <h3>Key Findings</h3>
+        <ul>
+            <li>Log transformations significantly improve model fit</li>
+            <li>Outlier removal generally improves model performance</li>
+            <li>Log-Log specification performs best overall</li>
+            <li>Best performing model: Log-Log without outliers (Adj R² =  0.134 )</li>
+        </ul>
+    </div>
+</body>
+</html>

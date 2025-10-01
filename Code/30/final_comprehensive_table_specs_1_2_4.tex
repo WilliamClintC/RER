@@ -1,0 +1,38 @@
+
+% Comprehensive Regression Table with Lagged GDP Per Capita - Specifications 1, 2, 4
+\begin{table}[!htbp] \centering
+  \caption{Comprehensive Regression Analysis: Remittances and Lagged GDP Per Capita (t-1) - Specifications 1, 2, 4}
+  \label{}
+\begin{tabular}{@{\extracolsep{5pt}}lcccccc}
+\\[-1.8ex]\hline
+\hline \\[-1.8ex]
+ & \multicolumn{6}{c}{\textit{Dependent variable:}} \\
+\cline{2-7}
+\\[-1.8ex] & \multicolumn{2}{c}{Remittance (thousands USD)} & \multicolumn{2}{c}{Log(Remittance Value)} & \multicolumn{2}{c}{Remittance (millions USD)} \\
+ & With Outliers & Without Outliers & With Outliers & Without Outliers & With Outliers & Without Outliers \\
+ & Spec 1 & Spec 1 & Spec 2 & Spec 2 & Spec 4 & Spec 4 \\
+\\[-1.8ex] & (1) & (2) & (3) & (4) & (5) & (6)\\
+\hline \\[-1.8ex]
+ Sending Country GDP Per Capita (t-1, USD) & 4.734$^{***}$ & 0.647$^{***}$ & & & & \\
+  & (0.699) & (0.067) & & & & \\
+ Receiving Country GDP Per Capita (t-1, USD) & $-$0.845 & 0.143 & & & & \\
+  & (1.185) & (0.115) & & & & \\
+ Log(Sending Country GDP Per Capita (t-1)) & & & 1.529$^{***}$ & 1.268$^{***}$ & 85.960$^{***}$ & 13.981$^{***}$ \\
+  & & & (0.073) & (0.067) & (12.243) & (1.148) \\
+ Log(Receiving Country GDP Per Capita (t-1)) & & & 0.144 & 0.265$^{***}$ & $-$38.180$^{**}$ & 0.094 \\
+  & & & (0.104) & (0.095) & (17.581) & (1.629) \\
+ Constant & 27,486.240 & 10,357.430$^{***}$ & $-$15.615$^{***}$ & $-$14.253$^{***}$ & $-$347.266$^{*}$ & $-$103.827$^{***}$ \\
+  & (23,165.860) & (2,197.237) & (1.173) & (1.059) & (197.355) & (18.232) \\
+ \hline \\[-1.8ex]
+Observations & 1,472 & 1,324 & 1,472 & 1,324 & 1,472 & 1,324 \\
+R$^{2}$ & 0.032 & 0.067 & 0.232 & 0.215 & 0.038 & 0.102 \\
+Adjusted R$^{2}$ & 0.031 & 0.065 & 0.231 & 0.214 & 0.037 & 0.101 \\
+Residual Std. Error & 600,276.400 (df = 1469) & 54,017.130 (df = 1321) & 3.556 (df = 1469) & 3.078 (df = 1321) & 598.410 (df = 1469) & 52.994 (df = 1321) \\
+F Statistic & 24.632$^{***}$ (df = 2; 1469) & 47.332$^{***}$ (df = 2; 1321) & 221.589$^{***}$ (df = 2; 1469) & 181.071$^{***}$ (df = 2; 1321) & 29.376$^{***}$ (df = 2; 1469) & 74.921$^{***}$ (df = 2; 1321) \\
+\hline
+\hline \\[-1.8ex]
+\textit{Note:}  & \multicolumn{6}{r}{Specification 1: Linear (thousands), Specification 2: Log-Log, Specification 4: Semi-Log} \\
+ & \multicolumn{6}{r}{GDP Per Capita variables are lagged by 1 period (t-1). Outliers removed using 5th-95th percentile method} \\
+ & \multicolumn{6}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\
+\end{tabular}
+\end{table}

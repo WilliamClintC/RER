@@ -1,0 +1,9 @@
+"Model","Description","Observations","R_Squared","Adj_R_Squared","F_Statistic"
+"Spec1_With","Remit(000s) vs GDP(M) - With Outliers",3830,0.0021,0.0015,3.94
+"Spec1_Without","Remit(000s) vs GDP(M) - Without Outliers",2509,0.008,0.0072,10.07
+"Spec2_With","Log-Log - With Outliers",3830,0.1274,0.127,279.42
+"Spec2_Without","Log-Log - Without Outliers",2509,0.1347,0.134,195.09
+"Spec3_With","Log-Linear - With Outliers",3830,0.0806,0.0801,167.73
+"Spec3_Without","Log-Linear - Without Outliers",2509,0.1061,0.1053,148.65
+"Spec4_With","Linear-Log - With Outliers",3830,0.005,0.0045,9.57
+"Spec4_Without","Linear-Log - Without Outliers",2509,0.0088,0.008,11.06

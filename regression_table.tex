@@ -1,0 +1,37 @@
+
+\begin{table}[htbp]
+\centering
+\caption{Regression Results: Remittance Values and GDP}
+\label{tab:regression_results}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Variable} & \textbf{Coefficient} & \textbf{Std. Error} & \textbf{t-value} & \textbf{p-value} \\
+\midrule
+(Intercept)          & 4.994e+02 & 1.833e+02 &   2.724 &  0.0065** \\
+Sending Country GDP  & 1.599e-04 & 5.870e-05 &   2.724 &  0.0065** \\
+Receiving Country GDP & -4.333e-05 & 7.318e-05 &  -0.592 &  0.5539 \\
+
+\midrule
+\end{tabular}
+
+\vspace{0.3cm}
+
+\begin{tabular}{ll}
+\textbf{Model Statistics:} & \\
+Dependent Variable & Value (Remittances) \\
+Independent Variables & Sending Country GDP, Receiving Country GDP \\
+Observations & 3,830 \\
+R-squared & 0.002053 \\
+Adjusted R-squared & 0.001531 \\
+Residual Standard Error & 10558 \\
+F-statistic & 3.936 \\
+F-statistic p-value & 0.019609 \\
+\end{tabular}
+
+\vspace{0.2cm}
+\begin{flushleft}
+\textit{Notes:} Significance levels: *** p < 0.001, ** p < 0.01, * p < 0.05\\
+Standard errors in parentheses. Dependent variable is remittance values in USD millions.\\
+Sample includes 3,830 observations after removing missing values.
+\end{flushleft}
+\end{table}

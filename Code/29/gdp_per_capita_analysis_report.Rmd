@@ -1,0 +1,221 @@
+---
+title: "Regression Analysis: Remittances and GDP Per Capita"
+author: "Analysis Report"
+date: "`r Sys.Date()`"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: default
+    highlight: textmate
+    code_folding: hide
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+library(car)
+library(stargazer)
+library(dplyr)
+library(knitr)
+```
+
+# Introduction
+
+This report presents a comprehensive regression analysis examining the relationship between remittance flows and GDP per capita variables. The analysis uses lagged GDP per capita variables (t-1) to address potential endogeneity concerns.
+
+# Data Overview
+
+```{r data-load, echo=TRUE}
+# Load the dataset
+file_path <- "29.csv"
+df <- read.csv(file_path, stringsAsFactors = FALSE)
+
+# Data preprocessing
+df$Value <- as.numeric(gsub(",", "", df$Value))
+df <- df[!is.na(df$Value) & !is.na(df$Sending_Country_GDP_Per_Capita) & !is.na(df$Receiving_Country_GDP_Per_Capita), ]
+df <- df[df$Value > 0 & df$Sending_Country_GDP_Per_Capita > 0 & df$Receiving_Country_GDP_Per_Capita > 0, ]
+df <- df[order(df$Sending_Country, df$Receiving_Country, df$Year), ]
+
+cat("Dataset loaded with", nrow(df), "observations")
+```
+
+# Variable Creation and Outlier Detection
+
+```{r variables, echo=TRUE}
+# Create lagged GDP per capita variables
+df <- df %>%
+  group_by(Sending_Country, Receiving_Country) %>%
+  arrange(Year) %>%
+  mutate(
+    Sending_Country_GDP_Per_Capita_lag1 = lag(Sending_Country_GDP_Per_Capita, 1),
+    Receiving_Country_GDP_Per_Capita_lag1 = lag(Receiving_Country_GDP_Per_Capita, 1)
+  ) %>%
+  ungroup()
+
+# Remove rows with missing lagged values
+df <- df[!is.na(df$Sending_Country_GDP_Per_Capita_lag1) & !is.na(df$Receiving_Country_GDP_Per_Capita_lag1), ]
+df <- df[df$Sending_Country_GDP_Per_Capita_lag1 > 0 & df$Receiving_Country_GDP_Per_Capita_lag1 > 0, ]
+
+# Create variables for analysis
+df$remittance_millions <- df$Value
+df$remittance_thousands <- df$Value * 1000
+df$gdp_per_capita_sending_lag1 <- df$Sending_Country_GDP_Per_Capita_lag1
+df$gdp_per_capita_receiving_lag1 <- df$Receiving_Country_GDP_Per_Capita_lag1
+df$log_remittance <- log(df$remittance_millions)
+df$log_gdp_per_capita_sending_lag1 <- log(df$gdp_per_capita_sending_lag1)
+df$log_gdp_per_capita_receiving_lag1 <- log(df$gdp_per_capita_receiving_lag1)
+
+# Outlier detection
+Q1 <- quantile(df$log_remittance, 0.25, na.rm = TRUE)
+Q3 <- quantile(df$log_remittance, 0.75, na.rm = TRUE)
+IQR <- Q3 - Q1
+lower_bound <- Q1 - 1.5 * IQR
+upper_bound <- Q3 + 1.5 * IQR
+
+df_no_outliers <- df[df$log_remittance >= lower_bound & df$log_remittance <= upper_bound, ]
+
+cat("After variable creation:", nrow(df), "observations")
+cat("After removing outliers:", nrow(df_no_outliers), "observations")
+```
+
+# Regression Models
+
+## Specification 1: Linear Model (Remittances in thousands vs GDP Per Capita)
+
+```{r spec1, echo=TRUE}
+spec1_with_outliers <- lm(remittance_thousands ~ gdp_per_capita_sending_lag1 + gdp_per_capita_receiving_lag1, data = df)
+spec1_without_outliers <- lm(remittance_thousands ~ gdp_per_capita_sending_lag1 + gdp_per_capita_receiving_lag1, data = df_no_outliers)
+```
+
+## Specification 2: Log-Log Model
+
+```{r spec2, echo=TRUE}
+spec2_with_outliers <- lm(log_remittance ~ log_gdp_per_capita_sending_lag1 + log_gdp_per_capita_receiving_lag1, data = df)
+spec2_without_outliers <- lm(log_remittance ~ log_gdp_per_capita_sending_lag1 + log_gdp_per_capita_receiving_lag1, data = df_no_outliers)
+```
+
+## Specification 3: Log-Linear Model
+
+```{r spec3, echo=TRUE}
+spec3_with_outliers <- lm(remittance_thousands ~ log_gdp_per_capita_sending_lag1 + log_gdp_per_capita_receiving_lag1, data = df)
+spec3_without_outliers <- lm(remittance_thousands ~ log_gdp_per_capita_sending_lag1 + log_gdp_per_capita_receiving_lag1, data = df_no_outliers)
+```
+
+## Specification 4: Linear Dependent, Log Independent
+
+```{r spec4, echo=TRUE}
+spec4_with_outliers <- lm(remittance_millions ~ log_gdp_per_capita_sending_lag1 + log_gdp_per_capita_receiving_lag1, data = df)
+spec4_without_outliers <- lm(remittance_millions ~ log_gdp_per_capita_sending_lag1 + log_gdp_per_capita_receiving_lag1, data = df_no_outliers)
+```
+
+## Specification 5: Log Dependent (millions), Linear Independent
+
+```{r spec5, echo=TRUE}
+spec5_with_outliers <- lm(log_remittance ~ gdp_per_capita_sending_lag1 + gdp_per_capita_receiving_lag1, data = df)
+spec5_without_outliers <- lm(log_remittance ~ gdp_per_capita_sending_lag1 + gdp_per_capita_receiving_lag1, data = df_no_outliers)
+```
+
+# Results
+
+## Comprehensive Results Table
+
+```{r results-table, results="asis", echo=FALSE}
+stargazer(
+  spec1_with_outliers, spec1_without_outliers,
+  spec2_with_outliers, spec2_without_outliers,
+  spec3_with_outliers, spec3_without_outliers,
+  spec4_with_outliers, spec4_without_outliers,
+  type = "html",
+  title = "Comprehensive Regression Analysis: Remittances and Lagged GDP Per Capita (t-1)",
+  column.labels = c("With Outliers", "Without Outliers", "With Outliers", "Without Outliers", "With Outliers", "Without Outliers", "With Outliers", "Without Outliers"),
+  column.separate = c(2, 2, 2, 2),
+  model.numbers = FALSE,
+  dep.var.labels = c("Remittance Value (thousands USD)", "Log(Remittance Value)", "Remittance Value (thousands USD)", "Remittance Value (millions USD)"),
+  covariate.labels = c("Sending Country GDP Per Capita (t-1, USD)", "Receiving Country GDP Per Capita (t-1, USD)",
+                      "Log(Sending Country GDP Per Capita (t-1))", "Log(Receiving Country GDP Per Capita (t-1))"),
+  add.lines = list(c("Specification", "1: Linear", "1: Linear", "2: Log-Log", "2: Log-Log", "3: Log-Linear", "3: Log-Linear", "4: Linear Dep, Log Indep", "4: Linear Dep, Log Indep")),
+  notes = c("Specification 1: Linear (thousands) vs Lagged GDP Per Capita",
+           "Specification 2: Log-Log Model with Lagged GDP Per Capita",
+           "Specification 3: Log-Linear Model (thousands) with Lagged GDP Per Capita", 
+           "Specification 4: Linear (millions) vs Log GDP Per Capita",
+           "GDP Per Capita variables are lagged by 1 period (t-1)",
+           "Note: *p<0.1; **p<0.05; ***p<0.01"),
+  notes.align = "l",
+  star.cutoffs = c(0.1, 0.05, 0.01),
+  digits = 3,
+  no.space = TRUE
+)
+```
+
+## Summary Statistics
+
+```{r summary-stats, echo=FALSE}
+summary_stats <- data.frame(
+  Statistic = c("Total observations (with outliers)", 
+                "Total observations (without outliers)", 
+                "Outliers removed",
+                "Mean remittance value (millions USD)",
+                "Mean sending country GDP per capita (USD)",
+                "Mean receiving country GDP per capita (USD)"),
+  Value = c(nrow(df),
+            nrow(df_no_outliers),
+            nrow(df) - nrow(df_no_outliers),
+            round(mean(df$remittance_millions, na.rm = TRUE), 2),
+            round(mean(df$gdp_per_capita_sending_lag1, na.rm = TRUE), 2),
+            round(mean(df$gdp_per_capita_receiving_lag1, na.rm = TRUE), 2))
+)
+
+kable(summary_stats, caption = "Summary Statistics")
+```
+
+# Model Diagnostics
+
+```{r diagnostics, echo=FALSE}
+# Model fit statistics
+model_stats <- data.frame(
+  Model = c("Spec 1 (With Outliers)", "Spec 1 (Without Outliers)",
+            "Spec 2 (With Outliers)", "Spec 2 (Without Outliers)",
+            "Spec 3 (With Outliers)", "Spec 3 (Without Outliers)",
+            "Spec 4 (With Outliers)", "Spec 4 (Without Outliers)"),
+  R_squared = c(summary(spec1_with_outliers)$r.squared,
+                summary(spec1_without_outliers)$r.squared,
+                summary(spec2_with_outliers)$r.squared,
+                summary(spec2_without_outliers)$r.squared,
+                summary(spec3_with_outliers)$r.squared,
+                summary(spec3_without_outliers)$r.squared,
+                summary(spec4_with_outliers)$r.squared,
+                summary(spec4_without_outliers)$r.squared),
+  Adj_R_squared = c(summary(spec1_with_outliers)$adj.r.squared,
+                    summary(spec1_without_outliers)$adj.r.squared,
+                    summary(spec2_with_outliers)$adj.r.squared,
+                    summary(spec2_without_outliers)$adj.r.squared,
+                    summary(spec3_with_outliers)$adj.r.squared,
+                    summary(spec3_without_outliers)$adj.r.squared,
+                    summary(spec4_with_outliers)$adj.r.squared,
+                    summary(spec4_without_outliers)$adj.r.squared),
+  F_statistic = c(summary(spec1_with_outliers)$fstatistic[1],
+                  summary(spec1_without_outliers)$fstatistic[1],
+                  summary(spec2_with_outliers)$fstatistic[1],
+                  summary(spec2_without_outliers)$fstatistic[1],
+                  summary(spec3_with_outliers)$fstatistic[1],
+                  summary(spec3_without_outliers)$fstatistic[1],
+                  summary(spec4_with_outliers)$fstatistic[1],
+                  summary(spec4_without_outliers)$fstatistic[1])
+)
+
+kable(model_stats, digits = 4, caption = "Model Fit Statistics")
+```
+
+# Conclusion
+
+This analysis examined the relationship between remittance flows and GDP per capita using four different model specifications:
+
+1. **Linear Model**: Direct relationship between remittances and GDP per capita levels
+2. **Log-Log Model**: Elasticity interpretation of the relationship
+3. **Log-Linear Model**: Linear dependent variable with log-transformed independent variables (thousands USD)
+4. **Semi-Log Model**: Linear dependent variable with log-transformed independent variables (millions USD)
+
+All models use lagged GDP per capita variables to address potential endogeneity concerns. The results show [interpret your specific findings here based on the actual output].
+
+The analysis was conducted both with and without outliers to assess the robustness of the findings.
+
