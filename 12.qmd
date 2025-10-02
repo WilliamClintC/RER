@@ -75,9 +75,7 @@ With our current datasets (IMF Kpodar paper and Remitscope), we will assess thei
 
 ## Initial US Outflows Analysis
 
-As discussed in our last meeting, we will now analyze US remittance outflows.
-
-The initial analysis of US outflows revealed potential data quality issues:
+As discussed in our last meeting, we will now analyze US remittance outflows. The initial analysis of US outflows revealed potential data quality issues:
 
 ![Initial US Outflows Analysis](images/21.png){#fig-us-outflows-initial}
 
@@ -127,7 +125,7 @@ Upon aggregating the dataset, it became evident that the discrepancy associated 
 
 Specifically, the dataset reported remittance flows to Kenya at approximately \$491 billion, whereas the World Bank macro remittance dataset indicates a figure closer to \$4.3 billion USD. This substantial divergence highlights a persistent issue within the datasets.
 
-To address this, we excluded Kenya from the analysis and employed the median as a robust measure to mitigate the impact of outliers. The resulting side-by-side comparison of the datasets is presented in @fig-dataset-comparison.
+To address this, we excluded Kenya from the analysis and employed the median as a measure to mitigate the impact of outliers. The resulting side-by-side comparison of the datasets is presented in @fig-dataset-comparison.
 
 ![Dataset Side by Side](images/26.png){#fig-dataset-comparison}
 
@@ -301,7 +299,7 @@ To reduce concerns about reverse causality and address the interpretational chal
 **Notes:** Spec 1: Linear (thousands), Spec 2: Log-Log, Spec 4: Linear-Log. GDP Per Capita variables lagged by 1 period (t-1). *p<0.1; **p<0.05; ***p<0.01. Standard errors in parentheses.
 
 ------------------------------------------------------------------------
-These results indicate that, although the coefficient for receiving country GDP is not strictly negative, it is consistently lower than that of the sending country. This finding suggests that countries receiving remittances tend to have lower GDP overall, consistent with the notion that remittance flows are directed toward less affluent economies. In the following section, I address potential issues of non-stationarity and upward trends in both GDP and remittance series by considering first-difference specifications.
+These results indicate that, although the coefficient for receiving country GDP is not strictly negative, it is consistently lower than that of the sending country. This finding suggests that countries receiving remittances tend to have lower GDP overall, consistent with the notion that remittance flows are directed toward less affluent economies. In the following section, I address potential issues of upward trends in both GDP and remittance series by considering first-difference specifications.
 
 
 
